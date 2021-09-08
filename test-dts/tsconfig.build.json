@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "paths": {
+      "@lgd-utils/*": ["../packages/*/dist"]
+    }
+  },
+  "exclude": ["../packages/*/__tests__", "../packages/*/src", "../packages/*/types"],
+  "include": ["../packages/built-in.d.ts", "../packages/global.d.ts", "../packages/*/dist", "../test-dts"]
+}

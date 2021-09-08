@@ -1,0 +1,1324 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.18.7",
+    "schemaVersion": 1004,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@typeReturns",
+          "syntaxKind": "block"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true,
+        "@typeReturns": true
+      }
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@lgd-utils/utils!",
+  "docComment": "/**\n * CachedStorage\n *\n * @remarks\n *\n * A front-end utils tool\n *\n * @packageDocumentation\n */\n",
+  "name": "@lgd-utils/utils",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@lgd-utils/utils!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@lgd-utils/utils!_default:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "_default: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    attemptFunc: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "attemptFunc",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    attemptFuncWithLazyDefault: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "attemptFuncWithLazyDefault",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    attemptFuncWithError: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "attemptFuncWithError",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    attemptFuncWithDefault: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "attemptFuncWithDefault",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    attemptFuncWithDefaultAndError: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "attemptFuncWithDefaultAndError",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    partialEq: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "partialEq",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    partialEqBy: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "partialEqBy",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    partialEqWith: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "partialEqWith",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    regexpTest: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "regexpTest",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    undefinedTo: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "undefinedTo",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    assertValue: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "assertValue",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    normalizeValue: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "normalizeValue",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    promiseSeries: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "promiseSeries",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    typeDefaultTo: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "typeDefaultTo",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "_default",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 30
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!assertValue:function(1)",
+          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param assertion - 断言模式\n *\n * @returns 是否与断言模式匹配\n *\n * @typeReturns\n *\n * boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function assertValue(value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", assertion?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown[] | "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, unknown> | "
+            },
+            {
+              "kind": "Reference",
+              "text": "RegExp",
+              "canonicalReference": "!RegExp:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | ((val: unknown) => boolean) | unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 9,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "assertion",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 8
+              }
+            }
+          ],
+          "name": "assertValue"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!attemptFunc:function(1)",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param args - 调用 func 时，传递的参数\n *\n * @typeParam func - ((...args: unknown[]) =\\> unknown) | undefined\n *\n * @typeParam args - unknown[]\n *\n * @returns 返回 func 调用结果或者错误对象或者 func\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function attemptFunc(func?: "
+            },
+            {
+              "kind": "Content",
+              "text": "(...args: unknown[]) => unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", ...args: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown[]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "func",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "args",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "attemptFunc"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!attemptFuncWithDefault:function(1)",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns result - 返回func结果或者出错时的默认值或者func\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function attemptFuncWithDefault(func?: "
+            },
+            {
+              "kind": "Content",
+              "text": "(...args: unknown[]) => unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", defaultV?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", ...args: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown[]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "func",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "defaultV",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "args",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "name": "attemptFuncWithDefault"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!attemptFuncWithDefaultAndError:function(1)",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns 返回func结果或者出错时的默认值或者func\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function attemptFuncWithDefaultAndError(func?: "
+            },
+            {
+              "kind": "Content",
+              "text": "(...args: unknown[]) => unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", defaultV?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", errorDefault?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", ...args: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown[]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 9,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "func",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "defaultV",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "errorDefault",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            },
+            {
+              "parameterName": "args",
+              "parameterTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              }
+            }
+          ],
+          "name": "attemptFuncWithDefaultAndError"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!attemptFuncWithError:function(1)",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns 返回func结果或者出错时的默认值或者func\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function attemptFuncWithError(func?: "
+            },
+            {
+              "kind": "Content",
+              "text": "(...args: unknown[]) => unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", errorDefault?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", ...args: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown[]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "func",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "errorDefault",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "args",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "name": "attemptFuncWithError"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!attemptFuncWithLazyDefault:function(1)",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param args - 调用 func 时，传递的参数\n *\n * @typeParam func - ((...args: unknown[]) =\\> unknown) | undefined\n *\n * @typeParam defaultV - (() =\\> unknown) | undefined\n *\n * @typeParam args - unknown[]\n *\n * @returns 返回 func 调用结果或者出错时的默认值或者 func\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function attemptFuncWithLazyDefault(func?: "
+            },
+            {
+              "kind": "Content",
+              "text": "(...args: unknown[]) => unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", defaultV?: "
+            },
+            {
+              "kind": "Content",
+              "text": "() => unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", ...args: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown[]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "func",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "defaultV",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "args",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "name": "attemptFuncWithLazyDefault"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!normalizeValue:function(1)",
+          "docComment": "/**\n * @param value - 要 normalize 的值\n *\n * @param type - normalize type\n *\n * @param defaultVal - 默认值\n *\n * @returns normalize 后的值\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function normalizeValue(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", type?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", defaultVal?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "type",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "defaultVal",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "name": "normalizeValue"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!partialEq:function(1)",
+          "docComment": "/**\n * @param partialArg - _.eq()的预设的参数\n *\n * @returns 返回预设参数的函数\n *\n * @typeReturns\n *\n * boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function partialEq(partialArg?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: unknown) => boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "partialArg",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "partialEq"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!partialEqBy:function(1)",
+          "docComment": "/**\n * @param partialArg - _.eq()的预设的参数\n *\n * @param iteratee - 迭代函数\n *\n * @returns 返回预设参数的函数\n *\n * @typeReturns\n *\n * (val: unknown) =\\> boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function partialEqBy(partialArg?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", iteratee?: "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: unknown) => unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: unknown) => boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "partialArg",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "iteratee",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "partialEqBy"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!partialEqWith:function(1)",
+          "docComment": "/**\n * @param partialArg - comparator 的预设的参数\n *\n * @param comparator - 比较函数\n *\n * @returns 返回预设参数的比较函数\n *\n * @typeReturns\n *\n * (val: unknown) =\\> boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function partialEqWith(partialArg?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", comparator?: "
+            },
+            {
+              "kind": "Content",
+              "text": "(partialArg: unknown, val: unknown) => boolean"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: unknown) => boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "partialArg",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "comparator",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "partialEqWith"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!promiseSeries:function(1)",
+          "docComment": "/**\n * @param promiseFnList - 返回 promise 的函数数组\n *\n * @param thisArg - 绑定的this对象\n *\n * @param successCb - 成功回调\n *\n * @param errorCb - 失败回调\n *\n * @returns promise\n *\n * @typeReturns\n *\n * Promise<unknown>\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function promiseSeries(promiseFnList?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Array",
+              "canonicalReference": "!Array:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<(args: unknown[]) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<unknown>>"
+            },
+            {
+              "kind": "Content",
+              "text": ", thisArg?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", successCb?: "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: unknown) => unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", errorCb?: "
+            },
+            {
+              "kind": "Content",
+              "text": "(val: unknown) => unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<unknown>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 12,
+            "endIndex": 14
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "promiseFnList",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            },
+            {
+              "parameterName": "thisArg",
+              "parameterTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              }
+            },
+            {
+              "parameterName": "successCb",
+              "parameterTypeTokenRange": {
+                "startIndex": 8,
+                "endIndex": 9
+              }
+            },
+            {
+              "parameterName": "errorCb",
+              "parameterTypeTokenRange": {
+                "startIndex": 10,
+                "endIndex": 11
+              }
+            }
+          ],
+          "name": "promiseSeries"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!regexpTest:function(1)",
+          "docComment": "/**\n * @param regexp - 正则\n *\n * @param value - 要检查的值\n *\n * @returns 校验结果\n *\n * @typeReturns\n *\n * boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function regexpTest(regexp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "RegExp",
+              "canonicalReference": "!RegExp:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", value: "
+            },
+            {
+              "kind": "Content",
+              "text": "number | string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "regexp",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "regexpTest"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!typeDefaultTo:function(1)",
+          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @param options - 配置\n *\n * @param assertTypes - options.assertTypes: 断言类型\n *\n * @param assertEq - options.assertEq: 断言 eq 模式\n *\n * @returns result\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function typeDefaultTo(value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", defaultValue?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", { assertTypes, assertEq, negate, }?: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    assertTypes?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Array",
+              "canonicalReference": "!Array:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "RegExp",
+              "canonicalReference": "!RegExp:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | string | ((val: unknown) => boolean) | unknown> | "
+            },
+            {
+              "kind": "Reference",
+              "text": "RegExp",
+              "canonicalReference": "!RegExp:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | string | ((val: unknown) => boolean) | unknown;\n    assertEq?: (val: unknown, otherVal: unknown) => boolean;\n    negate?: boolean;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 13,
+            "endIndex": 14
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "defaultValue",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "parameterName": "{ assertTypes, assertEq, negate, }",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 12
+              }
+            }
+          ],
+          "name": "typeDefaultTo"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/utils!undefinedTo:function(1)",
+          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @returns 返回 resolved 值\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function undefinedTo(value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", defaultValue?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "defaultValue",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "undefinedTo"
+        }
+      ]
+    }
+  ]
+}

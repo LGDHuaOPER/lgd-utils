@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx --no-install lint-staged
+
+cp -f -p gitmojis.json node_modules/commitlint-plugin-gitmoji/lib/
+echo "cp -f -p gitmojis.json node_modules/commitlint-plugin-gitmoji/lib/"
+echo "-- 执行成功"

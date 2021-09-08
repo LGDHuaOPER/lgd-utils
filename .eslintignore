@@ -1,0 +1,15 @@
+test/**
+lib/**
+types/**
+__tests__/**
+dist/**
+
+*.js
+.*.js
+*.config.js
+
+packages/*/test/**
+packages/*/lib/**
+packages/*/types/**
+packages/*/__tests__/**
+packages/*/dist/**

@@ -1,0 +1,57 @@
+{
+  "author": {
+    "email": "lgd.huaoper@gmail.com",
+    "name": "LGD.HuaFEEng",
+    "url": "https://lgdhuaoper.github.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/LGDHuaOPER/lgd-utils/issues"
+  },
+  "buildOptions": {
+    "output": {
+      "name": "LgdUtilsUtils"
+    }
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  },
+  "description": "A front-end utils tool",
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.4"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "__tests__",
+    "types": "types"
+  },
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "homepage": "https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils#readme",
+  "jsdelivr": "dist/utils.global.prod.js",
+  "keywords": [
+    "util",
+    "utils",
+    "tool",
+    "assert",
+    "front-end"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "module": "dist/utils.esm.js",
+  "name": "@lgd-utils/utils",
+  "publishConfig": {
+    "registry": "https://r.npm.taobao.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LGDHuaOPER/lgd-utils.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "types": "dist/utils.d.ts",
+  "unpkg": "dist/utils.global.prod.js",
+  "version": "0.0.1"
+}

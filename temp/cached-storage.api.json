@@ -1,0 +1,2771 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.18.7",
+    "schemaVersion": 1004,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@typeReturns",
+          "syntaxKind": "block"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true,
+        "@typeReturns": true
+      }
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@lgd-utils/cached-storage!",
+  "docComment": "/**\n * CachedStorage\n *\n * @remarks\n *\n * 具有失效功能的缓存存储\n *\n * @packageDocumentation\n */\n",
+  "name": "@lgd-utils/cached-storage",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@lgd-utils/cached-storage!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "@lgd-utils/cached-storage!CachedStorage:class",
+          "docComment": "/**\n * Class CachedStorage\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default class CachedStorage "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CachedStorage",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `CachedStorage` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorageConstructorOptions",
+                  "canonicalReference": "!CachedStorageConstructorOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#bucket:member",
+              "docComment": "/**\n * 桶名\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "bucket: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "bucket",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#bucketHistory:member",
+              "docComment": "/**\n * 桶名历史\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "bucketHistory: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "bucketHistory",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#bucketsKeysRecord:member",
+              "docComment": "/**\n * 桶名和 keys 的记录\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "bucketsKeysRecord: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, string[]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "bucketsKeysRecord",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.buildKey:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static buildKey(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", ...keys: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "keys",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "buildKey"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#cachePrefix:member",
+              "docComment": "/**\n * Prefix for all CachedStorage keys\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "cachePrefix: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "cachePrefix",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#cacheSuffix:member",
+              "docComment": "/**\n * Suffix for the key name on the expiration items in localStorage/sessionStorage/memoryStorage\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "cacheSuffix: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "cacheSuffix",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.calculateMaxDate:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static calculateMaxDate(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", expiryMilliseconds: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "expiryMilliseconds",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "calculateMaxDate"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#clear:member(1)",
+              "docComment": "/**\n * @remarks\n *\n * 清除\n *\n * @param buckets - 要做清除操作的桶\n *\n * @param onlyExpired - 是否只清除超期的\n *\n * @typeParam buckets - boolean | string | string[] | undefined\n *\n * @typeParam onlyExpired - boolean | undefined\n *\n * @returns 执行操作后的成功与否 - boolean\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "clear(buckets?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean | string | string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", onlyExpired?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "buckets",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "onlyExpired",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "clear"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#compress:member",
+              "docComment": "/**\n * 压缩行为\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "compress: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorageInstanceCompress",
+                  "canonicalReference": "!CachedStorageInstanceCompress:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "compress",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.compressHandler:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static compressHandler(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", string: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "string",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "compressHandler"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.currentTime:member(1)",
+              "docComment": "/**\n * Returns the number of minutes since the epoch.\n *\n * @returns number\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static currentTime(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "currentTime"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#decompress:member",
+              "docComment": "/**\n * 解压行为\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "decompress: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorageInstanceDecompress",
+                  "canonicalReference": "!CachedStorageInstanceDecompress:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "decompress",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.decompressHandler:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static decompressHandler(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", string: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "null | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "string",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "decompressHandler"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.eachKey:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static eachKey(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", fn: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(key: string, exprKey?: string) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bucket?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "fn",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "bucket",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                }
+              ],
+              "name": "eachKey"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.escapeRegExpSpecialCharacters:member(1)",
+              "docComment": "/**\n * Returns a string where all RegExp special characters are escaped with a \\.\n *\n * @typeParam text - string\n *\n * @returns string\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static escapeRegExpSpecialCharacters(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", text: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "text",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "escapeRegExpSpecialCharacters"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.expirationKey:member(1)",
+              "docComment": "/**\n * Returns the full string for the localStorage/sessionStorage/memoryStorage expiration item.\n *\n * @typeParam key - string\n *\n * @returns string\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static expirationKey(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "expirationKey"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#expiryMilliseconds:member",
+              "docComment": "/**\n * time resolution in milliseconds\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "expiryMilliseconds: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "expiryMilliseconds",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#expiryRadix:member",
+              "docComment": "/**\n * expiration date radix (set to Base-36 for most space savings)\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "expiryRadix: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "expiryRadix",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#expiryToStringKeys:member",
+              "docComment": "/**\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "expiryToStringKeys: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "expiryToStringKeys",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#flush:member(1)",
+              "docComment": "/**\n * @remarks\n *\n * Flushes all CachedStorage items and expiry markers without affecting rest of localStorage/sessionStorage/memoryStorage\n *\n * @param buckets - 要做 flush 操作的桶\n *\n * @typeParam buckets - boolean | string | string[] | undefined\n *\n * @returns 执行操作后的成功与否 - boolean\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "flush(buckets?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean | string | string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "buckets",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "flush"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#flushExpired:member(1)",
+              "docComment": "/**\n * @remarks\n *\n * Flushes expired CachedStorage items and expiry markers without affecting rest of localStorage/sessionStorage/memoryStorage\n *\n * @param buckets - 要做 flush 操作的桶\n *\n * @typeParam buckets - boolean | string | string[] | undefined\n *\n * @returns 执行操作后的成功与否 - boolean\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "flushExpired(buckets?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean | string | string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "buckets",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "flushExpired"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.flushExpiredItem:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static flushExpiredItem(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bucket?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean | void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "bucket",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                }
+              ],
+              "name": "flushExpiredItem"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.flushItem:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static flushItem(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bucket?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "bucket",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                }
+              ],
+              "name": "flushItem"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.getAvailableBuckets:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static getAvailableBuckets(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", buckets?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean | string | string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "buckets",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "getAvailableBuckets"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.getBucket:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static getBucket(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bucket?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "bucket",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "getBucket"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#getExpiryMilliseconds:member(1)",
+              "docComment": "/**\n * @remarks\n *\n * The currently set number of milliseconds each time unit represents in the set() function's \"time\" argument.\n *\n * @returns expiryMilliseconds - number\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getExpiryMilliseconds(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getExpiryMilliseconds"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#getItem:member(1)",
+              "docComment": "/**\n * @remarks\n *\n * Retrieves specified value from localStorage/sessionStorage/memoryStorage, if not expired.\n *\n * @param key - the key for the item\n *\n * @param bucket - bucket\n *\n * @typeParam key - string\n *\n * @typeParam bucket - string | undefined\n *\n * @returns item - Record\\<string, unknown\\> | null | string\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getItem(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bucket?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, unknown> | null | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "bucket",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "getItem"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.getItem:member(1)",
+              "docComment": "/**\n * Wrapper functions for localStorage/sessionStorage/memoryStorage methods\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static getItem(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bucket?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "null | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "bucket",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                }
+              ],
+              "name": "getItem"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#getItems:member(1)",
+              "docComment": "/**\n * @remarks\n *\n * Retrieves specified value from localStorage/sessionStorage/memoryStorage, if not expired.\n *\n * @param keys - the keys for the items\n *\n * @param buckets - buckets\n *\n * @param returnType - 返回类型，未传时作为 List 处理\n *\n * @typeParam keys - boolean | string | string[] | undefined\n *\n * @typeParam buckets - boolean | string | string[] | undefined\n *\n * @typeParam returnType - string | undefined\n *\n * @returns items - Record\\<string, Record\\<string, unknown\\>\\> | Array\\<Record\\<string, unknown\\>\\>\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getItems(keys?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean | string | string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", buckets?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean | string | string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", returnType?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, unknown>> | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Array",
+                  "canonicalReference": "!Array:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, unknown>>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 15
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "keys",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "buckets",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "returnType",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                }
+              ],
+              "name": "getItems"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.getObjectItem:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static getObjectItem(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bucket?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, unknown> | null | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "bucket",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                }
+              ],
+              "name": "getObjectItem"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.isOutOfSpace:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static isOutOfSpace(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", e?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Error",
+                  "canonicalReference": "!Error:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "e",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  }
+                }
+              ],
+              "name": "isOutOfSpace"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#isSupportJSON:member",
+              "docComment": "/**\n * 是否支持 JSON\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isSupportJSON: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isSupportJSON",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#isSupportStorage:member",
+              "docComment": "/**\n * 所选的存储是否支持\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isSupportStorage: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isSupportStorage",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#key:member(1)",
+              "docComment": "/**\n * @remarks\n *\n * Returns the name of the nth key in the list, or null if n is greater than or equal to the number of key/value pairs in the object.\n *\n * @param key - key\n *\n * @typeParam key - number | string\n *\n * @returns key or null - null | string\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "key(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "null | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "key"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#keySeparator:member",
+              "docComment": "/**\n * 分隔符\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "keySeparator: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "keySeparator",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#length:member",
+              "docComment": "/**\n * 长度\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "length: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "length",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#maxDate:member",
+              "docComment": "/**\n * ECMAScript max Date (epoch + 1e8 days)\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "maxDate: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "maxDate",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#removeItem:member(1)",
+              "docComment": "/**\n * @remarks\n *\n * Removes a value from localStorage/sessionStorage/memoryStorage. Equivalent to 'delete' in memcache, but that's a keyword in JS.\n *\n * @param key - key\n *\n * @param bucket - bucket\n *\n * @typeParam key - string\n *\n * @typeParam bucket - string | undefined\n *\n * @returns 执行操作后的成功与否 - boolean\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "removeItem(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bucket?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "bucket",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "removeItem"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.removeItem:member(1)",
+              "docComment": "/**\n * Wrapper functions for localStorage/sessionStorage/memoryStorage methods\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static removeItem(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bucket?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "bucket",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                }
+              ],
+              "name": "removeItem"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#resetBucket:member(1)",
+              "docComment": "/**\n * @remarks\n *\n * Resets the string being appended to cachePrefix so CachedStorage will use the default storage behavior.\n *\n * @returns void - void\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "resetBucket(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "resetBucket"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#setBucket:member(1)",
+              "docComment": "/**\n * @remarks\n *\n * Appends cachePrefix so CachedStorage will partition data in to different buckets.\n *\n * @param bucket - bucket\n *\n * @typeParam bucket - string | undefined\n *\n * @returns 执行操作后的成功与否 - boolean\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setBucket(bucket?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "bucket",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "setBucket"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#setExpiryMilliseconds:member(1)",
+              "docComment": "/**\n * @remarks\n *\n * Sets the number of milliseconds each time unit represents in the set() function's \"time\" argument.\n *\n * @param milliseconds - milliseconds\n *\n * @typeParam milliseconds - number\n *\n * @returns void - void\n *\n * @example\n *\n * Sample values:\n * ```\n * 1: each time unit = 1 millisecond\n * 1000: each time unit = 1 second\n * 60000: each time unit = 1 minute (Default value)\n * 360000: each time unit = 1 hour\n * ```\n *\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setExpiryMilliseconds(milliseconds: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "milliseconds",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "setExpiryMilliseconds"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#setItem:member(1)",
+              "docComment": "/**\n * @remarks\n *\n * Stores the value in localStorage/sessionStorage/memoryStorage. Expires after specified number of minutes.\n *\n * @param key - key\n *\n * @param value - value\n *\n * @param time - time\n *\n * @param bucket - bucket\n *\n * @typeParam key - string\n *\n * @typeParam value - unknown\n *\n * @typeParam time - number | undefined\n *\n * @typeParam bucket - string | undefined\n *\n * @returns 执行操作后的成功与否 - boolean\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setItem(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", time?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bucket?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 10
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "time",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                },
+                {
+                  "parameterName": "bucket",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  }
+                }
+              ],
+              "name": "setItem"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.setItem:member(1)",
+              "docComment": "/**\n * Wrapper functions for localStorage/sessionStorage/memoryStorage methods\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static setItem(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", bucket?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 10
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                },
+                {
+                  "parameterName": "bucket",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  }
+                }
+              ],
+              "name": "setItem"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#storage:member",
+              "docComment": "/**\n * 所要使用的存储\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "storage: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Storage",
+                  "canonicalReference": "!Storage:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "storage",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#supported:member(1)",
+              "docComment": "/**\n * @remarks\n *\n * Returns whether local storage is supported. Currently exposed for testing purposes.\n *\n * @returns 是否支持 Storage - boolean\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "supported(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "supported"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.supportJSON:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static supportJSON(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean | void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "supportJSON"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.supportStorage:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static supportStorage(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "supportStorage"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#switchWarnings:member",
+              "docComment": "/**\n * Sets whether to display warnings when an item is removed from the cache or not.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "switchWarnings: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(this: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", enabled: boolean) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "switchWarnings",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage.warn:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static warn(instance: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CachedStorage",
+                  "canonicalReference": "@lgd-utils/cached-storage!default:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", message: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", err?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Error",
+                  "canonicalReference": "!Error:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 8,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "message",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "err",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 7
+                  }
+                }
+              ],
+              "name": "warn"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@lgd-utils/cached-storage!CachedStorage#warnings:member",
+              "docComment": "/**\n * 开启 warning\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "warnings: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "warnings",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@lgd-utils/cached-storage!memoryStorage:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "memoryStorage: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Storage",
+              "canonicalReference": "!Storage:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "memoryStorage",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        }
+      ]
+    }
+  ]
+}
