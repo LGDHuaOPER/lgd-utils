@@ -2,13 +2,15 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:24:31
- * @LastEditTime: 2021-09-08 10:24:32
+ * @LastEditTime: 2021-09-09 21:55:28
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\assertValue.ts
  */
 
-import * as _ from 'lodash-es'
+import lodashIsFunction from 'lodash/isFunction'
+import lodashIsPlainObject from 'lodash/isPlainObject'
+import lodashIsRegExp from 'lodash/isRegExp'
 
 /**
  * @param value - 要检查的值
@@ -21,11 +23,11 @@ export default function assertValue(
   assertion?: unknown[] | Record<string, unknown> | RegExp | ((val: unknown) => boolean) | unknown,
 ): boolean {
   if (Array.isArray(assertion)) return assertion.some((v: unknown) => assertValue(value, v))
-  if (_.isPlainObject(assertion))
+  if (lodashIsPlainObject(assertion))
     return Object.keys(assertion as Record<string, unknown>).every((k) =>
       assertValue(value, (assertion as Record<string, unknown>)[k]),
     )
-  if (_.isRegExp(assertion)) return (assertion as RegExp).test(value as string)
-  if (_.isFunction(assertion)) return (assertion as (val: unknown) => boolean)(value)
+  if (lodashIsRegExp(assertion)) return (assertion as RegExp).test(value as string)
+  if (lodashIsFunction(assertion)) return (assertion as (val: unknown) => boolean)(value)
   return assertion === value
 }

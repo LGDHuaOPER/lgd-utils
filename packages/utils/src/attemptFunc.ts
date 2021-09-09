@@ -2,13 +2,14 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:13:12
- * @LastEditTime: 2021-09-08 10:16:12
+ * @LastEditTime: 2021-09-09 21:56:41
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\attemptFunc.ts
  */
 
-import * as _ from 'lodash-es'
+import lodashAttempt from 'lodash/attempt'
+import lodashIsFunction from 'lodash/isFunction'
 
 /**
  * @param func - 要尝试调用的函数
@@ -19,5 +20,5 @@ import * as _ from 'lodash-es'
  * @typeReturns unknown
  */
 export default function attemptFunc(func?: (...args: unknown[]) => unknown, ...args: unknown[]): unknown {
-  return _.isFunction(func) ? _.attempt(func, ...args) : func
+  return lodashIsFunction(func) ? lodashAttempt(func, ...args) : func
 }

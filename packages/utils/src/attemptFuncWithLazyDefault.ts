@@ -2,13 +2,14 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:13:50
- * @LastEditTime: 2021-09-08 10:14:57
+ * @LastEditTime: 2021-09-09 21:58:48
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\attemptFuncWithLazyDefault.ts
  */
 
-import * as _ from 'lodash-es'
+import lodashAttempt from 'lodash/attempt'
+import lodashIsFunction from 'lodash/isFunction'
 
 /**
  * @param func - 要尝试调用的函数
@@ -25,5 +26,5 @@ export default function attemptFuncWithLazyDefault(
   defaultV?: () => unknown,
   ...args: unknown[]
 ): unknown {
-  return _.isFunction(func) ? _.attempt(func, ...args) : _.isFunction(defaultV) ? defaultV() : defaultV
+  return lodashIsFunction(func) ? lodashAttempt(func, ...args) : lodashIsFunction(defaultV) ? defaultV() : defaultV
 }

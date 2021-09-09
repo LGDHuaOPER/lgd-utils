@@ -2,15 +2,14 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:18:37
- * @LastEditTime: 2021-09-08 10:18:37
+ * @LastEditTime: 2021-09-09 21:57:41
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\attemptFuncWithDefaultAndError.ts
  */
 
-import * as _ from 'lodash-es'
-
 import attemptFuncWithDefault from './attemptFuncWithDefault'
+import lodashIsError from 'lodash/isError'
 
 /**
  * @param func - 要尝试调用的函数
@@ -27,5 +26,5 @@ export default function attemptFuncWithDefaultAndError(
   ...args: unknown[]
 ): unknown {
   const result = attemptFuncWithDefault(func, defaultV, ...args)
-  return _.isError(result) ? errorDefault : result
+  return lodashIsError(result) ? errorDefault : result
 }

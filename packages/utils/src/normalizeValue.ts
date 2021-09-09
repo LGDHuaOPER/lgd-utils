@@ -2,13 +2,14 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:25:10
- * @LastEditTime: 2021-09-08 10:25:11
+ * @LastEditTime: 2021-09-09 22:00:01
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\normalizeValue.ts
  */
 
-import * as _ from 'lodash-es'
+import lodashIsNumber from 'lodash/isNumber'
+import lodashIsString from 'lodash/isString'
 
 /**
  * @param value - 要 normalize 的值
@@ -18,7 +19,7 @@ import * as _ from 'lodash-es'
  * @typeReturns unknown
  */
 export default function normalizeValue(value: unknown, type?: string, defaultVal?: unknown): unknown {
-  if (!_.isString(type)) return defaultVal === void 0 ? value : defaultVal
+  if (!lodashIsString(type)) return defaultVal === void 0 ? value : defaultVal
   switch (type.toUpperCase()) {
     /* eslint-disable no-unreachable */
     case 'NUMBER':
@@ -26,7 +27,7 @@ export default function normalizeValue(value: unknown, type?: string, defaultVal
       try {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const tempVal = +(value as any)
-        if (_.isNumber(tempVal) && !isNaN(tempVal)) return tempVal
+        if (lodashIsNumber(tempVal) && !isNaN(tempVal)) return tempVal
         // eslint-disable-next-line no-empty
       } catch (e) {}
       break

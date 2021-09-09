@@ -13,11 +13,11 @@
     }
   },
   "dependencies": {
-    "lodash-es": "^4.17.21"
+    "lodash": "^4.17.21"
   },
   "description": "A front-end verification tool",
   "devDependencies": {
-    "@types/lodash-es": "^4.17.4"
+    "@types/lodash": "^4.14.172"
   },
   "directories": {
     "lib": "src",

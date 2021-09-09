@@ -2,14 +2,14 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:20:55
- * @LastEditTime: 2021-09-08 10:22:07
+ * @LastEditTime: 2021-09-09 22:02:42
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\partialEqWith.ts
  */
 
-import * as _ from 'lodash-es'
-
+import lodashIsFunction from 'lodash/isFunction'
+import lodashPartial from 'lodash/partial'
 import partialEq from './partialEq'
 
 /**
@@ -22,6 +22,6 @@ export default function partialEqWith(
   partialArg?: unknown,
   comparator?: (partialArg: unknown, val: unknown) => boolean,
 ): (val: unknown) => boolean {
-  if (!_.isFunction(comparator)) return partialEq(partialArg)
-  return _.partial(comparator, partialArg)
+  if (!lodashIsFunction(comparator)) return partialEq(partialArg)
+  return lodashPartial(comparator, partialArg)
 }

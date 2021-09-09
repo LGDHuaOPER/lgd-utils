@@ -2,14 +2,28 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:27:04
- * @LastEditTime: 2021-09-08 10:28:13
+ * @LastEditTime: 2021-09-09 22:08:07
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\typeDefaultTo.ts
  */
 
-import * as _ from 'lodash-es'
-
+import lodashEq from 'lodash/eq'
+import lodashIsBoolean from 'lodash/isBoolean'
+import lodashIsEmpty from 'lodash/isEmpty'
+import lodashIsError from 'lodash/isError'
+import lodashIsFunction from 'lodash/isFunction'
+import lodashIsNaN from 'lodash/isNaN'
+import lodashIsNil from 'lodash/isNil'
+import lodashIsNull from 'lodash/isNull'
+import lodashIsNumber from 'lodash/isNumber'
+import lodashIsPlainObject from 'lodash/isPlainObject'
+import lodashIsRegExp from 'lodash/isRegExp'
+import lodashIsString from 'lodash/isString'
+import lodashIsUndefined from 'lodash/isUndefined'
+import lodashOverEvery from 'lodash/overEvery'
+import lodashOverSome from 'lodash/overSome'
+import lodashToUpper from 'lodash/toUpper'
 import regexpTest from './regexpTest'
 
 /**
@@ -25,8 +39,8 @@ export default function typeDefaultTo(
   value?: unknown,
   defaultValue?: unknown,
   {
-    assertTypes = _.isUndefined,
-    assertEq = _.eq,
+    assertTypes = lodashIsUndefined,
+    assertEq = lodashEq,
     negate = false,
   }: {
     assertTypes?:
@@ -39,50 +53,50 @@ export default function typeDefaultTo(
     negate?: boolean
   } = {},
 ): unknown {
-  if (!_.isFunction(assertEq)) assertEq = _.eq
+  if (!lodashIsFunction(assertEq)) assertEq = lodashEq
 
   let _negate = negate
-  if (_.isFunction(_negate)) _negate = _negate(value, defaultValue)
-  if (!_.isBoolean(_negate)) _negate = false
+  if (lodashIsFunction(_negate)) _negate = _negate(value, defaultValue)
+  if (!lodashIsBoolean(_negate)) _negate = false
 
   const fn = (assertTypes: RegExp | string | ((val: unknown) => boolean) | unknown) => {
-    if (_.isString(assertTypes)) {
-      switch (_.toUpper(assertTypes)) {
+    if (lodashIsString(assertTypes)) {
+      switch (lodashToUpper(assertTypes)) {
         case 'UNDEFINED':
-          return _.isUndefined
+          return lodashIsUndefined
         case 'NULL':
-          return _.isNull
+          return lodashIsNull
         case 'STRING':
-          return _.isString
+          return lodashIsString
         case 'BOOLEAN':
-          return _.isBoolean
+          return lodashIsBoolean
         case 'NUMBER':
-          return _.isNumber
+          return lodashIsNumber
         case 'ARRAY':
           return Array.isArray
         case 'EMPTY':
-          return _.isEmpty
+          return lodashIsEmpty
         case 'ERROR':
-          return _.isError
+          return lodashIsError
         case 'FUNCTION':
-          return _.isFunction
+          return lodashIsFunction
         case 'NAN':
-          return _.isNaN
+          return lodashIsNaN
         case 'NIL':
-          return _.isNil
+          return lodashIsNil
         case 'PLAINOBJECT':
-          return _.isPlainObject
+          return lodashIsPlainObject
         case 'REGEXP':
-          return _.isRegExp
+          return lodashIsRegExp
         default:
           void 0
       }
     }
-    if (_.isRegExp(assertTypes)) {
+    if (lodashIsRegExp(assertTypes)) {
       const _assertTypes = assertTypes
       return (value: number | string) => regexpTest(_assertTypes, value)
     }
-    if (!_.isFunction(assertTypes)) {
+    if (!lodashIsFunction(assertTypes)) {
       const _assertTypes = assertTypes
       return (value: unknown) => assertEq(value, _assertTypes)
     }
@@ -91,9 +105,9 @@ export default function typeDefaultTo(
   }
 
   if (Array.isArray(assertTypes)) {
-    assertTypes = _.overSome(assertTypes.map((_assertType) => fn(_assertType)))
-  } else if (_.isPlainObject(assertTypes)) {
-    assertTypes = _.overEvery(
+    assertTypes = lodashOverSome(assertTypes.map((_assertType) => fn(_assertType)))
+  } else if (lodashIsPlainObject(assertTypes)) {
+    assertTypes = lodashOverEvery(
       Object.values(assertTypes as Array<RegExp | string | ((val: unknown) => boolean) | unknown>).map((_assertType) =>
         fn(_assertType),
       ),
@@ -106,5 +120,5 @@ export default function typeDefaultTo(
     ? !(assertTypes as (val: unknown) => boolean)(value)
     : (assertTypes as (val: unknown) => boolean)(value)
 
-  return assertResult ? (_.isUndefined(defaultValue) ? value : defaultValue) : value
+  return assertResult ? (lodashIsUndefined(defaultValue) ? value : defaultValue) : value
 }

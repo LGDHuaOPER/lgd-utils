@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-09-08 14:56:39
+ * @LastEditTime: 2021-09-09 21:46:46
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\README.md
@@ -44,14 +44,16 @@ lerna create @lgd-utils/validate --es-module
 
 ### 给 package 安装依赖
 ```
+lerna add lodash --scope @lgd-utils/cached-storage
+lerna add @types/lodash --dev --scope @lgd-utils/cached-storage
 lerna add @lgd-utils/validate --scope @lgd-utils/cached-storage
 lerna add @types/globalthis --scope @lgd-utils/cached-storage
-lerna add @types/lodash-es --scope @lgd-utils/cached-storage
 lerna add globalthis --scope @lgd-utils/cached-storage
-lerna add lodash-es --scope @lgd-utils/cached-storage
 lerna add memorystorage --scope @lgd-utils/cached-storage
-lerna add @types/lodash-es --scope @lgd-utils/validate
-lerna add lodash-es --scope @lgd-utils/validate
+lerna add lodash --scope @lgd-utils/utils
+lerna add @types/lodash --dev --scope @lgd-utils/utils
+lerna add lodash --scope @lgd-utils/validate
+lerna add @types/lodash --dev --scope @lgd-utils/validate
 ```
 
 ### 整个项目安装开发环境依赖
@@ -110,7 +112,7 @@ npx tsc --init
     "types": [
       "globalthis",
       "jest",
-      "lodash-es",
+      "lodash",
       "node"
     ] /* Specify type package names to be included without being referenced in a source file. */,
     // "allowUmdGlobalAccess": true,                     /* Allow accessing UMD globals from modules. */
@@ -666,7 +668,7 @@ export default {
   //   "\\\\node_modules\\\\",
   //   "\\.pnp\\.[^\\\\]+$"
   // ],
-  transformIgnorePatterns: ['node_modules[\\\\/](?!(_?(@babel|lodash-es).*)[\\\\/])', '\\.history[\\\\/].+$'],
+  transformIgnorePatterns: ['node_modules[\\\\/](?!(_?(@babel|lodash).*)[\\\\/])', '\\.history[\\\\/].+$'],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
   // unmockedModulePathPatterns: undefined,

@@ -1,4 +1,5 @@
 // @ts-check
+
 import _ from 'lodash'
 import fs from 'fs-extra'
 import json from '@rollup/plugin-json'
@@ -121,6 +122,8 @@ function createConfig(format, output, plugins = []) {
       ? pkgBuildOptionsExternal
       : [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})]
   }
+
+  if (external.includes('lodash')) external = external.concat(/^lodash\/\w+$/)
 
   output.globals = getProp4PkgBuildOptions('output.globals', format, {})
 

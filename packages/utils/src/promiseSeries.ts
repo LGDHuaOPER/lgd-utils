@@ -2,15 +2,14 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:26:09
- * @LastEditTime: 2021-09-08 10:26:09
+ * @LastEditTime: 2021-09-09 22:03:03
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\promiseSeries.ts
  */
 
-import * as _ from 'lodash-es'
-
 import attemptFuncWithDefaultAndError from './attemptFuncWithDefaultAndError'
+import lodashIsFunction from 'lodash/isFunction'
 
 /**
  * @param  promiseFnList - 返回 promise 的函数数组
@@ -28,7 +27,7 @@ export default function promiseSeries(
 ): Promise<unknown> {
   if (!Array.isArray(promiseFnList)) promiseFnList = []
   promiseFnList = promiseFnList.map((_promiseFn) => {
-    if (_.isFunction(_promiseFn)) return _promiseFn
+    if (lodashIsFunction(_promiseFn)) return _promiseFn
     return function () {
       return Promise.resolve(_promiseFn)
     }
@@ -49,7 +48,7 @@ export default function promiseSeries(
     return dataList
   }
 
-  if (_.isFunction(successCb) || _.isFunction(errorCb)) {
+  if (lodashIsFunction(successCb) || lodashIsFunction(errorCb)) {
     return main()
       .then((value) => {
         return attemptFuncWithDefaultAndError(successCb, value, value, value)

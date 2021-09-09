@@ -11,16 +11,24 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-06-09 21:04:24
- * @LastEditTime: 2021-09-08 11:07:32
+ * @LastEditTime: 2021-09-09 21:53:54
  * @LastEditors: shiconghua
  * @Description: 具有失效功能的缓存存储
  * @FilePath: \lgd-utils\packages\cached-storage\src\index.ts
  */
 
-import * as _ from 'lodash-es'
-import { validToStringType } from '@lgd-utils/validate'
-import MemoryStorage from 'memorystorage'
 import globalthis from 'globalthis'
+import lodashFilter from 'lodash/filter'
+import lodashFlatten from 'lodash/flatten'
+import lodashForEach from 'lodash/forEach'
+import lodashIncludes from 'lodash/includes'
+import lodashKeys from 'lodash/keys'
+import lodashMap from 'lodash/map'
+import lodashReduce from 'lodash/reduce'
+import lodashUniq from 'lodash/uniq'
+import MemoryStorage from 'memorystorage'
+
+import { validToStringType } from '@lgd-utils/validate'
 
 const globalThis: ReturnType<typeof globalthis> & {
   [propName: string]: unknown
@@ -36,7 +44,7 @@ export { CachedStorage, MemoryStorage, memoryStorage }
  */
 export default class CachedStorage {
   static buildKey(instance: CachedStorage, ...keys: string[]): string {
-    const resultKey = _.reduce(
+    const resultKey = lodashReduce(
       keys,
       function (_result: string, _key: string) {
         if (_key !== '') _result += `${instance.keySeparator}${_key}`
@@ -162,18 +170,18 @@ export default class CachedStorage {
   }
 
   static getAvailableBuckets(instance: CachedStorage, buckets?: boolean | string | string[]): string[] {
-    const bucketHistory: string[] = _.uniq(instance.bucketHistory)
+    const bucketHistory: string[] = lodashUniq(instance.bucketHistory)
     if (buckets === true) return bucketHistory
 
     let _buckets = [instance.bucket]
     if (Array.isArray(buckets))
-      _buckets = _.filter(buckets, function (_bucket: string) {
+      _buckets = lodashFilter(buckets, function (_bucket: string) {
         return validToStringType(_bucket, 'String')
       })
     if (validToStringType(buckets, 'String')) _buckets = [buckets as string]
 
-    return _.filter(_buckets, function (_bucket: string) {
-      return _.includes(bucketHistory, _bucket)
+    return lodashFilter(_buckets, function (_bucket: string) {
+      return lodashIncludes(bucketHistory, _bucket)
     })
   }
 
@@ -215,7 +223,7 @@ export default class CachedStorage {
   // Check to set if the error is us dealing with being out of space
   static isOutOfSpace(instance: CachedStorage, e?: Error | unknown): boolean {
     if (!e) return false
-    return _.includes(['QUOTA_EXCEEDED_ERR', 'NS_ERROR_DOM_QUOTA_REACHED', 'QuotaExceededError'], (e as Error).name)
+    return lodashIncludes(['QUOTA_EXCEEDED_ERR', 'NS_ERROR_DOM_QUOTA_REACHED', 'QuotaExceededError'], (e as Error).name)
   }
 
   /**
@@ -319,7 +327,7 @@ export default class CachedStorage {
       'keySeparator',
       'warnings',
     ]
-    _.forEach(initAttrsKeys, function (_initAttrsKey) {
+    lodashForEach(initAttrsKeys, function (_initAttrsKey) {
       if (options[_initAttrsKey] == null) return
       ;(_this[_initAttrsKey] as ValueOf<CachedStorageConstructorOptions>) = options[_initAttrsKey]
     })
@@ -498,7 +506,7 @@ export default class CachedStorage {
 
     if (!CachedStorage.supportStorage(_this)) return false
 
-    _.forEach(CachedStorage.getAvailableBuckets(_this, buckets), function (_bucket) {
+    lodashForEach(CachedStorage.getAvailableBuckets(_this, buckets), function (_bucket) {
       CachedStorage.eachKey(
         _this,
         function (key) {
@@ -524,7 +532,7 @@ export default class CachedStorage {
 
     if (!CachedStorage.supportStorage(_this)) return false
 
-    _.forEach(CachedStorage.getAvailableBuckets(_this, buckets), function (_bucket: string) {
+    lodashForEach(CachedStorage.getAvailableBuckets(_this, buckets), function (_bucket: string) {
       CachedStorage.eachKey(
         _this,
         function (key) {
@@ -584,7 +592,7 @@ export default class CachedStorage {
     returnType?: string,
   ): Record<string, Record<string, unknown>> | Array<Record<string, unknown>> {
     if (Array.isArray(keys)) {
-      keys = _.filter(keys, function (_key: string) {
+      keys = lodashFilter(keys, function (_key: string) {
         return validToStringType(_key, 'String')
       })
     } else if (validToStringType(keys, 'String')) {
@@ -595,13 +603,13 @@ export default class CachedStorage {
       keys = []
     }
     if (Array.isArray(buckets)) {
-      buckets = _.filter(buckets, function (_bucket: string) {
+      buckets = lodashFilter(buckets, function (_bucket: string) {
         return validToStringType(_bucket, 'String')
       })
     } else if (validToStringType(buckets, 'String')) {
       buckets = [buckets as string]
     } else if (buckets === true) {
-      buckets = _.keys(this.bucketsKeysRecord)
+      buckets = lodashKeys(this.bucketsKeysRecord)
     } else {
       buckets = []
     }
@@ -611,9 +619,9 @@ export default class CachedStorage {
     switch (returnType) {
       case 'Mapping': {
         const _returnV: Record<string, Record<string, unknown>> = {}
-        _.forEach(buckets, function (_bucket: string) {
+        lodashForEach(buckets, function (_bucket: string) {
           if (!_returnV[_bucket]) _returnV[_bucket] = {}
-          _.forEach(
+          lodashForEach(
             (keys === true ? _this.bucketsKeysRecord[_bucket] || [] : keys) as string[],
             function (_key: string) {
               _returnV[_bucket][_key] = _this.getItem(_key, _bucket)
@@ -625,8 +633,8 @@ export default class CachedStorage {
       }
       case 'List':
       default: {
-        const _returnV = _.map(buckets, function (_bucket: string) {
-          return _.map(
+        const _returnV = lodashMap(buckets, function (_bucket: string) {
+          return lodashMap(
             (keys === true ? _this.bucketsKeysRecord[_bucket] || [] : keys) as string[],
             function (_key: string) {
               return {
@@ -638,7 +646,7 @@ export default class CachedStorage {
           )
         })
 
-        return _.flatten(_returnV)
+        return lodashFlatten(_returnV)
       }
     }
   }
@@ -829,7 +837,7 @@ export default class CachedStorage {
         expiryMilliseconds: _this.expiryMilliseconds,
         value,
       }
-      _.forEach(_this.expiryToStringKeys, function (_expiryToStringKey: string) {
+      lodashForEach(_this.expiryToStringKeys, function (_expiryToStringKey: string) {
         if (expiryToStringMapping[_expiryToStringKey])
           expiryStorageValue[_expiryToStringKey] = expiryToStringMapping[_expiryToStringKey]
       })

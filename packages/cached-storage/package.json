@@ -15,13 +15,13 @@
   "dependencies": {
     "@lgd-utils/validate": "^0.0.1",
     "globalthis": "^1.0.2",
-    "lodash-es": "^4.17.21",
+    "lodash": "^4.17.21",
     "memorystorage": "^0.12.0"
   },
   "description": "一个具有失效功能的缓存存储",
   "devDependencies": {
     "@types/globalthis": "^1.0.1",
-    "@types/lodash-es": "^4.17.4"
+    "@types/lodash": "^4.14.172"
   },
   "directories": {
     "lib": "src",

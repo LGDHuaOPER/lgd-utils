@@ -2,13 +2,16 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:22:24
- * @LastEditTime: 2021-09-08 10:22:25
+ * @LastEditTime: 2021-09-09 22:04:21
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\regexpTest.ts
  */
 
-import * as _ from 'lodash-es'
+import lodashIsNumber from 'lodash/isNumber'
+import lodashIsRegExp from 'lodash/isRegExp'
+import lodashIsString from 'lodash/isString'
+import lodashOverSome from 'lodash/overSome'
 
 /**
  * @param regexp - 正则
@@ -17,7 +20,7 @@ import * as _ from 'lodash-es'
  * @typeReturns boolean
  */
 export default function regexpTest(regexp: RegExp, value: number | string): boolean {
-  if (!_.isRegExp(regexp) || !_.overSome(_.isString, _.isNumber)(value)) return false
+  if (!lodashIsRegExp(regexp) || !lodashOverSome(lodashIsString, lodashIsNumber)(value)) return false
 
   return regexp.test(value as string)
 }
