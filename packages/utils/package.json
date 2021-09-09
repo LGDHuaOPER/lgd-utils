@@ -42,7 +42,7 @@
   "module": "dist/utils.esm.js",
   "name": "@lgd-utils/utils",
   "publishConfig": {
-    "registry": "https://r.npm.taobao.org"
+    "access": "public"
   },
   "repository": {
     "type": "git",
