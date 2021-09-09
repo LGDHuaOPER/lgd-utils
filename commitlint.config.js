@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:25:59
- * @LastEditTime: 2021-09-08 14:58:54
+ * @LastEditTime: 2021-09-09 23:41:53
  * @LastEditors: shiconghua
  * @Description: commitlint 配置文件
  * @FilePath: \lgd-utils\commitlint.config.js
@@ -38,5 +38,13 @@ module.exports = {
         })
         .filter(Boolean),
     ],
+    // lerna version 时关闭一些校验，只 warn
+    ...(process.env.GIT_COMMIT_TYPE === 'CZ'
+      ? null
+      : {
+          'start-with-gitmoji': [1, 'always'],
+          'subject-empty': [1, 'always'],
+          'type-empty': [1, 'always'],
+        }),
   },
 }
