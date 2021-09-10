@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:27:04
- * @LastEditTime: 2021-09-09 22:08:07
+ * @LastEditTime: 2021-09-10 23:28:09
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\typeDefaultTo.ts
@@ -49,14 +49,19 @@ export default function typeDefaultTo(
       | string
       | ((val: unknown) => boolean)
       | unknown
-    assertEq?: (val: unknown, otherVal: unknown) => boolean
-    negate?: boolean
+    assertEq?: ((val: unknown, otherVal: unknown) => boolean) | unknown
+    negate?: boolean | ((value?: unknown, defaultValue?: unknown) => boolean) | unknown
   } = {},
 ): unknown {
   if (!lodashIsFunction(assertEq)) assertEq = lodashEq
 
   let _negate = negate
-  if (lodashIsFunction(_negate)) _negate = _negate(value, defaultValue)
+  if (lodashIsFunction(_negate)) {
+    ;(_negate as unknown) = (_negate as (value?: unknown, defaultValue?: unknown) => boolean | unknown)(
+      value,
+      defaultValue,
+    )
+  }
   if (!lodashIsBoolean(_negate)) _negate = false
 
   const fn = (assertTypes: RegExp | string | ((val: unknown) => boolean) | unknown) => {
@@ -98,7 +103,7 @@ export default function typeDefaultTo(
     }
     if (!lodashIsFunction(assertTypes)) {
       const _assertTypes = assertTypes
-      return (value: unknown) => assertEq(value, _assertTypes)
+      return (value: unknown) => (assertEq as (val: unknown, otherVal: unknown) => boolean)(value, _assertTypes)
     }
 
     return assertTypes

@@ -8,19 +8,19 @@
 export function assertValue(value?: unknown, assertion?: unknown[] | Record<string, unknown> | RegExp | ((val: unknown) => boolean) | unknown): boolean;
 
 // @public (undocumented)
-export function attemptFunc(func?: (...args: unknown[]) => unknown, ...args: unknown[]): unknown;
+export function attemptFunc(func?: ((...args: unknown[]) => unknown) | unknown, ...args: unknown[]): unknown;
 
 // @public (undocumented)
-export function attemptFuncWithDefault(func?: (...args: unknown[]) => unknown, defaultV?: unknown, ...args: unknown[]): unknown;
+export function attemptFuncWithDefault(func?: ((...args: unknown[]) => unknown) | unknown, defaultV?: unknown, ...args: unknown[]): unknown;
 
 // @public (undocumented)
-export function attemptFuncWithDefaultAndError(func?: (...args: unknown[]) => unknown, defaultV?: unknown, errorDefault?: unknown, ...args: unknown[]): unknown;
+export function attemptFuncWithDefaultAndError(func?: ((...args: unknown[]) => unknown) | unknown, defaultV?: unknown, errorDefault?: unknown, ...args: unknown[]): unknown;
 
 // @public (undocumented)
-export function attemptFuncWithError(func?: (...args: unknown[]) => unknown, errorDefault?: unknown, ...args: unknown[]): unknown;
+export function attemptFuncWithError(func?: ((...args: unknown[]) => unknown) | unknown, errorDefault?: unknown, ...args: unknown[]): unknown;
 
 // @public (undocumented)
-export function attemptFuncWithLazyDefault(func?: (...args: unknown[]) => unknown, defaultV?: () => unknown, ...args: unknown[]): unknown;
+export function attemptFuncWithLazyDefault(func?: ((...args: unknown[]) => unknown) | unknown, defaultV?: () => unknown, ...args: unknown[]): unknown;
 
 // @public (undocumented)
 const _default: {
@@ -48,22 +48,22 @@ export function normalizeValue(value: unknown, type?: string, defaultVal?: unkno
 export function partialEq(partialArg?: unknown): (val: unknown) => boolean;
 
 // @public (undocumented)
-export function partialEqBy(partialArg?: unknown, iteratee?: (val: unknown) => unknown): (val: unknown) => boolean;
+export function partialEqBy(partialArg?: unknown, iteratee?: ((val: unknown) => unknown) | unknown): (val: unknown) => boolean;
 
 // @public (undocumented)
-export function partialEqWith(partialArg?: unknown, comparator?: (partialArg: unknown, val: unknown) => boolean): (val: unknown) => boolean;
+export function partialEqWith(partialArg?: unknown, comparator?: ((partialArg: unknown, val: unknown) => boolean) | unknown): (val: unknown) => boolean;
 
 // @public (undocumented)
-export function promiseSeries(promiseFnList?: Array<(args: unknown[]) => Promise<unknown>>, thisArg?: unknown, successCb?: (val: unknown) => unknown, errorCb?: (val: unknown) => unknown): Promise<unknown>;
+export function promiseSeries(promiseFnList?: Array<(args: unknown[]) => Promise<unknown>> | unknown, thisArg?: unknown, successCb?: (val: unknown) => unknown, errorCb?: (val: unknown) => unknown): Promise<unknown>;
 
 // @public (undocumented)
-export function regexpTest(regexp: RegExp, value: number | string): boolean;
+export function regexpTest(regexp?: RegExp | unknown, value?: number | string | unknown): boolean;
 
 // @public (undocumented)
 export function typeDefaultTo(value?: unknown, defaultValue?: unknown, { assertTypes, assertEq, negate, }?: {
     assertTypes?: Array<RegExp | string | ((val: unknown) => boolean) | unknown> | RegExp | string | ((val: unknown) => boolean) | unknown;
-    assertEq?: (val: unknown, otherVal: unknown) => boolean;
-    negate?: boolean;
+    assertEq?: ((val: unknown, otherVal: unknown) => boolean) | unknown;
+    negate?: boolean | ((value?: unknown, defaultValue?: unknown) => boolean) | unknown;
 }): unknown;
 
 // @public (undocumented)

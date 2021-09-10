@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:26:09
- * @LastEditTime: 2021-09-09 22:03:03
+ * @LastEditTime: 2021-09-10 20:47:29
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\promiseSeries.ts
@@ -20,13 +20,13 @@ import lodashIsFunction from 'lodash/isFunction'
  * @typeReturns Promise<unknown>
  */
 export default function promiseSeries(
-  promiseFnList?: Array<(args: unknown[]) => Promise<unknown>>,
+  promiseFnList?: Array<(args: unknown[]) => Promise<unknown>> | unknown,
   thisArg?: unknown,
   successCb?: (val: unknown) => unknown,
   errorCb?: (val: unknown) => unknown,
 ): Promise<unknown> {
   if (!Array.isArray(promiseFnList)) promiseFnList = []
-  promiseFnList = promiseFnList.map((_promiseFn) => {
+  promiseFnList = (promiseFnList as Array<(args: unknown[]) => Promise<unknown>>).map((_promiseFn) => {
     if (lodashIsFunction(_promiseFn)) return _promiseFn
     return function () {
       return Promise.resolve(_promiseFn)

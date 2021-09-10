@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:25:10
- * @LastEditTime: 2021-09-09 22:00:01
+ * @LastEditTime: 2021-09-10 20:45:48
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\normalizeValue.ts
@@ -20,7 +20,7 @@ import lodashIsString from 'lodash/isString'
  */
 export default function normalizeValue(value: unknown, type?: string, defaultVal?: unknown): unknown {
   if (!lodashIsString(type)) return defaultVal === void 0 ? value : defaultVal
-  switch (type.toUpperCase()) {
+  switch ((type as string).toUpperCase()) {
     /* eslint-disable no-unreachable */
     case 'NUMBER':
       if (Array.isArray(value)) break

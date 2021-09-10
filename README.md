@@ -2,47 +2,55 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-09-09 21:46:46
+ * @LastEditTime: 2021-09-10 22:05:41
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\README.md
 -->
+<h1 align="center">@lgd-utils</h1>
 
-## 项目准备
-### 全局安装 lerna 和 typescript
+<h3 align="center">The utils for lgd.</h3>
+
+- @lgd-utils/array [![npm](https://img.shields.io/npm/dt/@lgd-utils/array)](https://www.npmjs.com/package/@lgd-utils/array)
+- @lgd-utils/cached-storage [![npm](https://img.shields.io/npm/dt/@lgd-utils/cached-storage)](https://www.npmjs.com/package/@lgd-utils/cached-storage)
+- @lgd-utils/utils [![npm](https://img.shields.io/npm/dt/@lgd-utils/utils)](https://www.npmjs.com/package/@lgd-utils/utils)
+- @lgd-utils/validate [![npm](https://img.shields.io/npm/dt/@lgd-utils/validate)](https://www.npmjs.com/package/@lgd-utils/validate)
+
+## 1. 项目准备
+### 1.1 全局安装 lerna 和 typescript
 ```
 npm install lerna typescript -g
 ```
 
-### git 初始化项目目录
+### 1.2 git 初始化项目目录
 ```
 git init lgd-utils
 ```
 
-### git 本地配置
+### 1.3 git 本地配置
 ```
 git config --local user.name LGDHuaOPER
 git config --local user.email lgd.huaoper@gmail.com
 ```
 
-### npm 配置
+### 1.4 npm 配置
 ```
 npm config set registry=https://r.npm.taobao.org
 ```
 
-### lerna 初始化项目
+### 1.5 lerna 初始化项目
 ```
 cd lgd-utils/
 lerna init / lerna init -i / lerna init --independent #是否使用独立的版本控制模式
 ```
 
-### 创建两个 package
+### 1.6 创建两个 package
 ```
 lerna create @lgd-utils/cached-storage --es-module
 lerna create @lgd-utils/validate --es-module
 ```
 
-### 给 package 安装依赖
+### 1.7 给 package 安装依赖
 ```
 lerna add lodash --scope @lgd-utils/cached-storage
 lerna add @types/lodash --dev --scope @lgd-utils/cached-storage
@@ -56,13 +64,14 @@ lerna add lodash --scope @lgd-utils/validate
 lerna add @types/lodash --dev --scope @lgd-utils/validate
 ```
 
-### 整个项目安装开发环境依赖
-#### 安装和初始化 typescript
+### 1.8 整个项目安装开发环境依赖
+#### 1.8.1 安装和初始化 typescript
 ```
 npm i -D typescript
 npx tsc --init
 ```
-#### 配置 tsconfig.json
+
+#### 1.8.2 配置 tsconfig.json
 ```
 {
   "compilerOptions": {
@@ -194,12 +203,14 @@ npx tsc --init
   ]
 }
 ```
-#### 安装和初始化 eslint
+
+#### 1.8.3 安装和初始化 eslint
 ```
 npm i -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 npx eslint --init
 ```
-#### 配置 .eslintrc.yml
+
+#### 1.8.4 配置 .eslintrc.yml
 ```
 root: true
 env:
@@ -216,7 +227,8 @@ parserOptions:
 plugins:
   - '@typescript-eslint'
 ```
-#### 配置 .eslintignore
+
+#### 1.8.5 配置 .eslintignore
 ```
 test/**
 lib/**
@@ -234,11 +246,13 @@ packages/*/types/**
 packages/*/__tests__/**
 packages/*/dist/**
 ```
-#### 安装和初始化 prettier
+
+#### 1.8.6 安装和初始化 prettier
 ```
 npm i -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
-#### 配置 .prettierrc
+
+#### 1.8.7 配置 .prettierrc
 ```
 {
   "semi": false,
@@ -247,19 +261,22 @@ npm i -D prettier eslint-config-prettier eslint-plugin-prettier
   "printWidth": 120
 }
 ```
-#### 配置 .prettierignore
+
+#### 1.8.8 配置 .prettierignore
 ```
 {
   "ignored": false,
   "inferredParser": "typescript"
 }
 ```
-#### 修改 .eslintrc.yml，添加如下代码
+
+#### 1.8.9 修改 .eslintrc.yml，添加如下代码
 ```
 extends:
   - 'plugin:prettier/recommended'
 ```
-### 配置 .editorconfig
+
+### 1.9 配置 .editorconfig
 ```
 touch .editorconfig
 ```
@@ -290,18 +307,19 @@ trim_trailing_whitespace = false
 end_of_line = lf
 ```
 
-### 安装和初始化 husky lint-staged commitlint commitizen standard-version
+### 1.10 安装和初始化 husky lint-staged commitlint commitizen standard-version cross-env
 ```
-npm i -D husky lint-staged @commitlint/cli @commitlint/config-conventional commitizen cz-customizable @commitlint/config-lerna-scopes commitlint-config-gitmoji standard-version
+npm i -D husky lint-staged @commitlint/cli @commitlint/config-conventional commitizen cz-customizable @commitlint/config-lerna-scopes commitlint-config-gitmoji standard-version cross-env
 ```
 
-#### 生成 commitlint.config.js
+#### 1.10.1 生成 commitlint.config.js
 ```
 touch commitlint.config.js
 ```
-#### 配置 commitlint.config.js
+
+#### 1.10.2 配置 commitlint.config.js
 ```
-const czConfig = require('.cz-config.js')
+const czConfig = require('./.cz-config.js')
 
 module.exports = {
   extends: ['@commitlint/config-lerna-scopes', 'gitmoji'],
@@ -331,28 +349,36 @@ module.exports = {
         })
         .filter(Boolean),
     ],
+    // lerna version 时关闭一些校验，只 warn
+    ...(process.env.GIT_COMMIT_TYPE === 'CZ'
+      ? null
+      : {
+          'start-with-gitmoji': [1, 'always'],
+          'subject-empty': [1, 'always'],
+          'type-empty': [1, 'always'],
+        }),
   },
 }
 ```
 
-#### 在 package.json 中 scripts 中添加如下脚本
+#### 1.10.3 在 package.json 中 scripts 中添加如下脚本
 "scripts": {
-  "commit": "cz"
+  "commit": "cross-env GIT_COMMIT_TYPE=CZ cz"
 }
 
-#### 在 package.json 中添加以下代码，这里用的自定义 commitizen，使用 git-cz 执行命令
+#### 1.10.4 在 package.json 中添加以下代码，这里用的自定义 commitizen，使用 git-cz 执行命令
 "config": {
   "commitizen": {
     "path": "./node_modules/cz-customizable"
   }
 }
 
-#### 生成 .cz-config.js
+#### 1.10.5 生成 .cz-config.js
 ```
 touch .cz-config.js
 ```
 
-#### 配置 .cz-config.js
+#### 1.10.6 配置 .cz-config.js
 ```
 module.exports = {
   types: [
@@ -390,23 +416,23 @@ module.exports = {
 }
 ```
 
-#### 初始化 husky 配置
+#### 1.10.7 初始化 husky 配置
 ```
 npx husky-init
 npx husky add .husky/commit-msg
 ```
 
-#### 在 .husky 文件夹中的 pre-commit 中添加如下代码
+#### 1.10.8 在 .husky 文件夹中的 pre-commit 中添加如下代码
 ```
 npx --no-install lint-staged
 ```
 
-#### 在 .husky 文件夹中的 commit-msg 中添加如下代码
+#### 1.10.9 在 .husky 文件夹中的 commit-msg 中添加如下代码
 ```
 npx --no-install commitlint --edit "$1"
 ```
 
-#### 在 package.json 中的 scripts 添加如下脚本
+#### 1.10.10 在 package.json 中的 scripts 添加如下脚本
 ```
 {
   "scripts": {
@@ -415,12 +441,12 @@ npx --no-install commitlint --edit "$1"
 }
 ```
 
-#### 生成 versionrc.js
+#### 1.10.11 生成 versionrc.js
 ```
 touch versionrc.js
 ```
 
-#### 配置 versionrc.js
+#### 1.10.12 配置 versionrc.js
 ```
 module.exports = {
   types: [
@@ -440,24 +466,24 @@ module.exports = {
 }
 ```
 
-#### gitmoji 使用FAQ
+#### 1.10.13 gitmoji 使用FAQ
 ```
 https://github.com/arvinxx/gitmoji-commit-workflow/tree/master/packages/commitlint-plugin#fetch-error
 
 https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json
 ```
 
-### 安装和初始化 babel
+### 1.11 安装和初始化 babel
 ```
 npm i -D @babel/core @babel/plugin-transform-runtime @babel/preset-env @rollup/plugin-babel
 ```
 
-#### 生成 babel.config.json
+#### 1.11.1 生成 babel.config.json
 ```
 touch babel.config.json
 ```
 
-#### 配置 babel.config.json
+#### 1.11.2 配置 babel.config.json
 ```
 {
   "presets": [
@@ -478,13 +504,13 @@ touch babel.config.json
 }
 ```
 
-### 安装和初始化 jest
+### 1.12 安装和初始化 jest
 ```
 npm i -D jest ts-jest @types/jest ts-node jest-chain jest-extended
 npx jest --init
 ```
 
-#### 配置 jest.config.ts
+#### 1.12.1 配置 jest.config.ts
 ```
 export default {
   // All imported modules in your tests should be mocked automatically
@@ -694,17 +720,17 @@ export default {
 }
 ```
 
-### 安装和初始化 api-extractor
+### 1.13 安装和初始化 api-extractor
 ```
 npm i -D @microsoft/api-extractor
 ```
 
-#### 生成 api-extractor.json
+#### 1.13.1 生成 api-extractor.json
 ```
 touch api-extractor.json
 ```
 
-#### 配置 api-extractor.json
+#### 1.13.2 配置 api-extractor.json
 ```
 {
   "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
@@ -757,7 +783,7 @@ touch api-extractor.json
 }
 ```
 
-#### 在 packages/* 下配置 api-extractor.json
+#### 1.13.3 在 packages/* 下配置 api-extractor.json
 ```
 {
   "extends": "../../api-extractor.json",
@@ -768,12 +794,12 @@ touch api-extractor.json
 }
 ```
 
-#### 生成 tsdoc.json
+#### 1.13.4 生成 tsdoc.json
 ```
 touch tsdoc.json
 ```
 
-#### 配置 tsdoc.json
+#### 1.13.5 配置 tsdoc.json
 ```
 {
   "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -794,7 +820,7 @@ touch tsdoc.json
 }
 ```
 
-#### 修改 .eslintrc.yml，添加如下代码
+#### 1.13.6 修改 .eslintrc.yml，添加如下代码
 ```
 plugins:
   - 'eslint-plugin-tsdoc'
@@ -802,44 +828,64 @@ rules:
   'tsdoc/syntax': warn
 ```
 
-## 项目运行
-### 项目开发
+## 2. 项目运行
+### 2.1 项目开发
 ```
 npm run dev -- <packageName>
 ```
 
-### 项目构建
+### 2.2 项目构建
 ```
 npm run build / npm run build:t
 ```
 
-### 项目测试
+### 2.3 项目测试
 ```
 npm run test
 ```
 
-### 项目提交
+### 2.4 项目提交
 ```
 npm run commit
 ```
 
-## 项目协作
-### 克隆仓库
+## 3. 项目协作
+### 3.1 克隆仓库
 ```
 git clone git@github.com:LGDHuaOPER/lgd-utils.git
 ```
 
-### 安装依赖
+### 3.2 安装依赖
 ```
 npm run setup / lerna bootstrap --npm-client=cnpm && npm run husky:init
 ```
 
-### 新增 package 后链接各个包
+### 3.3 新增 package 后链接各个包
 ```
 lerna link
 ```
 
-### 在各个包中安装自己的依赖
+### 3.4 在各个包中安装自己的依赖
 ```
 lerna exec -- npm i
+```
+
+## 4. 项目发布
+### 4.1 lerna version 方式
+```
+lerna version
+
+npm config set registry https://registry.npmjs.org/
+
+cd packages/<packageName>/
+
+npm login
+
+npm publish --access=public
+
+cd ../../
+
+npm run release
+
+git push --follow-tags origin main
 ```

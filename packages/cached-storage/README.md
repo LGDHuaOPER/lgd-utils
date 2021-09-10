@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-08-30 19:45:52
- * @LastEditTime: 2021-09-09 23:22:32
+ * @LastEditTime: 2021-09-10 21:53:54
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\cached-storage\README.md
@@ -10,6 +10,14 @@
 # `@lgd-utils/cached-storage`
 
 > 一个具有失效功能的缓存存储
+
+<div align="center">
+
+[![MIT](https://img.shields.io/badge/license-MIT-000000.svg)](https://opensource.org/licenses/MIT/)
+[![lodash](https://img.shields.io/badge/lodash-4-green.svg)](https://github.com/lodash/lodash)
+[![npm](https://img.shields.io/npm/dt/@lgd-utils/cached-storage)](https://www.npmjs.com/package/@lgd-utils/cached-storage)
+
+</div>
 
 ## Usage
 
@@ -28,3 +36,14 @@ setTimeout (function () {
 
 ## Thanks
 灵感来源于 [lscache](http://github.com/pamelafox/lscache)，原库只有 localStorage，现扩展支持 localStorage / sessionStorage / memoryStorage
+
+## Contribute
+
+- [LGD.HuaFEEng(LGD.HuaOPER)][blog]
+
+## Documentation
+
+- [Quick tutorial](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/cached-storage#readme)
+- [Issue](https://github.com/LGDHuaOPER/lgd-utils/issues)
+
+[blog]: https://lgdhuaoper.github.io/ '敬昭的博客'

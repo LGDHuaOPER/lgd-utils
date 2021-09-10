@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:22:24
- * @LastEditTime: 2021-09-09 22:04:21
+ * @LastEditTime: 2021-09-10 20:47:58
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\regexpTest.ts
@@ -19,8 +19,8 @@ import lodashOverSome from 'lodash/overSome'
  * @returns 校验结果
  * @typeReturns boolean
  */
-export default function regexpTest(regexp: RegExp, value: number | string): boolean {
+export default function regexpTest(regexp?: RegExp | unknown, value?: number | string | unknown): boolean {
   if (!lodashIsRegExp(regexp) || !lodashOverSome(lodashIsString, lodashIsNumber)(value)) return false
 
-  return regexp.test(value as string)
+  return (regexp as RegExp).test(value as string)
 }

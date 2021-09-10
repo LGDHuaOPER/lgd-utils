@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:20:55
- * @LastEditTime: 2021-09-09 22:02:42
+ * @LastEditTime: 2021-09-10 20:46:43
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\partialEqWith.ts
@@ -20,7 +20,7 @@ import partialEq from './partialEq'
  */
 export default function partialEqWith(
   partialArg?: unknown,
-  comparator?: (partialArg: unknown, val: unknown) => boolean,
+  comparator?: ((partialArg: unknown, val: unknown) => boolean) | unknown,
 ): (val: unknown) => boolean {
   if (!lodashIsFunction(comparator)) return partialEq(partialArg)
   return lodashPartial(comparator, partialArg)

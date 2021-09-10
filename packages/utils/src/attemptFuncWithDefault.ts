@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:17:45
- * @LastEditTime: 2021-09-09 21:57:12
+ * @LastEditTime: 2021-09-10 20:43:36
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\attemptFuncWithDefault.ts
@@ -19,7 +19,7 @@ import lodashIsFunction from 'lodash/isFunction'
  * @typeReturns unknown
  */
 export default function attemptFuncWithDefault(
-  func?: (...args: unknown[]) => unknown,
+  func?: ((...args: unknown[]) => unknown) | unknown,
   defaultV?: unknown,
   ...args: unknown[]
 ): unknown {

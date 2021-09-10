@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:13:12
- * @LastEditTime: 2021-09-09 21:56:41
+ * @LastEditTime: 2021-09-10 20:43:04
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\attemptFunc.ts
@@ -19,6 +19,6 @@ import lodashIsFunction from 'lodash/isFunction'
  * @returns 返回 func 调用结果或者错误对象或者 func
  * @typeReturns unknown
  */
-export default function attemptFunc(func?: (...args: unknown[]) => unknown, ...args: unknown[]): unknown {
+export default function attemptFunc(func?: ((...args: unknown[]) => unknown) | unknown, ...args: unknown[]): unknown {
   return lodashIsFunction(func) ? lodashAttempt(func, ...args) : func
 }

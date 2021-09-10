@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:15:37
- * @LastEditTime: 2021-09-09 21:58:21
+ * @LastEditTime: 2021-09-10 20:43:57
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\attemptFuncWithError.ts
@@ -19,7 +19,7 @@ import lodashIsError from 'lodash/isError'
  * @typeReturns unknown
  */
 export default function attemptFuncWithError(
-  func?: (...args: unknown[]) => unknown,
+  func?: ((...args: unknown[]) => unknown) | unknown,
   errorDefault?: unknown,
   ...args: unknown[]
 ): unknown {
