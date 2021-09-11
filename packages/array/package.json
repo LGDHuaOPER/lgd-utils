@@ -13,7 +13,7 @@
     }
   },
   "dependencies": {
-    "@lgd-utils/utils": "^0.0.2",
+    "@lgd-utils/utils": "^0.0.3",
     "lodash": "^4.17.21"
   },
   "description": "A front-end array tool",
