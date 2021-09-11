@@ -66,6 +66,7 @@
     ]
   },
   "scripts": {
+    "available": "npm run build && npm run build:t && npm run test && npm run test-dts",
     "build": "node scripts/build.js",
     "build:t": "node scripts/build.js -t",
     "build:t:trace": "node scripts/build.js -t --trace-warnings",

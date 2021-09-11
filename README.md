@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-09-10 22:05:41
+ * @LastEditTime: 2021-09-11 12:15:45
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\README.md
@@ -871,6 +871,11 @@ lerna exec -- npm i
 ```
 
 ## 4. 项目发布
+发布前可以先使用以下命令进行可用性测试：
+```
+npm run available
+```
+
 ### 4.1 lerna version 方式
 ```
 lerna version
@@ -884,6 +889,15 @@ npm login
 npm publish --access=public
 
 cd ../../
+
+npm run release
+
+git push --follow-tags origin main
+```
+
+### 4.2 lerna publish 方式
+```
+lerna publish
 
 npm run release
 
