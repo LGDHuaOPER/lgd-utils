@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-09 20:46:45
- * @LastEditTime: 2021-09-11 16:25:59
+ * @LastEditTime: 2021-09-12 11:43:15
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\README.md
@@ -42,5 +42,12 @@ utils.undefinedTo(undefined, 4); // 4
 
 - [Quick tutorial](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils#readme)
 - [Issue](https://github.com/LGDHuaOPER/lgd-utils/issues)
+
+## Related
+
+- [@lgd-utils/cached-storage](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/cached-storage) - 一个具有失效功能的缓存存储
+- [@lgd-utils/utils](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils) - A front-end utils tool
+- [@lgd-utils/validate](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/validate) - A front-end verification tool
+- [More…](https://github.com/LGDHuaOPER/lgd-utils)
 
 [blog]: https://lgdhuaoper.github.io/ '敬昭的博客'

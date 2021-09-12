@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 17:04:33
- * @LastEditTime: 2021-09-11 16:26:24
+ * @LastEditTime: 2021-09-12 11:43:54
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\validate\README.md
@@ -42,5 +42,12 @@ validate.validToStringType(function () {}, 'Object'); // false
 
 - [Quick tutorial](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/validate#readme)
 - [Issue](https://github.com/LGDHuaOPER/lgd-utils/issues)
+
+## Related
+
+- [@lgd-utils/array](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/array) - A front-end array tool
+- [@lgd-utils/cached-storage](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/cached-storage) - 一个具有失效功能的缓存存储
+- [@lgd-utils/utils](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils) - A front-end utils tool
+- [More…](https://github.com/LGDHuaOPER/lgd-utils)
 
 [blog]: https://lgdhuaoper.github.io/ '敬昭的博客'

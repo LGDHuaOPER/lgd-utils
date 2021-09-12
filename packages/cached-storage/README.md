@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-08-30 19:45:52
- * @LastEditTime: 2021-09-11 16:25:35
+ * @LastEditTime: 2021-09-12 11:42:57
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\cached-storage\README.md
@@ -49,5 +49,12 @@ setTimeout (function () {
 
 - [Quick tutorial](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/cached-storage#readme)
 - [Issue](https://github.com/LGDHuaOPER/lgd-utils/issues)
+
+## Related
+
+- [@lgd-utils/array](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/array) - A front-end array tool
+- [@lgd-utils/utils](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils) - A front-end utils tool
+- [@lgd-utils/validate](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/validate) - A front-end verification tool
+- [More…](https://github.com/LGDHuaOPER/lgd-utils)
 
 [blog]: https://lgdhuaoper.github.io/ '敬昭的博客'
