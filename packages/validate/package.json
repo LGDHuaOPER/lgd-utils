@@ -52,5 +52,5 @@
   },
   "types": "dist/validate.d.ts",
   "unpkg": "dist/validate.global.prod.js",
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
