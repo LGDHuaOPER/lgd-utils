@@ -11,7 +11,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-06-09 21:04:24
- * @LastEditTime: 2021-09-09 21:53:54
+ * @LastEditTime: 2021-09-15 18:20:21
  * @LastEditors: shiconghua
  * @Description: 具有失效功能的缓存存储
  * @FilePath: \lgd-utils\packages\cached-storage\src\index.ts
@@ -321,6 +321,8 @@ export default class CachedStorage {
       'bucket',
       'cachePrefix',
       'cacheSuffix',
+      'compress',
+      'decompress',
       'expiryMilliseconds',
       'expiryRadix',
       'expiryToStringKeys',
