@@ -1,0 +1,59 @@
+{
+  "author": {
+    "email": "lgd.huaoper@gmail.com",
+    "name": "LGD.HuaFEEng",
+    "url": "https://lgdhuaoper.github.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/LGDHuaOPER/lgd-utils/issues"
+  },
+  "buildOptions": {
+    "output": {
+      "name": "LgdUtilsError"
+    }
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "description": "A front-end error tool",
+  "devDependencies": {
+    "@types/lodash": "^4.14.173"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "__tests__",
+    "types": "types"
+  },
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "homepage": "https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/error#readme",
+  "jsdelivr": "dist/error.global.prod.js",
+  "keywords": [
+    "error",
+    "custom",
+    "custom-error",
+    "extend",
+    "util",
+    "tool",
+    "front-end"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "module": "dist/error.esm.js",
+  "name": "@lgd-utils/error",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LGDHuaOPER/lgd-utils.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "types": "dist/error.d.ts",
+  "unpkg": "dist/error.global.prod.js",
+  "version": "0.0.1"
+}

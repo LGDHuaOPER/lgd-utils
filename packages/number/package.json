@@ -1,0 +1,62 @@
+{
+  "author": {
+    "email": "lgd.huaoper@gmail.com",
+    "name": "LGD.HuaFEEng",
+    "url": "https://lgdhuaoper.github.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/LGDHuaOPER/lgd-utils/issues"
+  },
+  "buildOptions": {
+    "output": {
+      "name": "LgdUtilsNumber"
+    }
+  },
+  "dependencies": {
+    "@lgd-utils/utils": "^0.0.4",
+    "bytes": "^3.1.0",
+    "lodash": "^4.17.21"
+  },
+  "description": "A front-end number tool",
+  "devDependencies": {
+    "@types/bytes": "^3.1.1",
+    "@types/lodash": "^4.14.173"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "__tests__",
+    "types": "types"
+  },
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "homepage": "https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/number#readme",
+  "jsdelivr": "dist/number.global.prod.js",
+  "keywords": [
+    "number",
+    "digit",
+    "size",
+    "data-size",
+    "util",
+    "tool",
+    "front-end"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "module": "dist/number.esm.js",
+  "name": "@lgd-utils/number",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LGDHuaOPER/lgd-utils.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "types": "dist/number.d.ts",
+  "unpkg": "dist/number.global.prod.js",
+  "version": "0.0.1"
+}

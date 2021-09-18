@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-09-11 12:15:45
+ * @LastEditTime: 2021-09-18 10:56:30
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\README.md
@@ -52,14 +52,12 @@ lerna create @lgd-utils/validate --es-module
 
 ### 1.7 给 package 安装依赖
 ```
-lerna add lodash --scope @lgd-utils/cached-storage
-lerna add @types/lodash --dev --scope @lgd-utils/cached-storage
 lerna add @lgd-utils/validate --scope @lgd-utils/cached-storage
-lerna add @types/globalthis --scope @lgd-utils/cached-storage
 lerna add globalthis --scope @lgd-utils/cached-storage
+lerna add lodash --scope @lgd-utils/cached-storage
 lerna add memorystorage --scope @lgd-utils/cached-storage
-lerna add lodash --scope @lgd-utils/utils
-lerna add @types/lodash --dev --scope @lgd-utils/utils
+lerna add @types/globalthis --scope @lgd-utils/cached-storage
+lerna add @types/lodash --dev --scope @lgd-utils/cached-storage
 lerna add lodash --scope @lgd-utils/validate
 lerna add @types/lodash --dev --scope @lgd-utils/validate
 ```
