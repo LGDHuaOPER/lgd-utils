@@ -44,6 +44,7 @@
     // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
     // "types": [],                                      /* Specify type package names to be included without being referenced in a source file. */
     "types": [
+      "bytes",
       "globalthis",
       "jest",
       "lodash",

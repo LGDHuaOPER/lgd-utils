@@ -6,9 +6,20 @@
 
 // @public (undocumented)
 const _default: {
+    validEmptyObject: typeof validEmptyObject;
+    validToStringObject: typeof validToStringObject;
     validToStringType: typeof validToStringType;
 };
 export default _default;
+
+// @public (undocumented)
+export function validEmptyObject(val?: unknown, iteratee?: (val?: unknown) => unknown | undefined, { assertObject, assertEmpty, }?: {
+    assertObject?: typeof validToStringObject;
+    assertEmpty?: (value?: unknown) => boolean;
+}): boolean;
+
+// @public (undocumented)
+export function validToStringObject(val?: unknown): boolean;
 
 // @public
 export function validToStringType(value: unknown, type: string): boolean;
