@@ -13,7 +13,7 @@
     }
   },
   "dependencies": {
-    "@lgd-utils/validate": "^0.0.4",
+    "@lgd-utils/validate": "^0.0.5",
     "lodash": "^4.17.21"
   },
   "description": "A front-end object tool",
