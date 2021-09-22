@@ -54,5 +54,5 @@
   },
   "types": "dist/utils.d.ts",
   "unpkg": "dist/utils.global.prod.js",
-  "version": "0.0.6"
+  "version": "0.0.7"
 }
