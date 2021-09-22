@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:19:44
- * @LastEditTime: 2021-09-09 22:00:52
+ * @LastEditTime: 2021-09-22 19:46:03
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\partialEq.ts
@@ -13,8 +13,7 @@ import lodashPartial from 'lodash/partial'
 
 /**
  * @param partialArg - lodashEq()的预设的参数
- * @returns 返回预设参数的函数
- * @typeReturns boolean
+ * @returns 返回预设参数的函数 - boolean
  */
 export default function partialEq(partialArg?: unknown): (val: unknown) => boolean {
   // return lodashWrap(lodashEq, function(func, val) {
