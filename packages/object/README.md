@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-19 22:59:53
- * @LastEditTime: 2021-09-22 17:54:11
+ * @LastEditTime: 2021-09-22 19:44:32
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\object\README.md
@@ -28,9 +28,10 @@
 ```
 import object from '@lgd-utils/object';
 
-const { omitNil, omitUndefined } = object;
+const { omitNil, omitUndefined, sortObjectByProp } = object;
 console.log(omitNil({ key: 'value', key1: null, key2: void 0 })); // { key: 'value' }
 console.log(omitUndefined({ key: 'value', key1: null, key2: void 0 })); // { key: 'value', key1: null }
+console.log(JSON.stringify(sortObjectByProp({ b: 2, a: '1', d: true, c: [33, 3], g: null, f: { ff: 55, ee: 4 } }))); // '{"a":"1","b":2,"c":[33,3],"d":true,"f":{"ee":4,"ff":55},"g":null}'
 ```
 
 ## Contribute

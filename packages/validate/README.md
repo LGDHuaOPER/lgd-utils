@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 17:04:33
- * @LastEditTime: 2021-09-22 17:39:48
+ * @LastEditTime: 2021-09-22 19:56:29
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\validate\README.md
@@ -27,11 +27,17 @@
 
 ```
 import validate from '@lgd-utils/validate';
+import lodashTrim from 'lodash/trim';
 
 validate.validToStringType(1, 'Number'); // true
 validate.validToStringType(undefined, 'Null'); // false
 validate.validToStringType(void 0, 'Undefined'); // true
 validate.validToStringType(function () {}, 'Object'); // false
+
+validate.validEmptyString(1); // false
+validate.validEmptyString('  '); // false
+validate.validEmptyString(''); // true
+validate.validEmptyString('  ', lodashTrim); // true
 ```
 
 ## Contribute

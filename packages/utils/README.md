@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-09 20:46:45
- * @LastEditTime: 2021-09-22 17:39:31
+ * @LastEditTime: 2021-09-22 19:56:42
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\README.md
@@ -30,10 +30,15 @@ import utils from '@lgd-utils/utils';
 
 utils.assertValue(1, 1); // true
 utils.assertValue('str', [3, null, /^\w+$/]); // true
+
 utils.normalizeValue(2, 'String'); // '2'
 utils.normalizeValue('3kb', 'Number', 4); // 4
+
 utils.undefinedTo(1, 2); // 1
 utils.undefinedTo(undefined, 4); // 4
+
+utils.partialEq('true')(true); // false
+utils.partialEq('false')('false'); // true
 ```
 
 ## Contribute
