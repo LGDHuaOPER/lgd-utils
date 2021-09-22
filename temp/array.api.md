@@ -6,12 +6,12 @@
 
 // @public (undocumented)
 const _default: {
-    reduceWrap: typeof typeDefaultTo;
+    reduceWrap: typeof reduceWrap;
 };
 export default _default;
 
 // @public (undocumented)
-export function typeDefaultTo(value?: unknown, reduceBy?: ((result?: unknown, v?: unknown, i?: number, arr?: unknown[]) => unknown) | unknown, reduceWhile?: unknown, initialValue?: unknown): unknown;
+export function reduceWrap(value?: unknown, reduceBy?: ((result?: unknown, v?: unknown, i?: number, arr?: unknown[]) => unknown) | unknown, reduceWhile?: unknown, initialValue?: unknown): unknown;
 
 // (No @packageDocumentation comment for this package)
 

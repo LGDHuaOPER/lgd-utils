@@ -206,7 +206,7 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@lgd-utils/array!typeDefaultTo:function(1)",
+          "canonicalReference": "@lgd-utils/array!reduceWrap:function(1)",
           "docComment": "/**\n * @remarks\n *\n * 以特定的约束条件迭代执行某逻辑，获取结果\n *\n * @param value - 要迭代的数组\n *\n * @param reduceBy - 迭代的方式\n *\n * @param reduceWhile - 什么时候进行迭代\n *\n * @param initialValue - 初始值\n *\n * @typeParam value - any\n *\n * @typeParam reduceBy - any\n *\n * @typeParam reduceWhile - any\n *\n * @typeParam initialValue - any\n *\n * @returns result - 返回迭代的结果\n */\n",
           "excerptTokens": [
             {
@@ -290,7 +290,7 @@
               }
             }
           ],
-          "name": "typeDefaultTo"
+          "name": "reduceWrap"
         }
       ]
     }

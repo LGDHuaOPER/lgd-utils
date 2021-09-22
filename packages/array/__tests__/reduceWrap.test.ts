@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 17:04:33
- * @LastEditTime: 2021-09-10 21:07:37
+ * @LastEditTime: 2021-09-22 20:50:05
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\array\__tests__\reduceWrap.test.ts
@@ -20,7 +20,7 @@ describe('@lgd-utils/validate validToStringType', () => {
     expect(reduceWrap([undefined, void 0, 33], null, lodashIsUndefined)).toBe(33)
   })
 
-  it(`After reduceWrap called is to be 15`, () => {
+  it(`After reduceWrap called is to be 21`, () => {
     expect(
       reduceWrap(
         [
@@ -29,11 +29,12 @@ describe('@lgd-utils/validate validToStringType', () => {
           (_result: number) => _result + 3,
           (_result: number) => _result + 4,
           (_result: number) => _result + 5,
+          (_result: number) => _result + 6,
         ],
         (_result: number, fn: (_result: number) => number) => fn(_result),
         true,
         0,
       ),
-    ).toBe(0 + 1 + 2 + 3 + 4 + 5)
+    ).toBe(0 + 1 + 2 + 3 + 4 + 5 + 6)
   })
 })

@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-10 20:12:33
- * @LastEditTime: 2021-09-22 17:53:10
+ * @LastEditTime: 2021-09-22 20:48:09
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\array\README.md
@@ -38,11 +38,12 @@ array.reduceWrap(
     (_result: number) => _result + 3,
     (_result: number) => _result + 4,
     (_result: number) => _result + 5,
+    (_result: number) => _result + 6,
   ],
   (_result: number, fn: (_result: number) => number) => fn(_result),
   true,
   0
-); // 15
+); // 21
 ```
 
 ## Contribute
