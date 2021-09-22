@@ -8,6 +8,6 @@
  * @FilePath: \lgd-utils\packages\array\src\index.ts
  */
 
-export { default as typeDefaultTo } from './reduceWrap'
+export { default as reduceWrap } from './reduceWrap'
 
 export { default } from './array.default'
