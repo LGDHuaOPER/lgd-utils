@@ -13,6 +13,10 @@
     }
   },
   "dependencies": {
+    "@lgd-utils/regexp": "^0.0.1",
+    "@lgd-utils/utils": "^0.0.4",
+    "@types/globalthis": "^1.0.1",
+    "globalthis": "^1.0.2",
     "lodash": "^4.17.21"
   },
   "description": "A front-end verification tool",

@@ -35,6 +35,7 @@
     "cross-env": "^7.0.3",
     "cz-customizable": "^6.3.0",
     "delay": "^5.0.0",
+    "delay-cli": "^1.1.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -67,7 +68,7 @@
     ]
   },
   "scripts": {
-    "available": "rimraf packages/*/dist/packages && npm run build && rimraf packages/*/dist/packages && npm run test-dts && rimraf packages/*/dist/packages && npm run build:t && npm run test",
+    "available": "rimraf packages/*/dist && npm run build && delay 5 && npm run test-dts && delay 5 && npm run build:t && npm run test",
     "build": "node scripts/build.js",
     "build:t": "node scripts/build.js -t",
     "build:t:trace": "node scripts/build.js -t --trace-warnings",

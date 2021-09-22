@@ -130,8 +130,7 @@ export default {
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   // setupFilesAfterEnv: [],
-  // setupFilesAfterEnv: ['jest-extended', 'jest-chain'],
-  setupFilesAfterEnv: ['jest-extended'],
+  setupFilesAfterEnv: ['jest-extended', 'jest-chain'],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
@@ -155,7 +154,11 @@ export default {
   // testPathIgnorePatterns: [
   //   "\\\\node_modules\\\\"
   // ],
-  testPathIgnorePatterns: ['node_modules[\\\\/]', '\\.history[\\\\/].+$'],
+  testPathIgnorePatterns: [
+    'node_modules[\\\\/]',
+    '\\.history[\\\\/].+$',
+    'packages[\\\\/][A-Za-z0-9_-]+[\\\\/]src[\\\\/](([A-Za-z0-9_.-]+\\.(spec|test))|(spec|test))\\.[tj]sx?$',
+  ],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],

@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-18 22:33:28
- * @LastEditTime: 2021-09-18 22:42:52
+ * @LastEditTime: 2021-09-22 15:36:43
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\validate\src\validEmptyObject.ts
@@ -16,8 +16,8 @@ import lodashOverEvery from 'lodash/overEvery'
 import validToStringObject from './validToStringObject'
 
 export default function validEmptyObject(
-  val?: unknown,
-  iteratee?: (val?: unknown) => unknown | undefined,
+  value?: unknown,
+  iteratee?: (value?: unknown) => unknown | undefined,
   {
     assertObject,
     assertEmpty,
@@ -30,5 +30,5 @@ export default function validEmptyObject(
   if (!lodashIsFunction(assertObject)) assertObject = validToStringObject
   if (!lodashIsFunction(assertEmpty)) assertEmpty = lodashIsEmpty
 
-  return lodashOverEvery(assertObject, lodashFlow([iteratee, assertEmpty]))(val)
+  return lodashOverEvery(assertObject, lodashFlow([iteratee, assertEmpty]))(value)
 }

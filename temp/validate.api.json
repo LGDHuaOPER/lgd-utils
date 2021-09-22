@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.18.9",
+    "toolVersion": "7.18.7",
     "schemaVersion": 1004,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -185,11 +185,110 @@
             },
             {
               "kind": "Content",
-              "text": "{\n    validEmptyObject: typeof "
+              "text": "{\n    validArrayBufferView: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validArrayBufferView",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    validEmail: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validEmail",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    validEmptyObject: typeof "
             },
             {
               "kind": "Reference",
               "text": "validEmptyObject",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    validEmptyString: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validEmptyString",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    validFormData: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validFormData",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    validIPv4: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validIPv4",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    validNilOrEmptyStr: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validNilOrEmptyStr",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    validNonemptyString: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validNonemptyString",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    validObjectKey: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validObjectKey",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    validStream: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validStream",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    validToStringBlob: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validToStringBlob",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    validToStringFile: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validToStringFile",
               "canonicalReference": "@lgd-utils/validate!default:function"
             },
             {
@@ -203,11 +302,38 @@
             },
             {
               "kind": "Content",
+              "text": ";\n    validToStringPromise: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validToStringPromise",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
               "text": ";\n    validToStringType: typeof "
             },
             {
               "kind": "Reference",
               "text": "validToStringType",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    validURL: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validURL",
+              "canonicalReference": "@lgd-utils/validate!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    validURLSearchParams: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "validURLSearchParams",
               "canonicalReference": "@lgd-utils/validate!default:function"
             },
             {
@@ -219,8 +345,129 @@
           "name": "_default",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 8
+            "endIndex": 36
           }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validArrayBufferView:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * Determine if a value is a view on an ArrayBuffer\n *\n * @param value - The value to test\n *\n * @param ArrayBufferConstructor - The constructor for ArrayBufferView\n *\n * @typeParam value - unknown | undefined\n *\n * @typeParam ArrayBufferConstructor - unknown | typeof ArrayBuffer\n *\n * @returns True if value is a view on an ArrayBuffer, otherwise false - boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validArrayBufferView(value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", ArrayBufferConstructor?: "
+            },
+            {
+              "kind": "Content",
+              "text": "typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "ArrayBuffer",
+              "canonicalReference": "!ArrayBuffer:var"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 6,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "ArrayBufferConstructor",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "validArrayBufferView"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validEmail:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * 校验 email\n *\n * @param email - The value to test\n *\n * @param lv - 0: 严谨, 1: 宽松; default is 0\n *\n * @typeParam email - string\n *\n * @typeParam lv - number | string\n *\n * @returns boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validEmail(email?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", lv?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number | string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "email",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "lv",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "validEmail"
         },
         {
           "kind": "Function",
@@ -229,7 +476,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export default function validEmptyObject(val?: "
+              "text": "export default function validEmptyObject(value?: "
             },
             {
               "kind": "Content",
@@ -241,7 +488,7 @@
             },
             {
               "kind": "Content",
-              "text": "(val?: unknown) => unknown | undefined"
+              "text": "(value?: unknown) => unknown | undefined"
             },
             {
               "kind": "Content",
@@ -281,7 +528,7 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "val",
+              "parameterName": "value",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -306,12 +553,191 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@lgd-utils/validate!validToStringObject:function(1)",
-          "docComment": "",
+          "canonicalReference": "@lgd-utils/validate!validEmptyString:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * 校验空字符串\n *\n * @param value - 字符串\n *\n * @param iteratee - 迭代函数\n *\n * @typeParam value - unknown | undefined\n *\n * @typeParam iteratee - unknown | undefined\n *\n * @returns boolean\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export default function validToStringObject(val?: "
+              "text": "export default function validEmptyString(value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", iteratee?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "iteratee",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "validEmptyString"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validFormData:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * Determine if a value is a FormData\n *\n * @param value - The value to test\n *\n * @param FormDataConstructor - The Constructor of FormData\n *\n * @typeParam value - unknown | undefined\n *\n * @typeParam FormDataConstructor - unknown | undefined\n *\n * @returns True if value is a FormData, otherwise false - boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validFormData(value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", FormDataConstructor?: "
+            },
+            {
+              "kind": "Content",
+              "text": "typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "FormData",
+              "canonicalReference": "!FormData:var"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 6,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "FormDataConstructor",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "validFormData"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validIPv4:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * Determine if a value is an IPv4\n *\n * @param ipv4 - The value to test\n *\n * @param lv - 0: 严谨, 1: 宽松; default is 0\n *\n * @typeParam ipv4 - unknown | undefined\n *\n * @typeParam lv - number | string | undefined\n *\n * @returns True if value is an IPv4, otherwise false - boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validIPv4(ipv4?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", lv?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number | string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "ipv4",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "lv",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "validIPv4"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validNilOrEmptyStr:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * 校验是undefined、null或空字符串\n *\n * @param value - 值\n *\n * @typeParam value - unknown | undefined\n *\n * @returns boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validNilOrEmptyStr(value?: "
             },
             {
               "kind": "Content",
@@ -338,7 +764,295 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "val",
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "validNilOrEmptyStr"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validNonemptyString:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * 校验非空字符串\n *\n * @param value - 字符串\n *\n * @param iteratee - 迭代函数\n *\n * @typeParam value - unknown | undefined\n *\n * @typeParam iteratee - unknown | undefined\n *\n * @returns boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validNonemptyString(value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", iteratee?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "iteratee",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "validNonemptyString"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validObjectKey:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * Determine if a value is an objectKey\n *\n * @param objectKey - The value to test\n *\n * @param lv - 0: 严谨, 1: 宽松, 2: 最宽松; default is 0\n *\n * @typeParam objectKey - unknown | undefined\n *\n * @typeParam lv - number | string | undefined\n *\n * @returns boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validObjectKey(objectKey?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", lv?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number | string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "objectKey",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "lv",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "validObjectKey"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validStream:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * Determine if a value is a Stream\n *\n * @param value - The value to test\n *\n * @typeParam value - unknown | undefined\n *\n * @returns True if value is a Stream, otherwise false - boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validStream(value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "validStream"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validToStringBlob:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * Determine if a value is a Blob\n *\n * @param value - The value to test\n *\n * @typeParam value - unknown | undefined\n *\n * @returns True if value is a Blob, otherwise false - boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validToStringBlob(value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "validToStringBlob"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validToStringFile:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * Determine if a value is a File\n *\n * @param value - The value to test\n *\n * @typeParam value - unknown | undefined\n *\n * @returns True if value is a File, otherwise false - boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validToStringFile(value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "validToStringFile"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validToStringObject:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * Determine if a value is an Object\n *\n * @param value - The value to test\n *\n * @typeParam value - unknown | undefined\n *\n * @returns True if value is an Object, otherwise false - boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validToStringObject(value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -349,8 +1063,51 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validToStringPromise:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * Determine if a value is a Promise\n *\n * @param value - The value to test\n *\n * @typeParam value - unknown | undefined\n *\n * @returns True if value is a Promise, otherwise false - boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validToStringPromise(value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "validToStringPromise"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "@lgd-utils/validate!validToStringType:function(1)",
-          "docComment": "/**\n * @function validToStringType\n *\n * @param value - 值\n *\n * @param type - 类型\n *\n * @typeParam value - unknown\n *\n * @typeParam type - string\n *\n * @returns 返回是否和给定的类型匹配\n */\n",
+          "docComment": "/**\n * @param value - 值\n *\n * @param type - 类型\n *\n * @typeParam value - unknown\n *\n * @typeParam type - string\n *\n * @returns 返回是否和给定的类型匹配 - boolean\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -404,6 +1161,127 @@
             }
           ],
           "name": "validToStringType"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validURL:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * Determine if a value is an URL\n *\n * @param url - The value to test\n *\n * @param lv - 0: 严谨, 1: 宽松, 2: 最宽松; default is 0\n *\n * @typeParam url - string\n *\n * @typeParam lv - number | string\n *\n * @returns boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validURL(url?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", lv?: "
+            },
+            {
+              "kind": "Content",
+              "text": "number | string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "url",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "lv",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "name": "validURL"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/validate!validURLSearchParams:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * Determine if a value is an URLSearchParams object\n *\n * @param value - The value to test\n *\n * @param URLSearchParamsConstructor - The Constructor of URLSearchParams\n *\n * @typeParam value - unknown | undefined\n *\n * @typeParam URLSearchParamsConstructor - typeof URLSearchParams | undefined\n *\n * @returns True if value is an URLSearchParams object, otherwise false - boolean\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function validURLSearchParams(value?: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", URLSearchParamsConstructor?: "
+            },
+            {
+              "kind": "Content",
+              "text": "typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "URLSearchParams",
+              "canonicalReference": "!URLSearchParams:var"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 6,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "parameterName": "URLSearchParamsConstructor",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              }
+            }
+          ],
+          "name": "validURLSearchParams"
         }
       ]
     }

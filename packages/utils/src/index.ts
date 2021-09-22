@@ -11,7 +11,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-06-15 20:12:01
- * @LastEditTime: 2021-09-08 11:08:00
+ * @LastEditTime: 2021-09-22 15:01:10
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\index.ts
@@ -25,7 +25,6 @@ export { default as attemptFuncWithDefaultAndError } from './attemptFuncWithDefa
 export { default as partialEq } from './partialEq'
 export { default as partialEqBy } from './partialEqBy'
 export { default as partialEqWith } from './partialEqWith'
-export { default as regexpTest } from './regexpTest'
 export { default as undefinedTo } from './undefinedTo'
 export { default as assertValue } from './assertValue'
 export { default as normalizeValue } from './normalizeValue'

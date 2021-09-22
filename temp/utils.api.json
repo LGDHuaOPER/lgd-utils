@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.18.9",
+    "toolVersion": "7.18.7",
     "schemaVersion": 1004,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -257,15 +257,6 @@
             },
             {
               "kind": "Content",
-              "text": ";\n    regexpTest: typeof "
-            },
-            {
-              "kind": "Reference",
-              "text": "regexpTest",
-              "canonicalReference": "@lgd-utils/utils!default:function"
-            },
-            {
-              "kind": "Content",
               "text": ";\n    undefinedTo: typeof "
             },
             {
@@ -318,7 +309,7 @@
           "name": "_default",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 30
+            "endIndex": 28
           }
         },
         {
@@ -1103,71 +1094,8 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@lgd-utils/utils!regexpTest:function(1)",
-          "docComment": "/**\n * @param regexp - 正则\n *\n * @param value - 要检查的值\n *\n * @returns 校验结果\n *\n * @typeReturns\n *\n * boolean\n */\n",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "export default function regexpTest(regexp?: "
-            },
-            {
-              "kind": "Reference",
-              "text": "RegExp",
-              "canonicalReference": "!RegExp:interface"
-            },
-            {
-              "kind": "Content",
-              "text": " | unknown"
-            },
-            {
-              "kind": "Content",
-              "text": ", value?: "
-            },
-            {
-              "kind": "Content",
-              "text": "number | string | unknown"
-            },
-            {
-              "kind": "Content",
-              "text": "): "
-            },
-            {
-              "kind": "Content",
-              "text": "boolean"
-            },
-            {
-              "kind": "Content",
-              "text": ";"
-            }
-          ],
-          "returnTypeTokenRange": {
-            "startIndex": 6,
-            "endIndex": 7
-          },
-          "releaseTag": "Public",
-          "overloadIndex": 1,
-          "parameters": [
-            {
-              "parameterName": "regexp",
-              "parameterTypeTokenRange": {
-                "startIndex": 1,
-                "endIndex": 3
-              }
-            },
-            {
-              "parameterName": "value",
-              "parameterTypeTokenRange": {
-                "startIndex": 4,
-                "endIndex": 5
-              }
-            }
-          ],
-          "name": "regexpTest"
-        },
-        {
-          "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!typeDefaultTo:function(1)",
-          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @param options - 配置\n *\n * @param assertTypes - options.assertTypes: 断言类型\n *\n * @param assertEq - options.assertEq: 断言 eq 模式\n *\n * @returns result\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @param options - 配置\n *\n * @param assertTypes - options.assertTypes: 断言类型\n *\n * @param assertEq - options.assertEq: 断言 eq 模式\n *\n * @returns result - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1267,7 +1195,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!undefinedTo:function(1)",
-          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @returns 返回 resolved 值\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @returns 返回 resolved 值 - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

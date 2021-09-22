@@ -32,7 +32,6 @@ const _default: {
     partialEq: typeof partialEq;
     partialEqBy: typeof partialEqBy;
     partialEqWith: typeof partialEqWith;
-    regexpTest: typeof regexpTest;
     undefinedTo: typeof undefinedTo;
     assertValue: typeof assertValue;
     normalizeValue: typeof normalizeValue;
@@ -55,9 +54,6 @@ export function partialEqWith(partialArg?: unknown, comparator?: ((partialArg: u
 
 // @public (undocumented)
 export function promiseSeries(promiseFnList?: Array<(args: unknown[]) => Promise<unknown>> | unknown, thisArg?: unknown, successCb?: (val: unknown) => unknown, errorCb?: (val: unknown) => unknown): Promise<unknown>;
-
-// @public (undocumented)
-export function regexpTest(regexp?: RegExp | unknown, value?: number | string | unknown): boolean;
 
 // @public (undocumented)
 export function typeDefaultTo(value?: unknown, defaultValue?: unknown, { assertTypes, assertEq, negate, }?: {

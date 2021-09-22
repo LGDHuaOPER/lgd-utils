@@ -9,16 +9,15 @@
   },
   "buildOptions": {
     "output": {
-      "name": "LgdUtilsUtils"
+      "name": "LgdUtilsRegexp"
     }
   },
   "dependencies": {
-    "@lgd-utils/regexp": "^0.0.1",
     "lodash": "^4.17.21"
   },
-  "description": "A front-end utils tool",
+  "description": "A front-end regexp tool",
   "devDependencies": {
-    "@types/lodash": "^4.14.172"
+    "@types/lodash": "^4.14.173"
   },
   "directories": {
     "lib": "src",
@@ -29,19 +28,20 @@
     "dist",
     "index.js"
   ],
-  "homepage": "https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils#readme",
-  "jsdelivr": "dist/utils.global.prod.js",
+  "homepage": "https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/regexp#readme",
+  "jsdelivr": "dist/regexp.global.prod.js",
   "keywords": [
+    "reg",
+    "regexp",
+    "test",
     "util",
-    "utils",
     "tool",
-    "assert",
     "front-end"
   ],
   "license": "MIT",
   "main": "index.js",
-  "module": "dist/utils.esm.js",
-  "name": "@lgd-utils/utils",
+  "module": "dist/regexp.esm.js",
+  "name": "@lgd-utils/regexp",
   "publishConfig": {
     "access": "public"
   },
@@ -52,7 +52,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "types": "dist/utils.d.ts",
-  "unpkg": "dist/utils.global.prod.js",
-  "version": "0.0.4"
+  "types": "dist/regexp.d.ts",
+  "unpkg": "dist/regexp.global.prod.js",
+  "version": "0.0.1"
 }

@@ -6,22 +6,78 @@
 
 // @public (undocumented)
 const _default: {
+    validArrayBufferView: typeof validArrayBufferView;
+    validEmail: typeof validEmail;
     validEmptyObject: typeof validEmptyObject;
+    validEmptyString: typeof validEmptyString;
+    validFormData: typeof validFormData;
+    validIPv4: typeof validIPv4;
+    validNilOrEmptyStr: typeof validNilOrEmptyStr;
+    validNonemptyString: typeof validNonemptyString;
+    validObjectKey: typeof validObjectKey;
+    validStream: typeof validStream;
+    validToStringBlob: typeof validToStringBlob;
+    validToStringFile: typeof validToStringFile;
     validToStringObject: typeof validToStringObject;
+    validToStringPromise: typeof validToStringPromise;
     validToStringType: typeof validToStringType;
+    validURL: typeof validURL;
+    validURLSearchParams: typeof validURLSearchParams;
 };
 export default _default;
 
 // @public (undocumented)
-export function validEmptyObject(val?: unknown, iteratee?: (val?: unknown) => unknown | undefined, { assertObject, assertEmpty, }?: {
+export function validArrayBufferView(value?: unknown, ArrayBufferConstructor?: typeof ArrayBuffer): boolean;
+
+// @public (undocumented)
+export function validEmail(email?: unknown, lv?: number | string): boolean;
+
+// @public (undocumented)
+export function validEmptyObject(value?: unknown, iteratee?: (value?: unknown) => unknown | undefined, { assertObject, assertEmpty, }?: {
     assertObject?: typeof validToStringObject;
     assertEmpty?: (value?: unknown) => boolean;
 }): boolean;
 
 // @public (undocumented)
-export function validToStringObject(val?: unknown): boolean;
+export function validEmptyString(value?: unknown, iteratee?: unknown): boolean;
 
-// @public
+// @public (undocumented)
+export function validFormData(value?: unknown, FormDataConstructor?: typeof FormData): boolean;
+
+// @public (undocumented)
+export function validIPv4(ipv4?: unknown, lv?: number | string): boolean;
+
+// @public (undocumented)
+export function validNilOrEmptyStr(value?: unknown): boolean;
+
+// @public (undocumented)
+export function validNonemptyString(value?: unknown, iteratee?: unknown): boolean;
+
+// @public (undocumented)
+export function validObjectKey(objectKey?: unknown, lv?: number | string): boolean;
+
+// @public (undocumented)
+export function validStream(value?: unknown): boolean;
+
+// @public (undocumented)
+export function validToStringBlob(value?: unknown): boolean;
+
+// @public (undocumented)
+export function validToStringFile(value?: unknown): boolean;
+
+// @public (undocumented)
+export function validToStringObject(value?: unknown): boolean;
+
+// @public (undocumented)
+export function validToStringPromise(value?: unknown): boolean;
+
+// @public (undocumented)
 export function validToStringType(value: unknown, type: string): boolean;
+
+// @public (undocumented)
+export function validURL(url?: unknown, lv?: number | string): boolean;
+
+// @public (undocumented)
+export function validURLSearchParams(value?: unknown, URLSearchParamsConstructor?: typeof URLSearchParams): boolean;
 
 ```
