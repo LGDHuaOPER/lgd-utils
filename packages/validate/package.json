@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@lgd-utils/regexp": "^0.0.1",
-    "@lgd-utils/utils": "^0.0.4",
+    "@lgd-utils/utils": "^0.0.5",
     "@types/globalthis": "^1.0.1",
     "globalthis": "^1.0.2",
     "lodash": "^4.17.21"
@@ -56,5 +56,5 @@
   },
   "types": "dist/validate.d.ts",
   "unpkg": "dist/validate.global.prod.js",
-  "version": "0.0.5"
+  "version": "0.0.6"
 }

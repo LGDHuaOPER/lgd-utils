@@ -13,7 +13,7 @@
     }
   },
   "dependencies": {
-    "@lgd-utils/validate": "^0.0.5",
+    "@lgd-utils/validate": "^0.0.6",
     "lodash": "^4.17.21"
   },
   "description": "A front-end object tool",
@@ -54,5 +54,5 @@
   },
   "types": "dist/object.d.ts",
   "unpkg": "dist/object.global.prod.js",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }

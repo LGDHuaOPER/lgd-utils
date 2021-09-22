@@ -50,5 +50,5 @@
   },
   "types": "dist/html.d.ts",
   "unpkg": "dist/html.global.prod.js",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
