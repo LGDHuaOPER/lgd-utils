@@ -17,6 +17,10 @@ const _default: {
     omitUndefined: typeof omitUndefined;
     sortObjectByProp: typeof sortObjectByProp;
     sortProps: typeof sortProps;
+    omitBy: typeof omitBy;
+    omitOwnBy: typeof omitOwnBy;
+    mergeOwn: typeof mergeOwn;
+    safeGet: typeof safeGet;
 };
 export default _default;
 
@@ -39,6 +43,12 @@ export function flatObjectDepth(object?: unknown, depth?: number, preFixKey?: st
 }): Record<string, unknown>;
 
 // @public (undocumented)
+export function mergeOwn(object?: Record<string, unknown> | unknown, sources?: Record<string, unknown> | Array<Record<string, unknown>> | unknown, options?: mergeOwnOptions | unknown): Record<string, unknown>;
+
+// @public (undocumented)
+export function omitBy(object?: unknown, predicate?: unknown, inheritedPredicate?: unknown): Record<string, unknown>;
+
+// @public (undocumented)
 export function omitDeepBy(object?: unknown, predicate?: ((v: unknown, k: string) => boolean) | Array<unknown> | string | unknown, inheritedPredicate?: ((v: unknown, k: string) => boolean) | Array<unknown> | string | unknown | boolean, { assertObject, enableEmptyObject, validEmptyObjectIteratee, assertEmpty, }?: {
     assertObject?: typeof validToStringObject | undefined;
     enableEmptyObject?: boolean | undefined;
@@ -53,6 +63,9 @@ export function omitDeepBy(object?: unknown, predicate?: ((v: unknown, k: string
 export function omitNil(object?: Record<string, unknown> | null): Record<string, unknown>;
 
 // @public (undocumented)
+export function omitOwnBy(object?: unknown, predicate?: unknown): Record<string, unknown>;
+
+// @public (undocumented)
 export function omitOwnDeepBy(object?: unknown, predicate?: ((v: unknown, k: string) => boolean) | Array<unknown> | string | unknown, { assertObject, enableEmptyObject, validEmptyObjectIteratee, assertEmpty, }?: {
     assertObject?: typeof validToStringObject | undefined;
     enableEmptyObject?: boolean | undefined;
@@ -65,6 +78,9 @@ export function omitOwnDeepBy(object?: unknown, predicate?: ((v: unknown, k: str
 
 // @public (undocumented)
 export function omitUndefined(object?: Record<string, unknown> | null): Record<string, unknown>;
+
+// @public (undocumented)
+export function safeGet(object?: unknown, path?: number | string | Array<number | string>, defaultValue?: unknown): unknown;
 
 // @public (undocumented)
 export function sortObjectByProp(object?: Record<string, unknown> | unknown, sortedFn?: (a: unknown, b: unknown) => number): Record<string, unknown>;
