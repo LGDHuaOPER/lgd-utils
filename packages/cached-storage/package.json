@@ -13,7 +13,7 @@
     }
   },
   "dependencies": {
-    "@lgd-utils/validate": "^0.0.10",
+    "@lgd-utils/validate": "^0.0.11",
     "globalthis": "^1.0.2",
     "lodash": "^4.17.21",
     "memorystorage": "^0.12.0"
@@ -60,5 +60,5 @@
   },
   "types": "dist/cached-storage.d.ts",
   "unpkg": "dist/cached-storage.global.prod.js",
-  "version": "0.0.10"
+  "version": "0.0.11"
 }
