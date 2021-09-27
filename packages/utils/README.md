@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-09 20:46:45
- * @LastEditTime: 2021-09-22 19:56:42
+ * @LastEditTime: 2021-09-27 14:10:29
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\README.md
@@ -53,6 +53,7 @@ utils.partialEq('false')('false'); // true
 ## Related
 
 - [@lgd-utils/cached-storage](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/cached-storage) - 一个具有失效功能的缓存存储
+- [@lgd-utils/collection](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/collection) - A front-end collection tool
 - [@lgd-utils/error](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/error) - A front-end error tool
 - [@lgd-utils/html](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/html) - A front-end html tool
 - [@lgd-utils/number](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/number) - A front-end number tool

@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-10 20:12:33
- * @LastEditTime: 2021-09-22 20:48:09
+ * @LastEditTime: 2021-09-27 14:09:38
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\array\README.md
@@ -58,6 +58,7 @@ array.reduceWrap(
 ## Related
 
 - [@lgd-utils/cached-storage](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/cached-storage) - 一个具有失效功能的缓存存储
+- [@lgd-utils/collection](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/collection) - A front-end collection tool
 - [@lgd-utils/error](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/error) - A front-end error tool
 - [@lgd-utils/html](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/html) - A front-end html tool
 - [@lgd-utils/number](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/number) - A front-end number tool

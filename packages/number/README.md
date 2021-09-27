@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-19 22:59:53
- * @LastEditTime: 2021-09-22 17:54:01
+ * @LastEditTime: 2021-09-27 14:10:12
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\number\README.md
@@ -46,6 +46,7 @@ console.log(convertLargeNumber(100000000)); // ['1.00', '亿', 1, 100000000, '']
 
 - [@lgd-utils/array](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/array) - A front-end array tool
 - [@lgd-utils/cached-storage](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/cached-storage) - 一个具有失效功能的缓存存储
+- [@lgd-utils/collection](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/collection) - A front-end collection tool
 - [@lgd-utils/error](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/error) - A front-end error tool
 - [@lgd-utils/html](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/html) - A front-end html tool
 - [@lgd-utils/object](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/object) - A front-end object tool
