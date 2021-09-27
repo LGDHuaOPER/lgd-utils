@@ -92,5 +92,5 @@
     "test-dts-only": "tsc -p ./test-dts/tsconfig.json && tsc -p ./test-dts/tsconfig.build.json",
     "tsc": "tsc"
   },
-  "version": "0.0.11"
+  "version": "0.0.12"
 }
