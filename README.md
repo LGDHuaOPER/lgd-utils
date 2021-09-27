@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-09-22 17:36:20
+ * @LastEditTime: 2021-09-27 14:01:04
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\README.md
@@ -13,6 +13,7 @@
 
 - @lgd-utils/array [![npm](https://img.shields.io/npm/dt/@lgd-utils/array)](https://www.npmjs.com/package/@lgd-utils/array)
 - @lgd-utils/cached-storage [![npm](https://img.shields.io/npm/dt/@lgd-utils/cached-storage)](https://www.npmjs.com/package/@lgd-utils/cached-storage)
+- @lgd-utils/collection [![npm](https://img.shields.io/npm/dt/@lgd-utils/collection)](https://www.npmjs.com/package/@lgd-utils/collection)
 - @lgd-utils/error [![npm](https://img.shields.io/npm/dt/@lgd-utils/error)](https://www.npmjs.com/package/@lgd-utils/error)
 - @lgd-utils/html [![npm](https://img.shields.io/npm/dt/@lgd-utils/html)](https://www.npmjs.com/package/@lgd-utils/html)
 - @lgd-utils/number [![npm](https://img.shields.io/npm/dt/@lgd-utils/number)](https://www.npmjs.com/package/@lgd-utils/number)
@@ -898,9 +899,39 @@ npm run release
 git push --follow-tags origin main
 ```
 
+或
+
+```
+npm run version
+
+npm config set registry https://registry.npmjs.org/
+
+cd packages/<packageName>/
+
+npm login
+
+npm publish --access=public
+
+cd ../../
+
+npm run release
+
+git push --follow-tags origin main
+```
+
 ### 4.2 lerna publish 方式
 ```
 lerna publish
+
+npm run release
+
+git push --follow-tags origin main
+```
+
+或
+
+```
+npm run publish
 
 npm run release
 
