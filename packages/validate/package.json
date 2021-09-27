@@ -15,12 +15,12 @@
   "dependencies": {
     "@lgd-utils/regexp": "^0.0.2",
     "@lgd-utils/utils": "^0.0.8",
-    "@types/globalthis": "^1.0.1",
     "globalthis": "^1.0.2",
     "lodash": "^4.17.21"
   },
   "description": "A front-end verification tool",
   "devDependencies": {
+    "@types/globalthis": "^1.0.1",
     "@types/lodash": "^4.14.172"
   },
   "directories": {

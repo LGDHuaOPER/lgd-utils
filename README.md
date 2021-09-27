@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-09-27 15:02:47
+ * @LastEditTime: 2021-09-27 16:08:10
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\README.md
@@ -62,7 +62,7 @@ lerna add @lgd-utils/validate --scope @lgd-utils/cached-storage
 lerna add globalthis --scope @lgd-utils/cached-storage
 lerna add lodash --scope @lgd-utils/cached-storage
 lerna add memorystorage --scope @lgd-utils/cached-storage
-lerna add @types/globalthis --scope @lgd-utils/cached-storage
+lerna add @types/globalthis --dev --scope @lgd-utils/cached-storage
 lerna add @types/lodash --dev --scope @lgd-utils/cached-storage
 lerna add lodash --scope @lgd-utils/validate
 lerna add @types/lodash --dev --scope @lgd-utils/validate
