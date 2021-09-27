@@ -20,7 +20,7 @@
   "description": "A front-end number tool",
   "devDependencies": {
     "@types/bytes": "^3.1.1",
-    "@types/lodash": "^4.14.173"
+    "@types/lodash": "^4.14.174"
   },
   "directories": {
     "lib": "src",

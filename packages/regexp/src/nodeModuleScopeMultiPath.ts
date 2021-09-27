@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-27 10:13:40
- * @LastEditTime: 2021-09-27 15:45:53
+ * @LastEditTime: 2021-09-27 20:00:50
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\regexp\src\nodeModuleScopeMultiPath.ts
@@ -11,7 +11,7 @@
 import lodashEscapeRegExp from 'lodash/escapeRegExp'
 import lodashIsString from 'lodash/isString'
 import lodashTrim from 'lodash/trim'
-import { validNonemptyString } from '@lgd-utils/validate'
+import validNonemptyString from './_validNonemptyString'
 
 export default function nodeModuleScopeMultiPath(
   scope: string,

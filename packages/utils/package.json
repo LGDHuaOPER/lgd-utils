@@ -18,7 +18,7 @@
   },
   "description": "A front-end utils tool",
   "devDependencies": {
-    "@types/lodash": "^4.14.172"
+    "@types/lodash": "^4.14.174"
   },
   "directories": {
     "lib": "src",

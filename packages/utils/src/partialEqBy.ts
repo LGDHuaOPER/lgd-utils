@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:20:55
- * @LastEditTime: 2021-09-10 20:46:24
+ * @LastEditTime: 2021-09-27 19:57:01
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\partialEqBy.ts
@@ -16,8 +16,7 @@ import partialEq from './partialEq'
 /**
  * @param partialArg - lodashEq()的预设的参数
  * @param iteratee - 迭代函数
- * @returns 返回预设参数的函数
- * @typeReturns (val: unknown) =\> boolean
+ * @returns 返回预设参数的函数 - (val: unknown) =\> boolean
  */
 export default function partialEqBy(
   partialArg?: unknown,

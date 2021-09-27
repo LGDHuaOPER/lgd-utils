@@ -145,17 +145,12 @@ function createConfig(format, output, plugins = []) {
       createReplacePlugin(format, output),
       // @ts-ignore
       isEsmBuildReg.test(format) && require('rollup-plugin-polyfill-node')(),
-      // !isCjsBuildReg.test(format) && require('@rollup/plugin-node-resolve').default(),
-      // !isCjsBuildReg.test(format) &&
-      //   // @ts-ignore
-      //   require('@rollup/plugin-commonjs')({
-      //     sourceMap: false,
-      //   }),
-      require('@rollup/plugin-node-resolve').default(),
-      // @ts-ignore
-      require('@rollup/plugin-commonjs')({
-        sourceMap: false,
-      }),
+      !isCjsBuildReg.test(format) && require('@rollup/plugin-node-resolve').default(),
+      !isCjsBuildReg.test(format) &&
+        // @ts-ignore
+        require('@rollup/plugin-commonjs')({
+          sourceMap: false,
+        }),
       // !isEsmBuildReg.test(format) && require('@rollup/plugin-babel').default({ babelHelpers: 'bundled' }),
       !isEsmBuildReg.test(format) &&
         require('@rollup/plugin-babel').getBabelOutputPlugin({

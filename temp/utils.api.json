@@ -872,7 +872,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!partialEqBy:function(1)",
-          "docComment": "/**\n * @param partialArg - lodashEq()的预设的参数\n *\n * @param iteratee - 迭代函数\n *\n * @returns 返回预设参数的函数\n *\n * @typeReturns\n *\n * (val: unknown) =\\> boolean\n */\n",
+          "docComment": "/**\n * @param partialArg - lodashEq()的预设的参数\n *\n * @param iteratee - 迭代函数\n *\n * @returns 返回预设参数的函数 - (val: unknown) =\\> boolean\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

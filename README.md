@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-09-27 16:08:10
+ * @LastEditTime: 2021-09-27 20:53:20
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\README.md
@@ -861,7 +861,7 @@ git clone git@github.com:LGDHuaOPER/lgd-utils.git
 
 ### 3.2 安装依赖
 ```
-npm run setup / lerna bootstrap --npm-client=cnpm && npm run husky:init
+npm run setup / npm run setup:cnpm
 ```
 
 ### 3.3 新增 package 后链接各个包

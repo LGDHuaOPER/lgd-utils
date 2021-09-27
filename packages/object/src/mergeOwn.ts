@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-25 22:44:14
- * @LastEditTime: 2021-09-25 23:54:51
+ * @LastEditTime: 2021-09-27 20:18:37
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\object\src\mergeOwn.ts
@@ -11,7 +11,6 @@
 import lodashIsFunction from 'lodash/isFunction'
 import lodashIsPlainObject from 'lodash/isPlainObject'
 import lodashMergeWith from 'lodash/mergeWith'
-import lodashOverSome from 'lodash/overSome'
 import lodashStubTrue from 'lodash/stubTrue'
 import omitBy from './omitBy'
 import { validToStringObject } from '@lgd-utils/validate'
@@ -32,6 +31,7 @@ export default function mergeOwn(
     key: string,
     object: Record<string, unknown> | unknown,
     source: Record<string, unknown> | unknown,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     stack: unknown,
   ) => {
     if (!Object.prototype.hasOwnProperty.call(source, key)) return defaultDropPropsSymbol
@@ -57,9 +57,10 @@ export default function mergeOwn(
   const fn = (
     object?: Record<string, unknown> | unknown,
     sources?: Record<string, unknown> | Array<Record<string, unknown>> | unknown,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     options?: mergeOwnOptions | unknown,
   ): Record<string, unknown> => {
-    if (lodashOverSome(objectValidator as (value?: unknown) => boolean, Array.isArray)(sources)) {
+    if ((objectValidator as (value?: unknown) => boolean)(sources) || Array.isArray(sources)) {
       object = objectValidator(object) ? object : stubObject()
       sources = objectValidator(sources)
         ? [sources as Record<string, unknown>]
@@ -74,6 +75,7 @@ export default function mergeOwn(
 
       return omitBy(
         tempObject,
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         (v: unknown, k: string) => v === dropPropsSymbol,
         enableTargetDropInherited ? lodashStubTrue : true,
       )
