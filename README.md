@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-09-27 14:01:04
+ * @LastEditTime: 2021-09-27 15:02:47
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\README.md
@@ -902,7 +902,7 @@ git push --follow-tags origin main
 或
 
 ```
-npm run version
+npm run lerna-version
 
 npm config set registry https://registry.npmjs.org/
 
@@ -931,7 +931,7 @@ git push --follow-tags origin main
 或
 
 ```
-npm run publish
+npm run lerna-publish
 
 npm run release
 

@@ -79,17 +79,17 @@
     "format": "prettier --write --parser typescript \"packages/**/*.ts?(x)\"",
     "husky:init": "node scripts/preHuskyInit.js && husky install && node scripts/postHuskyInit.js",
     "install:no-script": "npm install --ignore-scripts",
+    "lerna-publish": "rimraf packages/*/dist && npm run build && delay 5 && lerna publish",
+    "lerna-version": "rimraf packages/*/dist && npm run build && delay 5 && lerna version",
     "lint": "eslint --ext .ts packages/*/src/**.ts",
     "postinstall": "npm run husky:init",
     "prepare": "npm run husky:init",
-    "publish": "npm run build && delay 5 && lerna publish",
     "release": "standard-version",
     "setup": "lerna bootstrap && npm run husky:init",
     "test": "jest",
     "test-dts": "node scripts/build.js -dt -f esm && npm run test-dts-only",
     "test-dts-only": "tsc -p ./test-dts/tsconfig.json && tsc -p ./test-dts/tsconfig.build.json",
-    "tsc": "tsc",
-    "version": "npm run build && delay 5 && lerna version"
+    "tsc": "tsc"
   },
   "version": "0.0.9"
 }
