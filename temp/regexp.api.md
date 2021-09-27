@@ -6,9 +6,17 @@
 
 // @public (undocumented)
 const _default: {
+    nodeModulePath: typeof nodeModulePath;
+    nodeModuleScopePath: typeof nodeModuleScopePath;
     test: typeof test_2;
 };
 export default _default;
+
+// @public (undocumented)
+export function nodeModulePath(packageName: string, suffix?: number | string): RegExp;
+
+// @public (undocumented)
+export function nodeModuleScopePath(scope: string, packageName: string, suffix?: number | string): RegExp;
 
 // @public (undocumented)
 function test_2(regexp?: RegExp | unknown, value?: number | string | unknown): boolean;
