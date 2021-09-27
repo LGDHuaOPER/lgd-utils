@@ -6,14 +6,22 @@
 
 // @public (undocumented)
 const _default: {
+    nodeModuleMultiPath: typeof nodeModuleMultiPath;
     nodeModulePath: typeof nodeModulePath;
+    nodeModuleScopeMultiPath: typeof nodeModuleScopeMultiPath;
     nodeModuleScopePath: typeof nodeModuleScopePath;
     test: typeof test_2;
 };
 export default _default;
 
 // @public (undocumented)
+export function nodeModuleMultiPath(packageNames: string | string[], suffix?: number | string): RegExp;
+
+// @public (undocumented)
 export function nodeModulePath(packageName: string, suffix?: number | string): RegExp;
+
+// @public (undocumented)
+export function nodeModuleScopeMultiPath(scope: string, packageNames: string | string[], suffix?: number | string): RegExp;
 
 // @public (undocumented)
 export function nodeModuleScopePath(scope: string, packageName: string, suffix?: number | string): RegExp;
