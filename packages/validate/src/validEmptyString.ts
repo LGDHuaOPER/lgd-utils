@@ -2,14 +2,13 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-22 15:08:58
- * @LastEditTime: 2021-09-22 15:36:01
+ * @LastEditTime: 2021-09-28 10:32:20
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\validate\src\validEmptyString.ts
  */
 
 import lodashIsString from 'lodash/isString'
-import lodashOverEvery from 'lodash/overEvery'
 import { partialEqBy } from '@lgd-utils/utils'
 
 /**
@@ -22,5 +21,6 @@ import { partialEqBy } from '@lgd-utils/utils'
  * @returns boolean
  */
 export default function validEmptyString(value?: unknown, iteratee?: unknown): boolean {
-  return lodashOverEvery(lodashIsString, partialEqBy('', iteratee))(value)
+  // return lodashOverEvery(lodashIsString, partialEqBy('', iteratee))(value)
+  return lodashIsString(value) && partialEqBy('', iteratee)(value)
 }
