@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-09-27 20:53:20
+ * @LastEditTime: 2021-09-28 10:54:50
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\README.md
@@ -10,6 +10,10 @@
 <h1 align="center">@lgd-utils</h1>
 
 <h3 align="center">The utils for lgd.</h3>
+
+<p align="center">
+  <a href="https://snyk.io/test/github/LGDHuaOPER/lgd-utils"><img alt="Snyk badge" src="https://snyk.io/test/github/LGDHuaOPER/lgd-utils/badge.svg"></a>
+</p>
 
 - @lgd-utils/array [![npm](https://img.shields.io/npm/dt/@lgd-utils/array)](https://www.npmjs.com/package/@lgd-utils/array)
 - @lgd-utils/cached-storage [![npm](https://img.shields.io/npm/dt/@lgd-utils/cached-storage)](https://www.npmjs.com/package/@lgd-utils/cached-storage)

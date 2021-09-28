@@ -2,32 +2,42 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-26 00:25:18
- * @LastEditTime: 2021-09-26 00:38:42
+ * @LastEditTime: 2021-09-28 11:23:50
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\collection\src\forEach.ts
  */
 
+/**
+ * @remarks
+ * 循环一个集合，执行 function
+ *
+ * @param collection - 要循环的集合
+ * @param fn - 循环执行的 function
+ * @typeParam collection - unknown[] | Record\<string, unknown\> | null | undefined
+ * @typeParam fn - (value: unknown, key: number | string, collection?: unknown[] | Record\<string, unknown\>) =\> void
+ * @returns 返回结果 - void
+ */
 export default function forEach(
-  object: unknown[] | Record<string, unknown> | null | undefined,
-  fn: (value: unknown, key: number | string, object?: unknown[] | Record<string, unknown>) => void,
-) {
-  if (object === null || typeof object === 'undefined') {
+  collection: unknown[] | Record<string, unknown> | null | undefined,
+  fn: (value: unknown, key: number | string, collection?: unknown[] | Record<string, unknown>) => void,
+): void {
+  if (collection === null || typeof collection === 'undefined') {
     return
   }
 
-  if (typeof object !== 'object') {
-    object = [object]
+  if (typeof collection !== 'object') {
+    collection = [collection]
   }
 
-  if (Array.isArray(object)) {
-    for (let i = 0, l = object.length; i < l; i++) {
-      fn.call(null, object[i], i, object)
+  if (Array.isArray(collection)) {
+    for (let i = 0, l = collection.length; i < l; i++) {
+      fn.call(null, collection[i], i, collection)
     }
   } else {
-    for (const key in object) {
-      if (Object.prototype.hasOwnProperty.call(object, key)) {
-        fn.call(null, object[key], key, object)
+    for (const key in collection) {
+      if (Object.prototype.hasOwnProperty.call(collection, key)) {
+        fn.call(null, collection[key], key, collection)
       }
     }
   }

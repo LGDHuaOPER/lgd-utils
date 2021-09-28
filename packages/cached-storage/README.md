@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-08-30 19:45:52
- * @LastEditTime: 2021-09-27 14:09:50
+ * @LastEditTime: 2021-09-28 11:26:11
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\cached-storage\README.md
@@ -21,7 +21,7 @@
 
 </div>
 
-> 一个具有失效功能的缓存存储
+> 一个具有失效功能的缓存存储库
 
 ## Usage
 

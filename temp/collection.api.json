@@ -166,7 +166,7 @@
   },
   "kind": "Package",
   "canonicalReference": "@lgd-utils/collection!",
-  "docComment": "",
+  "docComment": "/**\n * collection\n *\n * @remarks\n *\n * A front-end collection tool\n *\n * @packageDocumentation\n */\n",
   "name": "@lgd-utils/collection",
   "members": [
     {
@@ -207,11 +207,11 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/collection!forEach:function(1)",
-          "docComment": "",
+          "docComment": "/**\n * @remarks\n *\n * 循环一个集合，执行 function\n *\n * @param collection - 要循环的集合\n *\n * @param fn - 循环执行的 function\n *\n * @typeParam collection - unknown[] | Record\\<string, unknown\\> | null | undefined\n *\n * @typeParam fn - (value: unknown, key: number | string, collection?: unknown[] | Record\\<string, unknown\\>) =\\> void\n *\n * @returns 返回结果 - void\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export default function forEach(object: "
+              "text": "export default function forEach(collection: "
             },
             {
               "kind": "Content",
@@ -232,7 +232,7 @@
             },
             {
               "kind": "Content",
-              "text": "(value: unknown, key: number | string, object?: unknown[] | "
+              "text": "(value: unknown, key: number | string, collection?: unknown[] | "
             },
             {
               "kind": "Reference",
@@ -264,7 +264,7 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "object",
+              "parameterName": "collection",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 4

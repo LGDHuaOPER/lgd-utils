@@ -166,7 +166,7 @@
   },
   "kind": "Package",
   "canonicalReference": "@lgd-utils/html!",
-  "docComment": "",
+  "docComment": "/**\n * html\n *\n * @remarks\n *\n * A front-end html tool\n *\n * @packageDocumentation\n */\n",
   "name": "@lgd-utils/html",
   "members": [
     {

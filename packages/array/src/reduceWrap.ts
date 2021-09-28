@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-06-23 17:36:30
- * @LastEditTime: 2021-09-10 21:04:50
+ * @LastEditTime: 2021-09-28 11:05:13
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\array\src\reduceWrap.ts
@@ -21,11 +21,11 @@ import lodashNthArg from 'lodash/nthArg'
  * @param reduceBy - 迭代的方式
  * @param reduceWhile - 什么时候进行迭代
  * @param initialValue - 初始值
- * @typeParam value - any
- * @typeParam reduceBy - any
- * @typeParam reduceWhile - any
- * @typeParam initialValue - any
- * @returns result - 返回迭代的结果
+ * @typeParam value - unknown | undefined
+ * @typeParam reduceBy - ((result?: unknown, v?: unknown, i?: number, arr?: unknown[]) =\> unknown) | unknown | undefined
+ * @typeParam reduceWhile - unknown | undefined
+ * @typeParam initialValue - unknown | undefined
+ * @returns 返回迭代的结果 - unknown
  */
 export default function reduceWrap(
   value?: unknown,

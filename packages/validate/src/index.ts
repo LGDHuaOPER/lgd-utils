@@ -1,5 +1,5 @@
 /**
- * CachedStorage
+ * validate
  *
  * @remarks
  * A front-end verification tool
@@ -11,7 +11,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-08-31 10:19:50
- * @LastEditTime: 2021-09-22 16:30:34
+ * @LastEditTime: 2021-09-28 11:25:34
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\validate\src\index.ts

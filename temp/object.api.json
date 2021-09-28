@@ -166,7 +166,7 @@
   },
   "kind": "Package",
   "canonicalReference": "@lgd-utils/object!",
-  "docComment": "",
+  "docComment": "/**\n * object\n *\n * @remarks\n *\n * A front-end object tool\n *\n * @packageDocumentation\n */\n",
   "name": "@lgd-utils/object",
   "members": [
     {

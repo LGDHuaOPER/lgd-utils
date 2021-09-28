@@ -166,7 +166,7 @@
   },
   "kind": "Package",
   "canonicalReference": "@lgd-utils/validate!",
-  "docComment": "/**\n * CachedStorage\n *\n * @remarks\n *\n * A front-end verification tool\n *\n * @packageDocumentation\n */\n",
+  "docComment": "/**\n * validate\n *\n * @remarks\n *\n * A front-end verification tool\n *\n * @packageDocumentation\n */\n",
   "name": "@lgd-utils/validate",
   "members": [
     {

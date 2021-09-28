@@ -166,7 +166,7 @@
   },
   "kind": "Package",
   "canonicalReference": "@lgd-utils/regexp!",
-  "docComment": "/**\n * CachedStorage\n *\n * @remarks\n *\n * A front-end utils tool\n *\n * @packageDocumentation\n */\n",
+  "docComment": "/**\n * regexp\n *\n * @remarks\n *\n * A front-end regexp tool\n *\n * @packageDocumentation\n */\n",
   "name": "@lgd-utils/regexp",
   "members": [
     {

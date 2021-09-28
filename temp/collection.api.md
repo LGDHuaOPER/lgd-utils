@@ -11,8 +11,6 @@ const _default: {
 export default _default;
 
 // @public (undocumented)
-export function forEach(object: unknown[] | Record<string, unknown> | null | undefined, fn: (value: unknown, key: number | string, object?: unknown[] | Record<string, unknown>) => void): void;
-
-// (No @packageDocumentation comment for this package)
+export function forEach(collection: unknown[] | Record<string, unknown> | null | undefined, fn: (value: unknown, key: number | string, collection?: unknown[] | Record<string, unknown>) => void): void;
 
 ```

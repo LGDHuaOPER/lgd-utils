@@ -88,6 +88,4 @@ export function sortObjectByProp(object?: Record<string, unknown> | unknown, sor
 // @public (undocumented)
 export function sortProps(object?: Record<string, unknown> | unknown, sortedFn?: (a: unknown, b: unknown) => number): Array<string>;
 
-// (No @packageDocumentation comment for this package)
-
 ```

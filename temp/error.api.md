@@ -25,6 +25,4 @@ export class ExtendableError extends Error {
     constructor(message?: string);
 }
 
-// (No @packageDocumentation comment for this package)
-
 ```

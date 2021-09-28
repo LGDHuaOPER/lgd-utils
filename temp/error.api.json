@@ -166,7 +166,7 @@
   },
   "kind": "Package",
   "canonicalReference": "@lgd-utils/error!",
-  "docComment": "",
+  "docComment": "/**\n * error\n *\n * @remarks\n *\n * A front-end error tool\n *\n * @packageDocumentation\n */\n",
   "name": "@lgd-utils/error",
   "members": [
     {

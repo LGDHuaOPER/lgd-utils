@@ -1,5 +1,5 @@
 /**
- * CachedStorage
+ * utils
  *
  * @remarks
  * A front-end utils tool
@@ -11,7 +11,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-06-15 20:12:01
- * @LastEditTime: 2021-09-22 15:01:10
+ * @LastEditTime: 2021-09-28 11:25:23
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\index.ts

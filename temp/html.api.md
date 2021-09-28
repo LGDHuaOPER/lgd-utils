@@ -35,6 +35,4 @@ export default _default;
 // @public (undocumented)
 export function encode(html?: string): string | unknown;
 
-// (No @packageDocumentation comment for this package)
-
 ```

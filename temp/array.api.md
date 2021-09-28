@@ -13,6 +13,4 @@ export default _default;
 // @public (undocumented)
 export function reduceWrap(value?: unknown, reduceBy?: ((result?: unknown, v?: unknown, i?: number, arr?: unknown[]) => unknown) | unknown, reduceWhile?: unknown, initialValue?: unknown): unknown;
 
-// (No @packageDocumentation comment for this package)
-
 ```
