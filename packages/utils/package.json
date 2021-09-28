@@ -13,7 +13,7 @@
     }
   },
   "dependencies": {
-    "@lgd-utils/regexp": "^0.0.4",
+    "@lgd-utils/regexp": "^0.0.5",
     "lodash": "^4.17.21"
   },
   "description": "A front-end utils tool",
@@ -54,5 +54,5 @@
   },
   "types": "dist/utils.d.ts",
   "unpkg": "dist/utils.global.prod.js",
-  "version": "0.0.10"
+  "version": "0.0.11"
 }

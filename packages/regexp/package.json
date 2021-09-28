@@ -54,5 +54,5 @@
   },
   "types": "dist/regexp.d.ts",
   "unpkg": "dist/regexp.global.prod.js",
-  "version": "0.0.4"
+  "version": "0.0.5"
 }
