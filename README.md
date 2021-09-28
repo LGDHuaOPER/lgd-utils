@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-09-28 16:38:40
+ * @LastEditTime: 2021-09-28 17:27:20
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\README.md
@@ -13,18 +13,20 @@
 
 <p align="center">
   <a href="https://snyk.io/test/github/LGDHuaOPER/lgd-utils"><img alt="Snyk badge" src="https://snyk.io/test/github/LGDHuaOPER/lgd-utils/badge.svg"></a>
+  <a href="https://wakatime.com/badge/github/LGDHuaOPER/lgd-utils"><img alt="wakatime" src="https://wakatime.com/badge/github/LGDHuaOPER/lgd-utils.svg"></a>
 </p>
 
-- @lgd-utils/array [![npm](https://img.shields.io/npm/dt/@lgd-utils/array)](https://www.npmjs.com/package/@lgd-utils/array)
-- @lgd-utils/cached-storage [![npm](https://img.shields.io/npm/dt/@lgd-utils/cached-storage)](https://www.npmjs.com/package/@lgd-utils/cached-storage)
-- @lgd-utils/collection [![npm](https://img.shields.io/npm/dt/@lgd-utils/collection)](https://www.npmjs.com/package/@lgd-utils/collection)
-- @lgd-utils/error [![npm](https://img.shields.io/npm/dt/@lgd-utils/error)](https://www.npmjs.com/package/@lgd-utils/error)
-- @lgd-utils/html [![npm](https://img.shields.io/npm/dt/@lgd-utils/html)](https://www.npmjs.com/package/@lgd-utils/html)
-- @lgd-utils/number [![npm](https://img.shields.io/npm/dt/@lgd-utils/number)](https://www.npmjs.com/package/@lgd-utils/number)
-- @lgd-utils/object [![npm](https://img.shields.io/npm/dt/@lgd-utils/object)](https://www.npmjs.com/package/@lgd-utils/object)
-- @lgd-utils/regexp [![npm](https://img.shields.io/npm/dt/@lgd-utils/regexp)](https://www.npmjs.com/package/@lgd-utils/regexp)
-- @lgd-utils/utils [![npm](https://img.shields.io/npm/dt/@lgd-utils/utils)](https://www.npmjs.com/package/@lgd-utils/utils)
-- @lgd-utils/validate [![npm](https://img.shields.io/npm/dt/@lgd-utils/validate)](https://www.npmjs.com/package/@lgd-utils/validate)
+### packages:
+- [@lgd-utils/array](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/array)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/array)](https://www.npmjs.com/package/@lgd-utils/array)
+- [@lgd-utils/cached-storage](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/cached-storage)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/cached-storage)](https://www.npmjs.com/package/@lgd-utils/cached-storage)
+- [@lgd-utils/collection](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/collection)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/collection)](https://www.npmjs.com/package/@lgd-utils/collection)
+- [@lgd-utils/error](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/error)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/error)](https://www.npmjs.com/package/@lgd-utils/error)
+- [@lgd-utils/html](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/html)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/html)](https://www.npmjs.com/package/@lgd-utils/html)
+- [@lgd-utils/number](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/number)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/number)](https://www.npmjs.com/package/@lgd-utils/number)
+- [@lgd-utils/object](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/object)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/object)](https://www.npmjs.com/package/@lgd-utils/object)
+- [@lgd-utils/regexp](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/regexp)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/regexp)](https://www.npmjs.com/package/@lgd-utils/regexp)
+- [@lgd-utils/utils](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/utils)](https://www.npmjs.com/package/@lgd-utils/utils)
+- [@lgd-utils/validate](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/validate)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/validate)](https://www.npmjs.com/package/@lgd-utils/validate)
 
 ## 1. 项目准备
 ### 1.1 全局安装 lerna 和 typescript
