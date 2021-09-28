@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-09-28 10:54:50
+ * @LastEditTime: 2021-09-28 16:38:40
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\README.md
@@ -889,7 +889,19 @@ npm run available
 lerna version
 
 npm config set registry https://registry.npmjs.org/
+```
 
+或
+
+```
+npm run lerna-version
+
+npm config set registry https://registry.npmjs.org/
+```
+
+然后
+
+```
 cd packages/<packageName>/
 
 npm login
@@ -906,17 +918,9 @@ git push --follow-tags origin main
 或
 
 ```
-npm run lerna-version
-
-npm config set registry https://registry.npmjs.org/
-
-cd packages/<packageName>/
-
 npm login
 
-npm publish --access=public
-
-cd ../../
+lerna exec -- "npm publish --access=public" / lerna exec --scope @lgd-utils/cached-storage -- "npm publish --access=public"
 
 npm run release
 
