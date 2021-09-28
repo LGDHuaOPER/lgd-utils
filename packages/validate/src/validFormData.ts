@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-22 15:37:38
- * @LastEditTime: 2021-09-27 16:32:44
+ * @LastEditTime: 2021-09-28 14:26:53
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\validate\src\validFormData.ts
@@ -13,6 +13,7 @@ import globalThis from './_globalThis'
 /**
  * @remarks
  * Determine if a value is a FormData
+ *
  * @param value - The value to test
  * @param FormDataConstructor - The Constructor of FormData
  * @typeParam value - unknown | undefined

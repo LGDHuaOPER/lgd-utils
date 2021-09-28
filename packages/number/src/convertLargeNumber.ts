@@ -2,12 +2,22 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-18 13:41:11
- * @LastEditTime: 2021-09-18 17:42:24
+ * @LastEditTime: 2021-09-28 14:16:01
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\number\src\convertLargeNumber.ts
  */
 
+/**
+ * @remarks
+ * 转换大额数字
+ *
+ * @param value - 要转换的数字
+ * @param precision - 精度
+ * @typeParam value - number | string | undefined
+ * @typeParam precision - number | undefined
+ * @returns [转换后的值, 转换后的单位, 数字类型的转换后的值, 原始的要转换的数字, 原始的要转换的单位] - [string, string, number, number, string]
+ */
 export default function convertLargeNumber(
   value?: number | string,
   precision?: number,

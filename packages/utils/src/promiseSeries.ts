@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:26:09
- * @LastEditTime: 2021-09-10 20:47:29
+ * @LastEditTime: 2021-09-28 14:25:23
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\promiseSeries.ts
@@ -16,8 +16,7 @@ import lodashIsFunction from 'lodash/isFunction'
  * @param thisArg - 绑定的this对象
  * @param successCb - 成功回调
  * @param errorCb - 失败回调
- * @returns promise
- * @typeReturns Promise<unknown>
+ * @returns promise - Promise<unknown>
  */
 export default function promiseSeries(
   promiseFnList?: Array<(args: unknown[]) => Promise<unknown>> | unknown,

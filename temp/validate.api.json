@@ -472,7 +472,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/validate!validEmptyObject:function(1)",
-          "docComment": "",
+          "docComment": "/**\n * @remarks\n *\n * 校验空对象\n *\n * @param value - 对象\n *\n * @param iteratee - 迭代函数\n *\n * @param options - 配置\n *\n * @typeParam value - unknown | undefined\n *\n * @typeParam iteratee - (value?: unknown) =\\> unknown | undefined\n *\n * @typeParam options___assertObject - typeof validToStringObject | undefined\n *\n * @typeParam options___assertEmpty - (value?: unknown) =\\> boolean | undefined\n *\n * @returns 检验结果 - boolean\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

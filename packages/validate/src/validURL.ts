@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-22 16:17:07
- * @LastEditTime: 2021-09-22 16:19:57
+ * @LastEditTime: 2021-09-28 14:26:10
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\validate\src\validURL.ts
@@ -14,6 +14,7 @@ import { test } from '@lgd-utils/regexp'
 /**
  * @remarks
  * Determine if a value is an URL
+ *
  * @param url - The value to test
  * @param lv - 0: 严谨, 1: 宽松, 2: 最宽松; default is 0
  * @typeParam url - string

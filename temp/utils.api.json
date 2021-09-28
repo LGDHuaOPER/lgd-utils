@@ -315,7 +315,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!assertValue:function(1)",
-          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param assertion - 断言模式\n *\n * @returns 是否与断言模式匹配\n *\n * @typeReturns\n *\n * boolean\n */\n",
+          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param assertion - 断言模式\n *\n * @returns 是否与断言模式匹配 - boolean\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -391,7 +391,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!attemptFunc:function(1)",
-          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param args - 调用 func 时，传递的参数\n *\n * @typeParam func - ((...args: unknown[]) =\\> unknown) | undefined\n *\n * @typeParam args - unknown[]\n *\n * @returns 返回 func 调用结果或者错误对象或者 func\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param args - 调用 func 时，传递的参数\n *\n * @typeParam func - ((...args: unknown[]) =\\> unknown) | undefined\n *\n * @typeParam args - unknown[]\n *\n * @returns 返回 func 调用结果或者错误对象或者 func - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -449,7 +449,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!attemptFuncWithDefault:function(1)",
-          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns result - 返回func结果或者出错时的默认值或者func\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns 返回func结果或者出错时的默认值或者func - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -522,7 +522,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!attemptFuncWithDefaultAndError:function(1)",
-          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns 返回func结果或者出错时的默认值或者func\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns 返回func结果或者出错时的默认值或者func - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -610,7 +610,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!attemptFuncWithError:function(1)",
-          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns 返回func结果或者出错时的默认值或者func\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns 返回func结果或者出错时的默认值或者func - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -683,7 +683,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!attemptFuncWithLazyDefault:function(1)",
-          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param args - 调用 func 时，传递的参数\n *\n * @typeParam func - ((...args: unknown[]) =\\> unknown) | undefined\n *\n * @typeParam defaultV - (() =\\> unknown) | undefined\n *\n * @typeParam args - unknown[]\n *\n * @returns 返回 func 调用结果或者出错时的默认值或者 func\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param args - 调用 func 时，传递的参数\n *\n * @typeParam func - ((...args: unknown[]) =\\> unknown) | undefined\n *\n * @typeParam defaultV - (() =\\> unknown) | undefined\n *\n * @typeParam args - unknown[]\n *\n * @returns 返回 func 调用结果或者出错时的默认值或者 func - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -756,7 +756,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!normalizeValue:function(1)",
-          "docComment": "/**\n * @param value - 要 normalize 的值\n *\n * @param type - normalize type\n *\n * @param defaultVal - 默认值\n *\n * @returns normalize 后的值\n *\n * @typeReturns\n *\n * unknown\n */\n",
+          "docComment": "/**\n * @param value - 要 normalize 的值\n *\n * @param type - normalize type\n *\n * @param defaultVal - 默认值\n *\n * @returns normalize 后的值 - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -930,7 +930,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!partialEqWith:function(1)",
-          "docComment": "/**\n * @param partialArg - comparator 的预设的参数\n *\n * @param comparator - 比较函数\n *\n * @returns 返回预设参数的比较函数\n *\n * @typeReturns\n *\n * (val: unknown) =\\> boolean\n */\n",
+          "docComment": "/**\n * @param partialArg - comparator 的预设的参数\n *\n * @param comparator - 比较函数\n *\n * @returns 返回预设参数的比较函数 - (val: unknown) =\\> boolean\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -988,7 +988,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!promiseSeries:function(1)",
-          "docComment": "/**\n * @param promiseFnList - 返回 promise 的函数数组\n *\n * @param thisArg - 绑定的this对象\n *\n * @param successCb - 成功回调\n *\n * @param errorCb - 失败回调\n *\n * @returns promise\n *\n * @typeReturns\n *\n * Promise<unknown>\n */\n",
+          "docComment": "/**\n * @param promiseFnList - 返回 promise 的函数数组\n *\n * @param thisArg - 绑定的this对象\n *\n * @param successCb - 成功回调\n *\n * @param errorCb - 失败回调\n *\n * @returns promise - Promise<unknown>\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

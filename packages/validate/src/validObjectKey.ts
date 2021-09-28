@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-22 16:27:29
- * @LastEditTime: 2021-09-27 20:30:29
+ * @LastEditTime: 2021-09-28 14:26:37
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\validate\src\validObjectKey.ts
@@ -15,6 +15,7 @@ import lodashIsSymbol from 'lodash/isSymbol'
 /**
  * @remarks
  * Determine if a value is an objectKey
+ *
  * @param objectKey - The value to test
  * @param lv - 0: 严谨, 1: 宽松, 2: 最宽松; default is 0
  * @typeParam objectKey - unknown | undefined

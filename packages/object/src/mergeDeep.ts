@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-26 00:15:30
- * @LastEditTime: 2021-09-26 21:56:53
+ * @LastEditTime: 2021-09-28 14:21:09
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\object\src\mergeDeep.ts
@@ -14,9 +14,17 @@ import lodashLast from 'lodash/last'
 import lodashSet from 'lodash/set'
 import safeGet from './safeGet'
 
+/**
+ * @remarks
+ * 递归合并数组或对象
+ *
+ * @param args - 要合并的数组或对象，最后一个可以传 'object' 或 'array' 标记合并行为
+ * @typeParam args - Array\<unknown[] | Record\<string, unknown\> | 'object' | 'array' | unknown\>
+ * @returns 合并后的数组或对象 - Record\<string, unknown\>
+ */
 export default function mergeDeep(
   ...args: Array<unknown[] | Record<string, unknown> | 'object' | 'array' | unknown>
-): Record<string, unknown> {
+): unknown[] | Record<string, unknown> {
   const last = lodashLast(args)
   let result = {}
   let offset = 0

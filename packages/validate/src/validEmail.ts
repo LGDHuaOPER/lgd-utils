@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-22 14:41:14
- * @LastEditTime: 2021-09-22 15:08:18
+ * @LastEditTime: 2021-09-28 14:27:03
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\validate\src\validEmail.ts
@@ -14,6 +14,7 @@ import { test } from '@lgd-utils/regexp'
 /**
  * @remarks
  * 校验 email
+ *
  * @param email - The value to test
  * @param lv - 0: 严谨, 1: 宽松; default is 0
  * @typeParam email - string

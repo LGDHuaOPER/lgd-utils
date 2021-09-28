@@ -216,7 +216,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/html!decode:function(1)",
-          "docComment": "",
+          "docComment": "/**\n * @remarks\n *\n * 反转义字符串中的 HTML 实体字符\n *\n * @param text - 字符串\n *\n * @typeParam text - string | undefined\n *\n * @returns 返回结果 - string | unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -280,7 +280,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/html!encode:function(1)",
-          "docComment": "",
+          "docComment": "/**\n * @remarks\n *\n * 转义字符串中的 HTML 实体字符\n *\n * @param html - 字符串\n *\n * @typeParam html - string | undefined\n *\n * @returns 返回结果 - string | unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

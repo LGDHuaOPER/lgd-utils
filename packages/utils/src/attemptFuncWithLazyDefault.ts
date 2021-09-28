@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:13:50
- * @LastEditTime: 2021-09-10 20:44:06
+ * @LastEditTime: 2021-09-28 14:24:52
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\attemptFuncWithLazyDefault.ts
@@ -18,8 +18,7 @@ import lodashIsFunction from 'lodash/isFunction'
  * @typeParam func - ((...args: unknown[]) =\> unknown) | undefined
  * @typeParam defaultV - (() =\> unknown) | undefined
  * @typeParam args - unknown[]
- * @returns 返回 func 调用结果或者出错时的默认值或者 func
- * @typeReturns unknown
+ * @returns 返回 func 调用结果或者出错时的默认值或者 func - unknown
  */
 export default function attemptFuncWithLazyDefault(
   func?: ((...args: unknown[]) => unknown) | unknown,

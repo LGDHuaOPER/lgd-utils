@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-22 15:43:34
- * @LastEditTime: 2021-09-22 15:48:34
+ * @LastEditTime: 2021-09-28 14:26:49
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\validate\src\validIPv4.ts
@@ -14,6 +14,7 @@ import { test } from '@lgd-utils/regexp'
 /**
  * @remarks
  * Determine if a value is an IPv4
+ *
  * @param ipv4 - The value to test
  * @param lv - 0: 严谨, 1: 宽松; default is 0
  * @typeParam ipv4 - unknown | undefined
