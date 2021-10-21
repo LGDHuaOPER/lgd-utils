@@ -7,6 +7,7 @@
 // @public (undocumented)
 const _default: {
     validArrayBufferView: typeof validArrayBufferView;
+    validCacheLike: typeof validCacheLike;
     validEmail: typeof validEmail;
     validEmptyObject: typeof validEmptyObject;
     validEmptyString: typeof validEmptyString;
@@ -28,6 +29,9 @@ export default _default;
 
 // @public (undocumented)
 export function validArrayBufferView(value?: unknown, ArrayBufferConstructor?: typeof ArrayBuffer): boolean;
+
+// @public (undocumented)
+export function validCacheLike(cache?: CacheLike<unknown>): boolean;
 
 // @public (undocumented)
 export function validEmail(email?: unknown, lv?: number | string): boolean;

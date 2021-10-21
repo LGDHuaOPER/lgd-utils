@@ -37,8 +37,19 @@ const _default: {
     normalizeValue: typeof normalizeValue;
     promiseSeries: typeof promiseSeries;
     typeDefaultTo: typeof typeDefaultTo;
+    nilTo: typeof nilTo;
+    disableEnable: typeof disableEnable;
 };
 export default _default;
+
+// @public (undocumented)
+export function disableEnable(disable?: boolean | null, enable?: boolean | null, enableByDefault?: boolean, { firstAssert, returnAssert }?: {
+    firstAssert?: string | undefined;
+    returnAssert?: string | undefined;
+}): boolean;
+
+// @public (undocumented)
+export function nilTo(value?: unknown, defaultValue?: unknown): unknown;
 
 // @public (undocumented)
 export function normalizeValue(value: unknown, type?: string, defaultVal?: unknown): unknown;
