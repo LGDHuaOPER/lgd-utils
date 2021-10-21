@@ -123,6 +123,10 @@ function createConfig(format, output, plugins = []) {
       : [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})]
   }
 
+  const extraExternal = getProp4PkgBuildOptions('_extraExternal', format)
+  if (Array.isArray(extraExternal)) external = external.concat(extraExternal)
+
+  /* lodash 使用按需加载 */
   if (external.includes('lodash')) external = external.concat(/^lodash\/\w+$/)
 
   output.globals = getProp4PkgBuildOptions('output.globals', format, {})

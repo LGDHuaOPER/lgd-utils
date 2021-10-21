@@ -9,7 +9,22 @@
   },
   "buildOptions": {
     "output": {
+      "globals": {
+        "axios": "axios"
+      },
       "name": "LgdUtilsAxios"
+    },
+    "_cjs": {
+      "_extraExternal": [
+        "axios/lib/core/buildFullPath",
+        "axios/lib/helpers/buildURL"
+      ]
+    },
+    "_esm": {
+      "_extraExternal": [
+        "axios/lib/core/buildFullPath",
+        "axios/lib/helpers/buildURL"
+      ]
     },
     "_global": {
       "external": [

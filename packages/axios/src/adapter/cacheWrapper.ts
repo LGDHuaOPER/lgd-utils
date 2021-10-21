@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-21 10:20:25
- * @LastEditTime: 2021-10-21 11:20:08
+ * @LastEditTime: 2021-10-21 14:53:50
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\axios\src\adapter\cacheWrapper.ts
@@ -23,7 +23,7 @@ import { omitNil, sortObjectByProp } from '@lgd-utils/object'
 export default function cacheWrapper(
   adapter: AxiosAdapter | undefined = axios.defaults.adapter,
   options: CacheWrapperOptions | undefined = {},
-) {
+): AxiosAdapter {
   const {
     cacheDelWhenErrorPath = 'cacheDelWhenError',
     cacheKeyPath = 'cacheKey',

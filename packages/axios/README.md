@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-10 20:12:33
- * @LastEditTime: 2021-10-21 13:56:15
+ * @LastEditTime: 2021-10-21 15:16:04
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\axios\README.md
@@ -39,6 +39,12 @@ http.get('/api/userInfo'); // make real http request
 http.get('/api/userInfo'); // use the response from the cache of previous request, without real http request made
 http.get('/api/userInfo', { forceUpdateCache: true }); // will forceUpdate the cache and the the real http request invoked
 http.get('/api/userInfo', { disableCache: true }); // disable cache manually and the the real http request invoked
+```
+
+#### 注意
+- 如果使用 dist/axios.global.prod.js，需要先引入 axios
+```
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 ```
 
 ## Contribute

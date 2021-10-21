@@ -1,4 +1,6 @@
 {
+  // 解决报错 -- [BABEL] Note: The code generator has deoptimised the styling of undefined as it exceeds the max of 500KB.
+  "compact": false,
   "presets": [
     [
       "@babel/preset-env",
