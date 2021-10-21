@@ -9,19 +9,26 @@
   },
   "buildOptions": {
     "output": {
-      "name": "LgdUtilsCachedStorage"
+      "name": "LgdUtilsAxios"
+    },
+    "_global": {
+      "external": [
+        "axios"
+      ]
     }
   },
   "dependencies": {
+    "@lgd-utils/object": "^0.0.9",
+    "@lgd-utils/utils": "^0.0.11",
     "@lgd-utils/validate": "^0.0.12",
-    "globalthis": "^1.0.2",
+    "axios": "^0.23.0",
     "lodash": "^4.17.21",
-    "memorystorage": "^0.12.0"
+    "lru-cache": "^6.0.0"
   },
-  "description": "一个具有失效功能的缓存存储库",
+  "description": "A axios adapter and middleware tool",
   "devDependencies": {
-    "@types/globalthis": "^1.0.1",
-    "@types/lodash": "^4.14.176"
+    "@types/lodash": "^4.14.176",
+    "@types/lru-cache": "^5.1.1"
   },
   "directories": {
     "lib": "src",
@@ -32,22 +39,21 @@
     "dist",
     "index.js"
   ],
-  "homepage": "https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/cached-storage#readme",
-  "jsdelivr": "dist/cached-storage.global.prod.js",
+  "homepage": "https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/axios#readme",
+  "jsdelivr": "dist/axios.global.prod.js",
   "keywords": [
-    "cache",
-    "storage",
-    "web-storage",
-    "cache-storage",
-    "memory-storage",
-    "util",
-    "tool",
-    "front-end"
+    "axios",
+    "http",
+    "request",
+    "response",
+    "middleware",
+    "adapter",
+    "cache"
   ],
   "license": "MIT",
   "main": "index.js",
-  "module": "dist/cached-storage.esm.js",
-  "name": "@lgd-utils/cached-storage",
+  "module": "dist/axios.esm.js",
+  "name": "@lgd-utils/axios",
   "publishConfig": {
     "access": "public"
   },
@@ -58,7 +64,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "types": "dist/cached-storage.d.ts",
-  "unpkg": "dist/cached-storage.global.prod.js",
-  "version": "0.0.12"
+  "types": "dist/axios.d.ts",
+  "unpkg": "dist/axios.global.prod.js",
+  "version": "0.0.1"
 }

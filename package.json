@@ -72,6 +72,7 @@
     "build": "node scripts/build.js",
     "build:t": "node scripts/build.js -t",
     "build:t:trace": "node scripts/build.js -t --trace-warnings",
+    "clean": "npm cache clean --force && rimraf node_modules/ && lerna exec -- rimraf node_modules/",
     "commit": "cross-env GIT_COMMIT_TYPE=CZ cz",
     "commit:bash": "cross-env GIT_COMMIT_TYPE=CZ winpty cz.cmd",
     "coverage": "jest --coverage",

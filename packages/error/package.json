@@ -17,7 +17,7 @@
   },
   "description": "A front-end error tool",
   "devDependencies": {
-    "@types/lodash": "^4.14.174"
+    "@types/lodash": "^4.14.176"
   },
   "directories": {
     "lib": "src",
