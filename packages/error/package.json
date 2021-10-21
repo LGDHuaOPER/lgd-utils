@@ -55,5 +55,5 @@
   },
   "types": "dist/error.d.ts",
   "unpkg": "dist/error.global.prod.js",
-  "version": "0.0.6"
+  "version": "0.0.7"
 }

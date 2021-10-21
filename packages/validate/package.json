@@ -13,8 +13,8 @@
     }
   },
   "dependencies": {
-    "@lgd-utils/regexp": "^0.0.5",
-    "@lgd-utils/utils": "^0.0.11",
+    "@lgd-utils/regexp": "^0.0.6",
+    "@lgd-utils/utils": "^0.0.12",
     "globalthis": "^1.0.2",
     "lodash": "^4.17.21"
   },
@@ -56,5 +56,5 @@
   },
   "types": "dist/validate.d.ts",
   "unpkg": "dist/validate.global.prod.js",
-  "version": "0.0.12"
+  "version": "0.0.13"
 }

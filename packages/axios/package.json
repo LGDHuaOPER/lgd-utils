@@ -33,9 +33,9 @@
     }
   },
   "dependencies": {
-    "@lgd-utils/object": "^0.0.9",
-    "@lgd-utils/utils": "^0.0.11",
-    "@lgd-utils/validate": "^0.0.12",
+    "@lgd-utils/object": "^0.0.10",
+    "@lgd-utils/utils": "^0.0.12",
+    "@lgd-utils/validate": "^0.0.13",
     "axios": "^0.23.0",
     "lodash": "^4.17.21",
     "lru-cache": "^6.0.0"
