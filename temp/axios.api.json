@@ -240,17 +240,9 @@
               "text": "): "
             },
             {
-              "kind": "Content",
-              "text": "(config: "
-            },
-            {
               "kind": "Reference",
-              "text": "AxiosRequestConfig",
-              "canonicalReference": "axios!AxiosRequestConfig:interface"
-            },
-            {
-              "kind": "Content",
-              "text": ") => any"
+              "text": "AxiosAdapter",
+              "canonicalReference": "axios!AxiosAdapter:interface"
             },
             {
               "kind": "Content",
@@ -259,7 +251,7 @@
           ],
           "returnTypeTokenRange": {
             "startIndex": 7,
-            "endIndex": 10
+            "endIndex": 8
           },
           "releaseTag": "Public",
           "overloadIndex": 1,

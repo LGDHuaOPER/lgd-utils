@@ -5,10 +5,9 @@
 ```ts
 
 import { AxiosAdapter } from 'axios';
-import { AxiosRequestConfig } from 'axios';
 
 // @public (undocumented)
-export function adapterCacheWrapper(adapter?: AxiosAdapter | undefined, options?: CacheWrapperOptions | undefined): (config: AxiosRequestConfig) => any;
+export function adapterCacheWrapper(adapter?: AxiosAdapter | undefined, options?: CacheWrapperOptions | undefined): AxiosAdapter;
 
 // @public (undocumented)
 const _default: {
