@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-08-30 19:45:52
- * @LastEditTime: 2021-09-28 11:26:11
+ * @LastEditTime: 2021-10-21 13:58:14
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\cached-storage\README.md
@@ -53,6 +53,7 @@ setTimeout (function () {
 ## Related
 
 - [@lgd-utils/array](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/array) - A front-end array tool
+- [@lgd-utils/axios](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/axios) - A axios adapter and middleware tool
 - [@lgd-utils/collection](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/collection) - A front-end collection tool
 - [@lgd-utils/error](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/error) - A front-end error tool
 - [@lgd-utils/html](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/html) - A front-end html tool
