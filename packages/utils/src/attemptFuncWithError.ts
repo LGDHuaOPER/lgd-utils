@@ -2,14 +2,15 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:15:37
- * @LastEditTime: 2021-09-28 14:24:46
+ * @LastEditTime: 2021-10-21 09:51:59
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\attemptFuncWithError.ts
  */
 
-import attemptFunc from './attemptFunc'
 import lodashIsError from 'lodash/isError'
+
+import attemptFunc from './attemptFunc'
 
 /**
  * @param func - 要尝试调用的函数

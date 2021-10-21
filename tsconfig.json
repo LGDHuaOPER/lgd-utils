@@ -122,6 +122,7 @@
   "include": [
     "packages/built-in.d.ts",
     "packages/global.d.ts",
+    "packages/lib.d.ts",
     "packages/*/__tests__",
     "packages/*/src",
     "packages/*/types",

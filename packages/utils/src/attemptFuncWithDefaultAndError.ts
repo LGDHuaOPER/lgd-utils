@@ -2,14 +2,15 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:18:37
- * @LastEditTime: 2021-09-28 14:24:39
+ * @LastEditTime: 2021-10-21 10:00:54
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\attemptFuncWithDefaultAndError.ts
  */
 
-import attemptFuncWithDefault from './attemptFuncWithDefault'
 import lodashIsError from 'lodash/isError'
+
+import attemptFuncWithDefault from './attemptFuncWithDefault'
 
 /**
  * @param func - 要尝试调用的函数

@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:20:55
- * @LastEditTime: 2021-09-27 19:57:01
+ * @LastEditTime: 2021-10-21 10:00:31
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\partialEqBy.ts
@@ -10,7 +10,7 @@
 
 import lodashEq from 'lodash/eq'
 import lodashIsFunction from 'lodash/isFunction'
-import lodashWrap from 'lodash/wrap'
+
 import partialEq from './partialEq'
 
 /**
@@ -23,7 +23,8 @@ export default function partialEqBy(
   iteratee?: ((val: unknown) => unknown) | unknown,
 ): (val: unknown) => boolean {
   if (!lodashIsFunction(iteratee)) return partialEq(partialArg)
-  return lodashWrap(lodashEq, function (func: (val: unknown, other: unknown) => boolean, val: unknown) {
-    return func(partialArg, (iteratee as (val: unknown) => unknown)(val))
-  })
+  // return lodashWrap(lodashEq, function (func: (val: unknown, other: unknown) => boolean, val: unknown) {
+  //   return func(partialArg, (iteratee as (val: unknown) => unknown)(val))
+  // })
+  return (val: unknown): boolean => lodashEq(partialArg, (iteratee as (val: unknown) => unknown)(val))
 }

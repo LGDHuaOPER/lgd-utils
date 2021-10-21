@@ -2,13 +2,14 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-05 21:19:57
- * @LastEditTime: 2021-09-22 16:31:11
+ * @LastEditTime: 2021-10-21 09:42:18
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\validate\src\validate.default.ts
  */
 
 import validArrayBufferView from './validArrayBufferView'
+import validCacheLike from './validCacheLike'
 import validEmail from './validEmail'
 import validEmptyObject from './validEmptyObject'
 import validEmptyString from './validEmptyString'
@@ -28,6 +29,7 @@ import validURLSearchParams from './validURLSearchParams'
 
 export default {
   validArrayBufferView,
+  validCacheLike,
   validEmail,
   validEmptyObject,
   validEmptyString,

@@ -2,14 +2,15 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:26:09
- * @LastEditTime: 2021-09-28 14:25:23
+ * @LastEditTime: 2021-10-21 09:54:51
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\promiseSeries.ts
  */
 
-import attemptFuncWithDefaultAndError from './attemptFuncWithDefaultAndError'
 import lodashIsFunction from 'lodash/isFunction'
+
+import attemptFuncWithDefaultAndError from './attemptFuncWithDefaultAndError'
 
 /**
  * @param  promiseFnList - 返回 promise 的函数数组

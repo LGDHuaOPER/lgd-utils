@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-09-28 17:27:20
+ * @LastEditTime: 2021-10-21 09:39:55
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\README.md
@@ -206,6 +206,7 @@ npx tsc --init
   "include": [
     "packages/built-in.d.ts",
     "packages/global.d.ts",
+    "packages/lib.d.ts",
     "packages/*/__tests__",
     "packages/*/src",
     "packages/*/types",
