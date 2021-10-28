@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@lgd-utils/object": "^0.0.10",
+    "@lgd-utils/symbol": "^0.0.1",
     "@lgd-utils/utils": "^0.0.12",
     "@lgd-utils/validate": "^0.0.13",
     "axios": "^0.23.0",

@@ -1,43 +1,34 @@
 <!--
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
- * @Date: 2021-09-01 17:04:33
- * @LastEditTime: 2021-10-28 17:11:44
+ * @Date: 2021-09-22 14:52:08
+ * @LastEditTime: 2021-10-28 17:10:51
  * @LastEditors: shiconghua
  * @Description: file content
- * @FilePath: \lgd-utils\packages\validate\README.md
+ * @FilePath: \lgd-utils\packages\symbol\README.md
 -->
-# `@lgd-utils/validate`
+# `@lgd-utils/symbol`
 
 <div align="center">
 
-[![Bundle size](https://img.shields.io/bundlephobia/minzip/@lgd-utils/validate.svg)](https://bundlephobia.com/result?p=@lgd-utils/validate)
+[![Bundle size](https://img.shields.io/bundlephobia/minzip/@lgd-utils/symbol.svg)](https://bundlephobia.com/result?p=@lgd-utils/symbol)
 [![MIT](https://img.shields.io/badge/license-MIT-000000.svg)](https://opensource.org/licenses/MIT/)
-[![NPM downloads](https://img.shields.io/npm/dm/@lgd-utils/validate.svg?style=flat)](https://npmjs.org/package/@lgd-utils/validate)
-[![NPM version](https://img.shields.io/npm/v/@lgd-utils/validate.svg?style=flat)](https://npmjs.org/package/@lgd-utils/validate)
+[![NPM downloads](https://img.shields.io/npm/dm/@lgd-utils/symbol.svg?style=flat)](https://npmjs.org/package/@lgd-utils/symbol)
+[![NPM version](https://img.shields.io/npm/v/@lgd-utils/symbol.svg?style=flat)](https://npmjs.org/package/@lgd-utils/symbol)
 [![lodash](https://img.shields.io/badge/lodash-4-green.svg)](https://github.com/lodash/lodash)
-[![npm](https://img.shields.io/npm/dt/@lgd-utils/validate)](https://www.npmjs.com/package/@lgd-utils/validate)
+[![npm](https://img.shields.io/npm/dt/@lgd-utils/symbol)](https://www.npmjs.com/package/@lgd-utils/symbol)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 </div>
 
-> A front-end verification tool
+> A front-end symbol tool
 
 ## Usage
 
 ```
-import validate from '@lgd-utils/validate';
-import lodashTrim from 'lodash/trim';
+import symbol from '@lgd-utils/symbol';
 
-validate.validToStringType(1, 'Number'); // true
-validate.validToStringType(undefined, 'Null'); // false
-validate.validToStringType(void 0, 'Undefined'); // true
-validate.validToStringType(function () {}, 'Object'); // false
-
-validate.validEmptyString(1); // false
-validate.validEmptyString('  '); // false
-validate.validEmptyString(''); // true
-validate.validEmptyString('  ', lodashTrim); // true
+console.log(symbol.defaultDropPropsSymbol); // Symbol(__defaultDropPropsSymbol__)
 ```
 
 ## Contribute
@@ -46,7 +37,7 @@ validate.validEmptyString('  ', lodashTrim); // true
 
 ## Documentation
 
-- [Quick tutorial](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/validate#readme)
+- [Quick tutorial](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/symbol#readme)
 - [Issue](https://github.com/LGDHuaOPER/lgd-utils/issues)
 
 ## Related
@@ -60,8 +51,8 @@ validate.validEmptyString('  ', lodashTrim); // true
 - [@lgd-utils/number](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/number) - A front-end number tool
 - [@lgd-utils/object](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/object) - A front-end object tool
 - [@lgd-utils/regexp](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/regexp) - A front-end regexp tool
-- [@lgd-utils/symbol](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/symbol) - A front-end symbol tool
 - [@lgd-utils/utils](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils) - A front-end utils tool
+- [@lgd-utils/validate](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/validate) - A front-end verification tool
 - [More…](https://github.com/LGDHuaOPER/lgd-utils)
 
 [blog]: https://lgdhuaoper.github.io/ '敬昭的博客'
