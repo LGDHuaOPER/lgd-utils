@@ -38,12 +38,14 @@
     "@lgd-utils/validate": "^0.0.13",
     "axios": "^0.23.0",
     "lodash": "^4.17.21",
-    "lru-cache": "^6.0.0"
+    "lru-cache": "^6.0.0",
+    "qs": "^6.10.1"
   },
   "description": "A axios adapter and middleware tool",
   "devDependencies": {
     "@types/lodash": "^4.14.176",
-    "@types/lru-cache": "^5.1.1"
+    "@types/lru-cache": "^5.1.1",
+    "@types/qs": "^6.9.7"
   },
   "directories": {
     "lib": "src",

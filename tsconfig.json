@@ -49,7 +49,8 @@
       "jest",
       "lodash",
       "lru-cache",
-      "node"
+      "node",
+      "qs"
     ] /* Specify type package names to be included without being referenced in a source file. */,
     // "allowUmdGlobalAccess": true,                     /* Allow accessing UMD globals from modules. */
     "resolveJsonModule": true /* Enable importing .json files */,
