@@ -7,6 +7,11 @@
   "bugs": {
     "url": "https://github.com/LGDHuaOPER/lgd-utils/issues"
   },
+  "buildOptions": {
+    "output": {
+      "name": "LgdUtilsSymbol"
+    }
+  },
   "description": "A front-end symbol tool",
   "directories": {
     "lib": "src",

@@ -33,6 +33,7 @@
     }
   },
   "dependencies": {
+    "@lgd-utils/array": "^0.0.10",
     "@lgd-utils/object": "^0.0.10",
     "@lgd-utils/symbol": "^0.0.1",
     "@lgd-utils/utils": "^0.0.12",

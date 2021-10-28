@@ -23,22 +23,30 @@ export function attemptFuncWithError(func?: ((...args: unknown[]) => unknown) | 
 export function attemptFuncWithLazyDefault(func?: ((...args: unknown[]) => unknown) | unknown, defaultV?: () => unknown, ...args: unknown[]): unknown;
 
 // @public (undocumented)
+export function attemptFuncWithLazyDefaultAndLazyError(func?: ((...args: unknown[]) => unknown) | unknown, defaultV?: () => unknown, errorDefault?: () => unknown, ...args: unknown[]): unknown;
+
+// @public (undocumented)
+export function attemptFuncWithLazyError(func?: ((...args: unknown[]) => unknown) | unknown, errorDefault?: unknown, ...args: unknown[]): unknown;
+
+// @public (undocumented)
 const _default: {
+    assertValue: typeof assertValue;
     attemptFunc: typeof attemptFunc;
-    attemptFuncWithLazyDefault: typeof attemptFuncWithLazyDefault;
-    attemptFuncWithError: typeof attemptFuncWithError;
     attemptFuncWithDefault: typeof attemptFuncWithDefault;
     attemptFuncWithDefaultAndError: typeof attemptFuncWithDefaultAndError;
+    attemptFuncWithError: typeof attemptFuncWithError;
+    attemptFuncWithLazyDefault: typeof attemptFuncWithLazyDefault;
+    attemptFuncWithLazyDefaultAndLazyError: typeof attemptFuncWithLazyDefaultAndLazyError;
+    attemptFuncWithLazyError: typeof attemptFuncWithLazyError;
+    disableEnable: typeof disableEnable;
+    nilTo: typeof nilTo;
+    normalizeValue: typeof normalizeValue;
     partialEq: typeof partialEq;
     partialEqBy: typeof partialEqBy;
     partialEqWith: typeof partialEqWith;
-    undefinedTo: typeof undefinedTo;
-    assertValue: typeof assertValue;
-    normalizeValue: typeof normalizeValue;
     promiseSeries: typeof promiseSeries;
     typeDefaultTo: typeof typeDefaultTo;
-    nilTo: typeof nilTo;
-    disableEnable: typeof disableEnable;
+    undefinedTo: typeof undefinedTo;
 };
 export default _default;
 
