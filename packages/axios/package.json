@@ -85,5 +85,5 @@
   },
   "types": "dist/axios.d.ts",
   "unpkg": "dist/axios.global.prod.js",
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
