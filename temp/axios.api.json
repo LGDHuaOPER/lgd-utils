@@ -207,7 +207,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/axios!adapterCacheWrapper:function(1)",
-          "docComment": "",
+          "docComment": "/**\n * @remarks\n *\n * The cacheWrapper adapter for axios\n *\n * @param adapter - The axios adapter\n *\n * @param options - The options for cacheWrapper\n *\n * @typeParam adapter - AxiosAdapter | undefined\n *\n * @typeParam options - CacheWrapperOptions | undefined\n *\n * @returns The wrapper for axios adapter - (config: AxiosRequestConfig) =\\> AxiosPromise<any>\n *\n * @defaultValue\n *\n * `axios.defaults.adapter`\n *\n * @defaultValue\n *\n * `{}`\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

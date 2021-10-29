@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-10-28 17:25:12
+ * @LastEditTime: 2021-10-29 10:19:48
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\README.md
@@ -849,7 +849,7 @@ npm run dev -- <packageName>
 
 ### 2.2 项目构建
 ```
-npm run build / npm run build:t
+npm run build / npm run build:t / npm run build -- <packageName> / npm run build -- <packageName> -t
 ```
 
 ### 2.3 项目测试

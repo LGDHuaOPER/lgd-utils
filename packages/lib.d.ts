@@ -2,19 +2,21 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-21 09:23:10
- * @LastEditTime: 2021-10-21 09:36:55
+ * @LastEditTime: 2021-10-29 09:16:43
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\lib.d.ts
  */
 declare interface CacheLike<T> {
-	get(key: string): T | undefined;
+  get(key: string): T | undefined
 
-	set(key: string, value: T, maxAge?: number): boolean;
+  set(key: string, value: T, maxAge?: number): boolean
 
-	del(key: string): void;
+  del?: (key: string) => void
 
-  keys(): string[];
+  delete?: (key: string) => void
 
-  [propName: string]: unknown | undefined;
+  keys(): string[]
+
+  [propName: string]: unknown | undefined
 }
