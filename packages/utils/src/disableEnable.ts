@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-21 09:50:15
- * @LastEditTime: 2021-10-21 09:53:38
+ * @LastEditTime: 2021-11-11 15:43:38
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\disableEnable.ts
@@ -17,7 +17,7 @@ export default function disableEnable(
   enable?: boolean | null,
   enableByDefault?: boolean,
   { firstAssert = 'ENABLE', returnAssert = 'ENABLE' } = {},
-) {
+): boolean {
   if (!lodashIsString(firstAssert)) firstAssert = 'ENABLE'
   if (!lodashIsString(returnAssert)) returnAssert = 'ENABLE'
   firstAssert = firstAssert.toUpperCase()
