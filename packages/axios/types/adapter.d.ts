@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-21 10:39:44
- * @LastEditTime: 2021-11-11 14:06:19
+ * @LastEditTime: 2021-11-12 00:25:26
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\axios\types\adapter.d.ts
@@ -155,16 +155,16 @@ declare interface RequestManagerOptions {
 }
 
 declare interface RequestManagerLike {
-  add?: () => unknown
-  set?: () => unknown
-  remove?: () => unknown
-  delete?: () => unknown
-  del?: () => unknown
-  cancel: () => unknown
-  cancelAll?: () => unknown
-  clear?: () => unknown
-  get?: () => unknown
-  has?: () => unknown
+  add?: (requestId: string, canceler: Canceler) => void
+  set?: (requestId: string, canceler: Canceler) => void
+  remove?: (requestId: string) => void
+  delete?: (requestId: string) => void
+  del?: (requestId: string) => void
+  cancel: (requestId: string, reason?: string) => void
+  cancelAll?: (reason?: string) => void
+  clear?: (reason?: string) => void
+  get?: (requestId: string) => Canceler
+  has?: (requestId: string) => boolean
 }
 
 declare interface CancelWrapperOptions {
@@ -192,25 +192,25 @@ declare interface CancelWrapperOptions {
   /**
    * @remarks
    *
-   * 禁用缓存
+   * 禁用取消
    */
   disableCancel?: boolean | null
   /**
    * @remarks
    *
-   * 禁用缓存，在 config 中的 PropertyPath
+   * 禁用取消，在 config 中的 PropertyPath
    */
   disableCancelPath?: string | string[]
   /**
    * @remarks
    *
-   * 启用缓存
+   * 启用取消
    */
   enableCancel?: boolean | null
   /**
    * @remarks
    *
-   * 启用缓存，在 config 中的 PropertyPath
+   * 启用取消，在 config 中的 PropertyPath
    */
   enableCancelPath?: string | string[]
   /**
@@ -218,11 +218,11 @@ declare interface CancelWrapperOptions {
    *
    * 默认启用
    */
-  enabledByDefault?: boolean | ((options: CacheWrapperOptions, config: AxiosRequestConfig) => boolean)
+  enabledByDefault?: boolean | ((options: CancelWrapperOptions, config: AxiosRequestConfig) => boolean)
   /**
    * @remarks
    *
-   * 缓存添加时的回调函数
+   * canceler生成时的回调函数
    */
   onCancelerCreate?: (
     metaData: [string, (reason?: string) => void],
@@ -233,31 +233,31 @@ declare interface CancelWrapperOptions {
   /**
    * @remarks
    *
-   * 缓存添加时的回调函数，在 config 中的 PropertyPath
+   * canceler生成时的回调函数，在 config 中的 PropertyPath
    */
   onCancelerCreatePath?: string | string[]
   /**
    * @remarks
    *
-   * 自定义使用的 cache
+   * 自定义使用的 requestManager
    */
   requestManager?: RequestManagerLike
   /**
    * @remarks
    *
-   * 自定义使用的 cache，在 config 中的 PropertyPath
+   * 自定义使用的 requestManager，在 config 中的 PropertyPath
    */
   requestManagerPath?: string | string[]
   /**
    * @remarks
    *
-   * 自定义使用的 cache
+   * 使用默认的 requestManager 时所传递的配置
    */
   requestManagerOptions?: RequestManagerOptions
   /**
    * @remarks
    *
-   * 自定义使用的 cache，在 config 中的 PropertyPath
+   * 使用默认的 requestManager 时所传递的配置，在 config 中的 PropertyPath
    */
   requestManagerOptionsPath?: string | string[]
 }
