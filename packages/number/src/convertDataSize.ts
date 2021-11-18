@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-18 13:43:53
- * @LastEditTime: 2021-09-18 17:43:38
+ * @LastEditTime: 2021-11-18 15:02:17
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\number\src\convertDataSize.ts
@@ -14,6 +14,27 @@ import bytes from 'bytes'
 import lodashOmit from 'lodash/omit'
 import lodashToNumber from 'lodash/toNumber'
 
+/**
+ * @remarks
+ * 转换数据大小为人类可读
+ *
+ * @param originalSize - 原始的数据大小
+ * @param originalUnit - 原始的数据大小的单位
+ * @param unitSeparator - 数据大小与单位之间的分隔符
+ * @param options - 配置
+ * @typeParam originalSize - number | string | undefined
+ * @typeParam originalUnit - string | undefined
+ * @typeParam unitSeparator - string | undefined
+ * @typeParam options - bytes.BytesOptions | ((option: \{
+        bytesSize: number
+        bytes: typeof bytes
+        defaultUnit: string
+        originalSize: number | string
+        originalUnit: string
+        unitSeparator: string
+      \}) =\> bytes.BytesOptions) | undefined
+ * @returns [转换后的数据大小, 转换后的数据大小的单位, 数字类型的转换后的数据大小, 要转换的原始的数据大小, 要转换的原始的数据大小的单位] - [string, string, number, number | string, string]
+ */
 export default function convertDataSize(
   originalSize?: number | string,
   originalUnit?: string,

@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-27 19:03:29
- * @LastEditTime: 2021-10-28 15:54:29
+ * @LastEditTime: 2021-11-18 14:56:11
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\axios\src\middleware\pruneConfigProp.ts
@@ -18,6 +18,18 @@ import { attemptFuncWithError, attemptFuncWithLazyDefault, disableEnable, nilTo 
 
 import { AxiosInstance, AxiosRequestConfig } from 'axios'
 
+/**
+ * @remarks
+ * 对 AxiosRequestConfig 属性进行提纯
+ *
+ * @param config - 要提纯的 AxiosRequestConfig
+ * @param instance - axios instance
+ * @param options - 提纯配置
+ * @typeParam config - AxiosRequestConfig
+ * @typeParam instance - AxiosInstance | undefined
+ * @typeParam options - PruneConfigPropOptions | undefined
+ * @returns 返回提纯后的结果 - AxiosRequestConfig
+ */
 export default function pruneConfigProp(
   config: AxiosRequestConfig,
   instance?: AxiosInstance,

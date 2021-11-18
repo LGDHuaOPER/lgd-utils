@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:25:10
- * @LastEditTime: 2021-09-28 14:25:00
+ * @LastEditTime: 2021-11-18 15:25:56
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\normalizeValue.ts
@@ -15,6 +15,9 @@ import lodashIsString from 'lodash/isString'
  * @param value - 要 normalize 的值
  * @param type - normalize type
  * @param defaultVal - 默认值
+ * @typeParam value - unknown | undefined
+ * @typeParam type - string | undefined
+ * @typeParam defaultVal - unknown | undefined
  * @returns normalize 后的值 - unknown
  */
 export default function normalizeValue(value: unknown, type?: string, defaultVal?: unknown): unknown {

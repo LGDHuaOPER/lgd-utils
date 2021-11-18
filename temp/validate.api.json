@@ -423,7 +423,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/validate!validCacheLike:function(1)",
-          "docComment": "",
+          "docComment": "/**\n * @remarks\n *\n * Determine if a value is a cacheLike\n *\n * @param cache - The value to test\n *\n * @typeParam cache - CacheLike\\<unknown\\> | undefined\n *\n * @returns True if value is a cacheLike, otherwise false - boolean\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

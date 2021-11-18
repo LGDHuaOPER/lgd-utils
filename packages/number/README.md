@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-19 22:59:53
- * @LastEditTime: 2021-10-21 13:58:48
+ * @LastEditTime: 2021-11-18 15:16:30
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\number\README.md
@@ -52,6 +52,7 @@ console.log(convertLargeNumber(100000000)); // ['1.00', '亿', 1, 100000000, '']
 - [@lgd-utils/html](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/html) - A front-end html tool
 - [@lgd-utils/object](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/object) - A front-end object tool
 - [@lgd-utils/regexp](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/regexp) - A front-end regexp tool
+- [@lgd-utils/symbol](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/symbol) - A front-end symbol tool
 - [@lgd-utils/utils](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils) - A front-end utils tool
 - [@lgd-utils/validate](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/validate) - A front-end verification tool
 - [More…](https://github.com/LGDHuaOPER/lgd-utils)

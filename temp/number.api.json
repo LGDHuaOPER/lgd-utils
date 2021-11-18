@@ -216,7 +216,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/number!convertDataSize:function(1)",
-          "docComment": "",
+          "docComment": "/**\n * @remarks\n *\n * 转换数据大小为人类可读\n *\n * @param originalSize - 原始的数据大小\n *\n * @param originalUnit - 原始的数据大小的单位\n *\n * @param unitSeparator - 数据大小与单位之间的分隔符\n *\n * @param options - 配置\n *\n * @typeParam originalSize - number | string | undefined\n *\n * @typeParam originalUnit - string | undefined\n *\n * @typeParam unitSeparator - string | undefined\n *\n * @typeParam options - bytes.BytesOptions | ((option: \\{ bytesSize: number bytes: typeof bytes defaultUnit: string originalSize: number | string originalUnit: string unitSeparator: string \\}) =\\> bytes.BytesOptions) | undefined\n *\n * @returns [转换后的数据大小, 转换后的数据大小的单位, 数字类型的转换后的数据大小, 要转换的原始的数据大小, 要转换的原始的数据大小的单位] - [string, string, number, number | string, string]\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

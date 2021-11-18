@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-22 14:52:08
- * @LastEditTime: 2021-10-21 13:59:02
+ * @LastEditTime: 2021-11-18 15:16:14
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\regexp\README.md
@@ -51,6 +51,7 @@ regexp.test(/^\d+$/, '45'); // true
 - [@lgd-utils/html](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/html) - A front-end html tool
 - [@lgd-utils/number](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/number) - A front-end number tool
 - [@lgd-utils/object](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/object) - A front-end object tool
+- [@lgd-utils/symbol](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/symbol) - A front-end symbol tool
 - [@lgd-utils/utils](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils) - A front-end utils tool
 - [@lgd-utils/validate](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/validate) - A front-end verification tool
 - [More…](https://github.com/LGDHuaOPER/lgd-utils)

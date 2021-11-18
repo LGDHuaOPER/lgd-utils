@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-21 09:50:15
- * @LastEditTime: 2021-11-11 15:43:38
+ * @LastEditTime: 2021-11-18 15:57:43
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\disableEnable.ts
@@ -12,6 +12,20 @@ import lodashIsString from 'lodash/isString'
 
 import nilTo from './nilTo'
 
+/**
+ * @param disable - disable 状态
+ * @param enable - enable 状态
+ * @param enableByDefault - 默认 enable
+ * @param options - 配置
+ * @typeParam disable - boolean | null | undefined
+ * @typeParam enable - boolean | null | undefined
+ * @typeParam enableByDefault - boolean | undefined
+ * @typeParam options - \{
+    firstAssert: 'ENABLE' | 'enable' | 'DISABLE' | 'disable'
+    returnAssert: 'ENABLE' | 'enable' | 'DISABLE' | 'disable'
+  \}
+ * @returns 返回 disable 或 enable 状态 - boolean
+ */
 export default function disableEnable(
   disable?: boolean | null,
   enable?: boolean | null,

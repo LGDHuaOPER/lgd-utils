@@ -243,7 +243,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/regexp!nodeModuleMultiPath:function(1)",
-          "docComment": "",
+          "docComment": "/**\n * @remarks\n *\n * 生成 node_modules 内多个包的正则表达式\n *\n * @param packageNames - 多个包名\n *\n * @param suffix - 后缀\n *\n * @typeParam packageNames - string | string[]\n *\n * @typeParam suffix - number | string | undefined\n *\n * @returns 生成的正则表达式 - RegExp\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

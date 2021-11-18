@@ -185,7 +185,16 @@
             },
             {
               "kind": "Content",
-              "text": "{\n    flatObject: typeof "
+              "text": "{\n    attemptInvoke: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "attemptInvoke",
+              "canonicalReference": "@lgd-utils/object!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    flatObject: typeof "
             },
             {
               "kind": "Reference",
@@ -212,6 +221,24 @@
             },
             {
               "kind": "Content",
+              "text": ";\n    mergeOwn: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "mergeOwn",
+              "canonicalReference": "@lgd-utils/object!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    omitBy: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "omitBy",
+              "canonicalReference": "@lgd-utils/object!default:function"
+            },
+            {
+              "kind": "Content",
               "text": ";\n    omitDeepBy: typeof "
             },
             {
@@ -226,6 +253,15 @@
             {
               "kind": "Reference",
               "text": "omitNil",
+              "canonicalReference": "@lgd-utils/object!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    omitOwnBy: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "omitOwnBy",
               "canonicalReference": "@lgd-utils/object!default:function"
             },
             {
@@ -248,6 +284,15 @@
             },
             {
               "kind": "Content",
+              "text": ";\n    safeGet: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "safeGet",
+              "canonicalReference": "@lgd-utils/object!default:function"
+            },
+            {
+              "kind": "Content",
               "text": ";\n    sortObjectByProp: typeof "
             },
             {
@@ -266,42 +311,6 @@
             },
             {
               "kind": "Content",
-              "text": ";\n    omitBy: typeof "
-            },
-            {
-              "kind": "Reference",
-              "text": "omitBy",
-              "canonicalReference": "@lgd-utils/object!default:function"
-            },
-            {
-              "kind": "Content",
-              "text": ";\n    omitOwnBy: typeof "
-            },
-            {
-              "kind": "Reference",
-              "text": "omitOwnBy",
-              "canonicalReference": "@lgd-utils/object!default:function"
-            },
-            {
-              "kind": "Content",
-              "text": ";\n    mergeOwn: typeof "
-            },
-            {
-              "kind": "Reference",
-              "text": "mergeOwn",
-              "canonicalReference": "@lgd-utils/object!default:function"
-            },
-            {
-              "kind": "Content",
-              "text": ";\n    safeGet: typeof "
-            },
-            {
-              "kind": "Reference",
-              "text": "safeGet",
-              "canonicalReference": "@lgd-utils/object!default:function"
-            },
-            {
-              "kind": "Content",
               "text": ";\n}"
             }
           ],
@@ -309,8 +318,86 @@
           "name": "_default",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 28
+            "endIndex": 30
           }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@lgd-utils/object!attemptInvoke:function(1)",
+          "docComment": "/**\n * @remarks\n *\n * 尝试调用 object 对象 path 上的方法，返回 调用结果 或者 捕捉到的错误对象\n *\n * @param object - 要检索的对象\n *\n * @param path - PropertyPath\n *\n * @param args - 调用方法时传递的参数\n *\n * @typeParam object - Record\\<string, unknown\\>\n *\n * @typeParam path - string | string[]\n *\n * @typeParam args - unknown[]\n *\n * @returns 返回 调用结果 或者 捕捉到的错误对象 - unknown\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export default function attemptInvoke(object: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, unknown>"
+            },
+            {
+              "kind": "Content",
+              "text": ", path: "
+            },
+            {
+              "kind": "Content",
+              "text": "string | string[]"
+            },
+            {
+              "kind": "Content",
+              "text": ", ...args: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown[]"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 8,
+            "endIndex": 9
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "object",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "parameterName": "path",
+              "parameterTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              }
+            },
+            {
+              "parameterName": "args",
+              "parameterTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              }
+            }
+          ],
+          "name": "attemptInvoke"
         },
         {
           "kind": "Function",
@@ -525,15 +612,20 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/object!flatObjectDepth:function(1)",
-          "docComment": "",
+          "docComment": "/**\n * @remarks\n *\n * 根据 depth 递归减少 object 的嵌套层级\n *\n * @param object - 要处理的对象\n *\n * @param depth - depth\n *\n * @param preFixKey - 前缀\n *\n * @param options - 配置\n *\n * @typeParam object - Record\\<string, unknown\\> | unknown | undefined\n *\n * @typeParam depth - number | undefined\n *\n * @typeParam preFixKey - string | undefined\n *\n * @typeParam options - \\{ connector?: string iteratee?: ( _accumulator?: Record\\<string, unknown\\>, _value?: unknown, _key?: string, _object?: Record\\<string, unknown\\>, key?: string, depth?: number, ) =\\> Record\\<string, unknown\\> | unknown \\} | undefined\n *\n * @returns 返回处理后的对象 - Record\\<string, unknown\\>\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
               "text": "export default function flatObjectDepth(object?: "
             },
             {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
               "kind": "Content",
-              "text": "unknown"
+              "text": "<string, unknown> | unknown"
             },
             {
               "kind": "Content",
@@ -605,8 +697,8 @@
             }
           ],
           "returnTypeTokenRange": {
-            "startIndex": 15,
-            "endIndex": 17
+            "startIndex": 16,
+            "endIndex": 18
           },
           "releaseTag": "Public",
           "overloadIndex": 1,
@@ -615,28 +707,28 @@
               "parameterName": "object",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
-                "endIndex": 2
+                "endIndex": 3
               }
             },
             {
               "parameterName": "depth",
               "parameterTypeTokenRange": {
-                "startIndex": 3,
-                "endIndex": 4
+                "startIndex": 4,
+                "endIndex": 5
               }
             },
             {
               "parameterName": "preFixKey",
               "parameterTypeTokenRange": {
-                "startIndex": 5,
-                "endIndex": 6
+                "startIndex": 6,
+                "endIndex": 7
               }
             },
             {
               "parameterName": "{ connector, iteratee, }",
               "parameterTypeTokenRange": {
-                "startIndex": 7,
-                "endIndex": 14
+                "startIndex": 8,
+                "endIndex": 15
               }
             }
           ],

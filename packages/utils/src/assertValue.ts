@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:24:31
- * @LastEditTime: 2021-09-28 14:24:11
+ * @LastEditTime: 2021-11-18 15:12:58
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\assertValue.ts
@@ -15,6 +15,8 @@ import lodashIsRegExp from 'lodash/isRegExp'
 /**
  * @param value - 要检查的值
  * @param assertion - 断言模式
+ * @typeParam value - unknown | undefined
+ * @typeParam assertion - unknown[] | Record\<string, unknown\> | RegExp | ((val: unknown) =\> boolean) | unknown | undefined
  * @returns 是否与断言模式匹配 - boolean
  */
 export default function assertValue(

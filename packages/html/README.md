@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-19 22:59:53
- * @LastEditTime: 2021-10-21 13:58:41
+ * @LastEditTime: 2021-11-18 15:16:47
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\html\README.md
@@ -51,6 +51,7 @@ encode('<div></div>') === '&lt;div&gt;&lt;/div&gt;'; // true
 - [@lgd-utils/number](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/number) - A front-end number tool
 - [@lgd-utils/object](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/object) - A front-end object tool
 - [@lgd-utils/regexp](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/regexp) - A front-end regexp tool
+- [@lgd-utils/symbol](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/symbol) - A front-end symbol tool
 - [@lgd-utils/utils](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils) - A front-end utils tool
 - [@lgd-utils/validate](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/validate) - A front-end verification tool
 - [More…](https://github.com/LGDHuaOPER/lgd-utils)

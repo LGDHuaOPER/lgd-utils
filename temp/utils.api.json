@@ -351,7 +351,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!assertValue:function(1)",
-          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param assertion - 断言模式\n *\n * @returns 是否与断言模式匹配 - boolean\n */\n",
+          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param assertion - 断言模式\n *\n * @typeParam value - unknown | undefined\n *\n * @typeParam assertion - unknown[] | Record\\<string, unknown\\> | RegExp | ((val: unknown) =\\> boolean) | unknown | undefined\n *\n * @returns 是否与断言模式匹配 - boolean\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -485,7 +485,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!attemptFuncWithDefault:function(1)",
-          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns 返回func结果或者出错时的默认值或者func - unknown\n */\n",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @typeParam func - ((...args: unknown[]) =\\> unknown) | unknown | undefined\n *\n * @typeParam defaultV - unknown | undefined\n *\n * @typeParam args - unknown[]\n *\n * @returns 返回func结果或者出错时的默认值或者func - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -558,7 +558,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!attemptFuncWithDefaultAndError:function(1)",
-          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns 返回func结果或者出错时的默认值或者func - unknown\n */\n",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @typeParam func - ((...args: unknown[]) =\\> unknown) | unknown | undefined\n *\n * @typeParam defaultV - unknown | undefined\n *\n * @typeParam errorDefault - unknown | undefined\n *\n * @typeParam args - unknown[]\n *\n * @returns 返回func结果或者出错时的默认值或者func - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -646,7 +646,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!attemptFuncWithError:function(1)",
-          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns 返回func结果或者出错时的默认值或者func - unknown\n */\n",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @typeParam func - ((...args: unknown[]) =\\> unknown) | unknown | undefined\n *\n * @typeParam errorDefault - unknown | undefined\n *\n * @typeParam args - unknown[]\n *\n * @returns 返回func结果或者出错时的默认值或者func - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -792,7 +792,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!attemptFuncWithLazyDefaultAndLazyError:function(1)",
-          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns 返回func结果或者出错时的默认值或者func - unknown\n */\n",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param defaultV - 默认值\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @typeParam func - ((...args: unknown[]) =\\> unknown) | unknown | undefined\n *\n * @typeParam defaultV - (() =\\> unknown) | undefined\n *\n * @typeParam errorDefault - (() =\\> unknown) | undefined\n *\n * @typeParam args - unknown[]\n *\n * @returns 返回func结果或者出错时的默认值或者func - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -880,7 +880,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!attemptFuncWithLazyError:function(1)",
-          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @returns 返回func结果或者出错时的默认值或者func - unknown\n */\n",
+          "docComment": "/**\n * @param func - 要尝试调用的函数\n *\n * @param errorDefault - 尝试调用的函数出错时的默认值\n *\n * @param args - 调用func时，传递的参数\n *\n * @typeParam func - ((...args: unknown[]) =\\> unknown) | unknown | undefined\n *\n * @typeParam errorDefault - unknown | undefined\n *\n * @typeParam args - unknown[]\n *\n * @returns 返回func结果或者出错时的默认值或者func - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -953,7 +953,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!disableEnable:function(1)",
-          "docComment": "",
+          "docComment": "/**\n * @param disable - disable 状态\n *\n * @param enable - enable 状态\n *\n * @param enableByDefault - 默认 enable\n *\n * @param options - 配置\n *\n * @typeParam disable - boolean | null | undefined\n *\n * @typeParam enable - boolean | null | undefined\n *\n * @typeParam enableByDefault - boolean | undefined\n *\n * @typeParam options - \\{ firstAssert: 'ENABLE' | 'enable' | 'DISABLE' | 'disable' returnAssert: 'ENABLE' | 'enable' | 'DISABLE' | 'disable' \\}\n *\n * @returns 返回 disable 或 enable 状态 - boolean\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1041,7 +1041,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!nilTo:function(1)",
-          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @returns result - 返回 resolved 值\n */\n",
+          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @typeParam value - unknown | undefined\n *\n * @typeParam defaultValue - unknown | undefined\n *\n * @returns result - 返回 resolved 值\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1099,7 +1099,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!normalizeValue:function(1)",
-          "docComment": "/**\n * @param value - 要 normalize 的值\n *\n * @param type - normalize type\n *\n * @param defaultVal - 默认值\n *\n * @returns normalize 后的值 - unknown\n */\n",
+          "docComment": "/**\n * @param value - 要 normalize 的值\n *\n * @param type - normalize type\n *\n * @param defaultVal - 默认值\n *\n * @typeParam value - unknown | undefined\n *\n * @typeParam type - string | undefined\n *\n * @typeParam defaultVal - unknown | undefined\n *\n * @returns normalize 后的值 - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1172,7 +1172,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!partialEq:function(1)",
-          "docComment": "/**\n * @param partialArg - lodashEq()的预设的参数\n *\n * @returns 返回预设参数的函数 - boolean\n */\n",
+          "docComment": "/**\n * @param partialArg - lodashEq()的预设的参数\n *\n * @typeParam partialArg - unknown | undefined\n *\n * @returns 返回预设参数的函数 - boolean\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1215,7 +1215,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!partialEqBy:function(1)",
-          "docComment": "/**\n * @param partialArg - lodashEq()的预设的参数\n *\n * @param iteratee - 迭代函数\n *\n * @returns 返回预设参数的函数 - (val: unknown) =\\> boolean\n */\n",
+          "docComment": "/**\n * @param partialArg - lodashEq()的预设的参数\n *\n * @param iteratee - 迭代函数\n *\n * @typeParam partialArg - unknown | undefined\n *\n * @typeParam iteratee - ((val: unknown) =\\> unknown) | unknown | undefined\n *\n * @returns 返回预设参数的函数 - (val: unknown) =\\> boolean\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1273,7 +1273,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!partialEqWith:function(1)",
-          "docComment": "/**\n * @param partialArg - comparator 的预设的参数\n *\n * @param comparator - 比较函数\n *\n * @returns 返回预设参数的比较函数 - (val: unknown) =\\> boolean\n */\n",
+          "docComment": "/**\n * @param partialArg - comparator 的预设的参数\n *\n * @param comparator - 比较函数\n *\n * @typeParam partialArg - unknown | undefined\n *\n * @typeParam comparator - ((partialArg: unknown, val: unknown) =\\> boolean) | unknown | undefined\n *\n * @returns 返回预设参数的比较函数 - (val: unknown) =\\> boolean\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1331,7 +1331,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!promiseSeries:function(1)",
-          "docComment": "/**\n * @param promiseFnList - 返回 promise 的函数数组\n *\n * @param thisArg - 绑定的this对象\n *\n * @param successCb - 成功回调\n *\n * @param errorCb - 失败回调\n *\n * @returns promise - Promise<unknown>\n */\n",
+          "docComment": "/**\n * @param promiseFnList - 返回 promise 的函数数组\n *\n * @param thisArg - 绑定的this对象\n *\n * @param successCb - 成功回调\n *\n * @param errorCb - 失败回调\n *\n * @typeParam promiseFnList - Array\\<(args: unknown[]) =\\> Promise<unknown>\\> | unknown | undefined\n *\n * @typeParam thisArg - unknown | undefined\n *\n * @typeParam successCb - (val: unknown) =\\> unknown | undefined\n *\n * @typeParam errorCb - (val: unknown) =\\> unknown | undefined\n *\n * @returns promise - Promise<unknown>\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1438,7 +1438,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!typeDefaultTo:function(1)",
-          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @param options - 配置\n *\n * @param assertTypes - options.assertTypes: 断言类型\n *\n * @param assertEq - options.assertEq: 断言 eq 模式\n *\n * @returns result - unknown\n */\n",
+          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @param options - 配置\n *\n * @param assertTypes - options.assertTypes: 断言类型\n *\n * @param assertEq - options.assertEq: 断言 eq 模式\n *\n * @param negate - options.negate: 是否对结果进行取反\n *\n * @typeParam value - unknown | undefined\n *\n * @typeParam defaultValue - unknown | undefined\n *\n * @typeParam options - \\{ assertTypes?: | Array\\<RegExp | string | ((val: unknown) =\\> boolean) | unknown\\> | RegExp | string | ((val: unknown) =\\> boolean) | unknown assertEq?: ((val: unknown, otherVal: unknown) =\\> boolean) | unknown negate?: boolean | ((value?: unknown, defaultValue?: unknown) =\\> boolean) | unknown \\}\n *\n * @returns result - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1538,7 +1538,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!undefinedTo:function(1)",
-          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @returns 返回 resolved 值 - unknown\n */\n",
+          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @typeParam value - unknown | undefined\n *\n * @typeParam defaultValue - unknown | undefined\n *\n * @returns 返回 resolved 值 - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

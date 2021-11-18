@@ -7,20 +7,24 @@
 import { validToStringObject } from '@lgd-utils/validate';
 
 // @public (undocumented)
+export function attemptInvoke(object: Record<string, unknown>, path: string | string[], ...args: unknown[]): unknown;
+
+// @public (undocumented)
 const _default: {
+    attemptInvoke: typeof attemptInvoke;
     flatObject: typeof flatObject;
     flatObjectDeep: typeof flatObjectDeep;
     flatObjectDepth: typeof flatObjectDepth;
+    mergeOwn: typeof mergeOwn;
+    omitBy: typeof omitBy;
     omitDeepBy: typeof omitDeepBy;
     omitNil: typeof omitNil;
+    omitOwnBy: typeof omitOwnBy;
     omitOwnDeepBy: typeof omitOwnDeepBy;
     omitUndefined: typeof omitUndefined;
+    safeGet: typeof safeGet;
     sortObjectByProp: typeof sortObjectByProp;
     sortProps: typeof sortProps;
-    omitBy: typeof omitBy;
-    omitOwnBy: typeof omitOwnBy;
-    mergeOwn: typeof mergeOwn;
-    safeGet: typeof safeGet;
 };
 export default _default;
 
@@ -37,7 +41,7 @@ export function flatObjectDeep(object?: unknown, preFixKey?: string, { connector
 }): Record<string, unknown>;
 
 // @public (undocumented)
-export function flatObjectDepth(object?: unknown, depth?: number, preFixKey?: string, { connector, iteratee, }?: {
+export function flatObjectDepth(object?: Record<string, unknown> | unknown, depth?: number, preFixKey?: string, { connector, iteratee, }?: {
     connector?: string;
     iteratee?: (_accumulator?: Record<string, unknown>, _value?: unknown, _key?: string, _object?: Record<string, unknown>, key?: string, depth?: number) => Record<string, unknown> | unknown;
 }): Record<string, unknown>;
