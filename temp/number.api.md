@@ -17,7 +17,37 @@ export function convertDataSize(originalSize?: number | string, originalUnit?: s
 }) => bytes.BytesOptions)): [string, string, number, number | string, string];
 
 // @public (undocumented)
+export namespace convertDataSize {
+    var // (undocumented)
+    format: (separator?: string | undefined, originalSize?: string | number | undefined, originalUnit?: string | undefined, unitSeparator?: string | undefined, options?: bytes.BytesOptions | ((option: {
+        bytesSize: number;
+        bytes: typeof bytes;
+        defaultUnit: string;
+        originalSize: string | number;
+        originalUnit: string;
+        unitSeparator: string;
+    }) => bytes.BytesOptions) | undefined) => string;
+    var // (undocumented)
+    normal: (originalSize?: string | number | undefined, originalUnit?: string | undefined, unitSeparator?: string | undefined, options?: bytes.BytesOptions | ((option: {
+        bytesSize: number;
+        bytes: typeof bytes;
+        defaultUnit: string;
+        originalSize: string | number;
+        originalUnit: string;
+        unitSeparator: string;
+    }) => bytes.BytesOptions) | undefined) => string;
+}
+
+// @public (undocumented)
 export function convertLargeNumber(value?: number | string, precision?: number): [string, string, number, number, string];
+
+// @public (undocumented)
+export namespace convertLargeNumber {
+    var // (undocumented)
+    format: (separator?: string | undefined, value?: string | number | undefined, precision?: number | undefined) => string;
+    var // (undocumented)
+    normal: (value?: string | number | undefined, precision?: number | undefined) => string;
+}
 
 // @public (undocumented)
 const _default: {

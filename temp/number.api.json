@@ -190,7 +190,7 @@
             {
               "kind": "Reference",
               "text": "convertDataSize",
-              "canonicalReference": "@lgd-utils/number!default:function"
+              "canonicalReference": "@lgd-utils/number!~convertDataSize:function"
             },
             {
               "kind": "Content",
@@ -199,7 +199,7 @@
             {
               "kind": "Reference",
               "text": "convertLargeNumber",
-              "canonicalReference": "@lgd-utils/number!default:function"
+              "canonicalReference": "@lgd-utils/number!~convertLargeNumber:function"
             },
             {
               "kind": "Content",
@@ -220,7 +220,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export default function convertDataSize(originalSize?: "
+              "text": "declare function convertDataSize(originalSize?: "
             },
             {
               "kind": "Content",
@@ -325,13 +325,124 @@
           "name": "convertDataSize"
         },
         {
+          "kind": "Namespace",
+          "canonicalReference": "@lgd-utils/number!convertDataSize:namespace",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare namespace convertDataSize "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "convertDataSize",
+          "members": [
+            {
+              "kind": "Variable",
+              "canonicalReference": "@lgd-utils/number!convertDataSize.format:var",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "format: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(separator?: string | undefined, originalSize?: string | number | undefined, originalUnit?: string | undefined, unitSeparator?: string | undefined, options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "bytes.BytesOptions",
+                  "canonicalReference": "@types/bytes!~bytes.BytesOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | ((option: {\n        bytesSize: number;\n        bytes: typeof "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "bytes",
+                  "canonicalReference": "@types/bytes!~bytes:function"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n        defaultUnit: string;\n        originalSize: string | number;\n        originalUnit: string;\n        unitSeparator: string;\n    }) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "bytes.BytesOptions",
+                  "canonicalReference": "@types/bytes!~bytes.BytesOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") | undefined) => string"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "format",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 8
+              }
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "@lgd-utils/number!convertDataSize.normal:var",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "normal: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(originalSize?: string | number | undefined, originalUnit?: string | undefined, unitSeparator?: string | undefined, options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "bytes.BytesOptions",
+                  "canonicalReference": "@types/bytes!~bytes.BytesOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | ((option: {\n        bytesSize: number;\n        bytes: typeof "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "bytes",
+                  "canonicalReference": "@types/bytes!~bytes:function"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n        defaultUnit: string;\n        originalSize: string | number;\n        originalUnit: string;\n        unitSeparator: string;\n    }) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "bytes.BytesOptions",
+                  "canonicalReference": "@types/bytes!~bytes.BytesOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") | undefined) => string"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "normal",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 8
+              }
+            }
+          ]
+        },
+        {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/number!convertLargeNumber:function(1)",
           "docComment": "/**\n * @remarks\n *\n * 转换大额数字\n *\n * @param value - 要转换的数字\n *\n * @param precision - 精度\n *\n * @typeParam value - number | string | undefined\n *\n * @typeParam precision - number | undefined\n *\n * @returns [转换后的值, 转换后的单位, 数字类型的转换后的值, 原始的要转换的数字, 原始的要转换的单位] - [string, string, number, number, string]\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export default function convertLargeNumber(value?: "
+              "text": "declare function convertLargeNumber(value?: "
             },
             {
               "kind": "Content",
@@ -381,6 +492,63 @@
             }
           ],
           "name": "convertLargeNumber"
+        },
+        {
+          "kind": "Namespace",
+          "canonicalReference": "@lgd-utils/number!convertLargeNumber:namespace",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare namespace convertLargeNumber "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "convertLargeNumber",
+          "members": [
+            {
+              "kind": "Variable",
+              "canonicalReference": "@lgd-utils/number!convertLargeNumber.format:var",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "format: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(separator?: string | undefined, value?: string | number | undefined, precision?: number | undefined) => string"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "format",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "@lgd-utils/number!convertLargeNumber.normal:var",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "normal: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(value?: string | number | undefined, precision?: number | undefined) => string"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "normal",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
         }
       ]
     }
