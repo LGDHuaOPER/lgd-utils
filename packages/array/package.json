@@ -13,7 +13,7 @@
     }
   },
   "dependencies": {
-    "@lgd-utils/utils": "^0.0.13",
+    "@lgd-utils/utils": "^0.0.14",
     "lodash": "^4.17.21"
   },
   "description": "A front-end array tool",
@@ -56,5 +56,5 @@
   },
   "types": "dist/array.d.ts",
   "unpkg": "dist/array.global.prod.js",
-  "version": "0.0.11"
+  "version": "0.0.12"
 }
