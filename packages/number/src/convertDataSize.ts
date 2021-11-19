@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-18 13:43:53
- * @LastEditTime: 2021-11-18 15:02:17
+ * @LastEditTime: 2021-11-19 09:06:21
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\number\src\convertDataSize.ts
@@ -11,6 +11,7 @@
 import { attemptFunc, typeDefaultTo } from '@lgd-utils/utils'
 
 import bytes from 'bytes'
+import lodashIsString from 'lodash/isString'
 import lodashOmit from 'lodash/omit'
 import lodashToNumber from 'lodash/toNumber'
 
@@ -91,4 +92,14 @@ export default function convertDataSize(
     originalSize as number | string,
     originalUnit as string,
   ]
+}
+
+convertDataSize.format = function format(separator?: string, ...args: Parameters<typeof convertDataSize>): string {
+  return convertDataSize(...args)
+    .slice(0, 2)
+    .join(lodashIsString(separator) ? separator : '')
+}
+
+convertDataSize.normal = function normal(...args: Parameters<typeof convertDataSize>): string {
+  return convertDataSize.format(' ', ...args)
 }

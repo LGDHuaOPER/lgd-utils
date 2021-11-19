@@ -2,11 +2,13 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-18 13:41:11
- * @LastEditTime: 2021-09-28 14:16:01
+ * @LastEditTime: 2021-11-19 09:09:57
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\number\src\convertLargeNumber.ts
  */
+
+import lodashIsString from 'lodash/isString'
 
 /**
  * @remarks
@@ -43,4 +45,17 @@ export default function convertLargeNumber(
   const _unit = baseUnitList[unitIndex]
 
   return [_value, _unit, +_value, value as number, '']
+}
+
+convertLargeNumber.format = function format(
+  separator?: string,
+  ...args: Parameters<typeof convertLargeNumber>
+): string {
+  return convertLargeNumber(...args)
+    .slice(0, 2)
+    .join(lodashIsString(separator) ? separator : '')
+}
+
+convertLargeNumber.normal = function normal(...args: Parameters<typeof convertLargeNumber>): string {
+  return convertLargeNumber.format(' ', ...args)
 }
