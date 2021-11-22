@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-27 18:51:05
- * @LastEditTime: 2021-10-28 15:37:33
+ * @LastEditTime: 2021-11-22 14:49:54
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\axios\src\middleware\paramsSerializer.ts
@@ -54,7 +54,7 @@ export default function paramsSerializer(
   return config
 }
 
-export function auto(
+paramsSerializer.auto = function auto(
   instance: AxiosInstance,
   options?: {
     default?: ParamsSerializerOptions

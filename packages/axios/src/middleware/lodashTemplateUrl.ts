@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-27 18:33:16
- * @LastEditTime: 2021-10-28 14:51:27
+ * @LastEditTime: 2021-11-22 14:49:07
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\axios\src\middleware\lodashTemplateUrl.ts
@@ -46,7 +46,7 @@ export default function lodashTemplateUrl(
   return config
 }
 
-export function auto(
+lodashTemplateUrl.auto = function auto(
   instance: AxiosInstance,
   options?: {
     default?: LodashTemplateUrlOptions

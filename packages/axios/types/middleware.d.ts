@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-28 14:16:21
- * @LastEditTime: 2021-10-28 16:49:36
+ * @LastEditTime: 2021-11-22 14:35:00
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\axios\types\middleware.d.ts
@@ -132,7 +132,11 @@ declare interface PruneConfigPropOptions {
   [propName: string]: unknown
 }
 
-declare type RuntimeInterceptorFn = (config: AxiosRequestConfig) => AxiosRequestConfig
+declare type RuntimeInterceptorFn = (
+  config: AxiosRequestConfig,
+  i?: number,
+  arr?: RuntimeInterceptorFn[],
+) => AxiosRequestConfig
 
 declare type RuntimeInterceptorFns = RuntimeInterceptorFn | RuntimeInterceptorFn[]
 

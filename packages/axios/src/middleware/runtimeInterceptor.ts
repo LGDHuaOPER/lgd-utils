@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-27 19:20:47
- * @LastEditTime: 2021-10-28 16:57:31
+ * @LastEditTime: 2021-11-22 14:44:20
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\axios\src\middleware\runtimeInterceptor.ts
@@ -10,11 +10,10 @@
 
 import lodashDefaultTo from 'lodash/defaultTo'
 import lodashGet from 'lodash/get'
-import lodashIsFunction from 'lodash/isFunction'
 import lodashIsString from 'lodash/isString'
 import lodashOnce from 'lodash/once'
 
-import { reduceWrap } from '@lgd-utils/array'
+import { waterfall } from '@lgd-utils/array'
 import {
   attemptFuncWithDefaultAndError,
   attemptFuncWithError,
@@ -47,19 +46,7 @@ export function requestFulfilled(
   )
     return config
 
-  const runtimeRequestFulfilled = lodashGet(options, 'interceptor')
-  config = reduceWrap(
-    Array.isArray(runtimeRequestFulfilled)
-      ? runtimeRequestFulfilled.filter((fn) => lodashIsFunction(fn))
-      : lodashIsFunction(runtimeRequestFulfilled)
-      ? [runtimeRequestFulfilled]
-      : [],
-    (_result: AxiosRequestConfig, fn: RuntimeInterceptorFn) => fn(_result),
-    true,
-    config,
-  ) as AxiosRequestConfig
-
-  return config
+  return waterfall(lodashGet(options, 'interceptor'), config) as AxiosRequestConfig
 }
 
 export function responseFulfilled(
@@ -67,10 +54,10 @@ export function responseFulfilled(
   instance?: AxiosInstance,
   options?: RuntimeInterceptorResponseFulfilledOptions,
 ): AxiosResponse | unknown {
-  if (!responseOrError)
-    throw new TypeError(
-      `The parameter 'responseOrError' for function 'responseFulfilled' is ${typeof responseOrError}.`,
-    )
+  // if (!responseOrError)
+  //   throw new TypeError(
+  //     `The parameter 'responseOrError' for function 'responseFulfilled' is ${typeof responseOrError}.`,
+  //   )
   // if (!instance) throw new TypeError(`The parameter 'instance' for function 'responseFulfilled' is ${typeof instance}.`)
 
   // 如果是 disabled，则不处理
@@ -89,19 +76,7 @@ export function responseFulfilled(
   )
     return responseOrError
 
-  const runtimeResponseFulfilled = lodashGet(options, 'interceptor')
-  responseOrError = reduceWrap(
-    Array.isArray(runtimeResponseFulfilled)
-      ? runtimeResponseFulfilled.filter((fn) => lodashIsFunction(fn))
-      : lodashIsFunction(runtimeResponseFulfilled)
-      ? [runtimeResponseFulfilled]
-      : [],
-    (_result: AxiosResponse | unknown, fn: RuntimeInterceptorFn) => fn(_result),
-    true,
-    responseOrError,
-  ) as AxiosResponse | unknown
-
-  return responseOrError
+  return waterfall(lodashGet(options, 'interceptor'), responseOrError) as AxiosResponse | unknown
 }
 
 export function responseFulfilledWrapper(
@@ -109,10 +84,10 @@ export function responseFulfilledWrapper(
   instance?: AxiosInstance,
   options?: RuntimeInterceptorResponseFulfilledWrapperOptions,
 ): AxiosResponse | unknown | Promise<AxiosResponse | unknown> {
-  if (!responseOrError)
-    throw new TypeError(
-      `The parameter 'responseOrError' for function 'responseFulfilledWrapper' is ${typeof responseOrError}.`,
-    )
+  // if (!responseOrError)
+  //   throw new TypeError(
+  //     `The parameter 'responseOrError' for function 'responseFulfilledWrapper' is ${typeof responseOrError}.`,
+  //   )
   // if (!instance) throw new TypeError(`The parameter 'instance' for function 'responseFulfilledWrapper' is ${typeof instance}.`)
 
   // 如果是 disabled，则不处理
@@ -203,8 +178,8 @@ export function responseRejected(
   instance?: AxiosInstance,
   options?: RuntimeInterceptorResponseRejectedOptions,
 ): AxiosResponse | AxiosError | unknown {
-  if (!responseOrError)
-    throw new TypeError(`The parameter 'responseOrError' for function 'responseRejected' is ${typeof responseOrError}.`)
+  // if (!responseOrError)
+  //   throw new TypeError(`The parameter 'responseOrError' for function 'responseRejected' is ${typeof responseOrError}.`)
   // if (!instance) throw new TypeError(`The parameter 'instance' for function 'responseRejected' is ${typeof instance}.`)
 
   // 如果是 disabled，则不处理
@@ -223,19 +198,7 @@ export function responseRejected(
   )
     return responseOrError
 
-  const runtimeResponseRejected = lodashGet(options, 'interceptor')
-  responseOrError = reduceWrap(
-    Array.isArray(runtimeResponseRejected)
-      ? runtimeResponseRejected.filter((fn) => lodashIsFunction(fn))
-      : lodashIsFunction(runtimeResponseRejected)
-      ? [runtimeResponseRejected]
-      : [],
-    (_result: AxiosResponse | AxiosError | unknown, fn: RuntimeInterceptorFn) => fn(_result),
-    true,
-    responseOrError,
-  )
-
-  return responseOrError
+  return waterfall(lodashGet(options, 'interceptor'), responseOrError) as AxiosResponse | AxiosError | unknown
 }
 
 export function responseRejectedWrapper(

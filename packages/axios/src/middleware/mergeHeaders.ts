@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-27 17:43:26
- * @LastEditTime: 2021-10-28 15:31:53
+ * @LastEditTime: 2021-11-22 14:49:40
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\axios\src\middleware\mergeHeaders.ts
@@ -68,7 +68,7 @@ export default function mergeHeaders(
   return config
 }
 
-export function auto(
+mergeHeaders.auto = function auto(
   instance: AxiosInstance,
   options?: {
     default?: MergeHeadersOptions

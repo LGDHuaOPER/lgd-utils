@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-27 19:03:29
- * @LastEditTime: 2021-11-18 14:56:11
+ * @LastEditTime: 2021-11-22 14:50:07
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\axios\src\middleware\pruneConfigProp.ts
@@ -67,7 +67,7 @@ export default function pruneConfigProp(
   return config
 }
 
-export function auto(
+pruneConfigProp.auto = function auto(
   instance: AxiosInstance,
   options?: {
     default?: PruneConfigPropOptions
