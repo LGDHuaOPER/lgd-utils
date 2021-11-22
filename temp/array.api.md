@@ -7,10 +7,18 @@
 // @public (undocumented)
 const _default: {
     reduceWrap: typeof reduceWrap;
+    waterfall: typeof waterfall;
+    waterfalls: typeof waterfalls;
 };
 export default _default;
 
 // @public (undocumented)
 export function reduceWrap(value?: unknown, reduceBy?: ((result?: unknown, v?: unknown, i?: number, arr?: unknown[]) => unknown) | unknown, reduceWhile?: unknown, initialValue?: unknown): unknown;
+
+// @public (undocumented)
+export function waterfall(fns?: WaterfallParameterFns, arg?: unknown): unknown;
+
+// @public (undocumented)
+export function waterfalls(fns?: WaterfallsParameterFns, ...args: unknown[]): unknown[] | unknown;
 
 ```

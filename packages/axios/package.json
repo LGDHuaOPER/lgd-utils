@@ -10,7 +10,8 @@
   "buildOptions": {
     "output": {
       "globals": {
-        "axios": "axios"
+        "axios": "axios",
+        "qs": "Qs"
       },
       "name": "LgdUtilsAxios"
     },
@@ -28,7 +29,8 @@
     },
     "_global": {
       "external": [
-        "axios"
+        "axios",
+        "qs"
       ]
     }
   },
