@@ -5,14 +5,122 @@
 ```ts
 
 import { AxiosAdapter } from 'axios';
+import { AxiosError } from 'axios';
+import { AxiosInstance } from 'axios';
+import { AxiosRequestConfig } from 'axios';
+import { AxiosResponse } from 'axios';
 
 // @public (undocumented)
 export function adapterCacheWrapper(adapter?: AxiosAdapter | undefined, options?: CacheWrapperOptions | undefined): AxiosAdapter;
 
 // @public (undocumented)
+function auto(instance: AxiosInstance, options?: {
+    defaults?: ContentTypeDefaultsOptions;
+    request?: ContentTypeDefaultsOptions;
+}): AxiosInstance;
+
+// @public (undocumented)
 const _default: {
     adapterCacheWrapper: typeof adapterCacheWrapper;
+    middlewareContentType: typeof middlewareContentType;
+    middlewareLodashTemplateUrl: typeof middlewareLodashTemplateUrl;
+    middlewareMergeHeaders: typeof middlewareMergeHeaders;
+    middlewareParamsSerializer: typeof middlewareParamsSerializer;
+    middlewarePruneConfigProp: typeof middlewarePruneConfigProp;
+    middlewareRuntimeInterceptor: typeof middlewareRuntimeInterceptor;
 };
 export default _default;
+
+// @public (undocumented)
+function defaults(instance: AxiosInstance, options?: ContentTypeDefaultsOptions): AxiosInstance;
+
+// @public (undocumented)
+function getContentType(config: AxiosRequestConfig, instance?: AxiosInstance, options?: {
+    headerKey?: string;
+    type?: string;
+}): string;
+
+declare namespace middlewareContentType {
+    export {
+        defaults,
+        getContentType,
+        request,
+        auto
+    }
+}
+export { middlewareContentType }
+
+// @public (undocumented)
+export function middlewareLodashTemplateUrl(config: AxiosRequestConfig, instance?: AxiosInstance, options?: LodashTemplateUrlOptions): AxiosRequestConfig;
+
+// @public (undocumented)
+export namespace middlewareLodashTemplateUrl {
+    var // (undocumented)
+    auto: (instance: AxiosInstance, options?: {
+        default?: LodashTemplateUrlOptions | undefined;
+    } | undefined) => AxiosInstance;
+}
+
+// @public (undocumented)
+export function middlewareMergeHeaders(config: AxiosRequestConfig, instance?: AxiosInstance, options?: MergeHeadersOptions): AxiosRequestConfig;
+
+// @public (undocumented)
+export namespace middlewareMergeHeaders {
+    var // (undocumented)
+    auto: (instance: AxiosInstance, options?: {
+        default?: MergeHeadersOptions | undefined;
+    } | undefined) => AxiosInstance;
+}
+
+// @public (undocumented)
+export function middlewareParamsSerializer(config: AxiosRequestConfig, instance?: AxiosInstance, options?: ParamsSerializerOptions): AxiosRequestConfig;
+
+// @public (undocumented)
+export namespace middlewareParamsSerializer {
+    var // (undocumented)
+    auto: (instance: AxiosInstance, options?: {
+        default?: ParamsSerializerOptions | undefined;
+    } | undefined) => AxiosInstance;
+}
+
+// @public (undocumented)
+export function middlewarePruneConfigProp(config: AxiosRequestConfig, instance?: AxiosInstance, options?: PruneConfigPropOptions): AxiosRequestConfig;
+
+// @public (undocumented)
+export namespace middlewarePruneConfigProp {
+    var // (undocumented)
+    auto: (instance: AxiosInstance, options?: {
+        default?: PruneConfigPropOptions | undefined;
+    } | undefined) => AxiosInstance;
+}
+
+declare namespace middlewareRuntimeInterceptor {
+    export {
+        requestFulfilled,
+        responseFulfilled,
+        responseFulfilledWrapper,
+        responseRejected,
+        responseRejectedWrapper
+    }
+}
+export { middlewareRuntimeInterceptor }
+
+// @public (undocumented)
+function request(config: AxiosRequestConfig, instance?: AxiosInstance, options?: ContentTypeRequestOptions): AxiosRequestConfig;
+
+// @public (undocumented)
+function requestFulfilled(config: AxiosRequestConfig, instance?: AxiosInstance, options?: RuntimeInterceptorRequestFulfilledOptions): AxiosRequestConfig;
+
+// @public (undocumented)
+function responseFulfilled(responseOrError: AxiosResponse | unknown, instance?: AxiosInstance, options?: RuntimeInterceptorResponseFulfilledOptions): AxiosResponse | unknown;
+
+// @public (undocumented)
+function responseFulfilledWrapper(responseOrError: AxiosResponse, instance?: AxiosInstance, options?: RuntimeInterceptorResponseFulfilledWrapperOptions): AxiosResponse | unknown | Promise<AxiosResponse | unknown>;
+
+// @public (undocumented)
+function responseRejected(responseOrError: AxiosResponse | AxiosError | unknown, instance?: AxiosInstance, options?: RuntimeInterceptorResponseRejectedOptions): AxiosResponse | AxiosError | unknown;
+
+// @public (undocumented)
+function responseRejectedWrapper(responseOrError: AxiosError | unknown, instance?: AxiosInstance, options?: RuntimeInterceptorResponseRejectedWrapper): AxiosError | unknown | Promise<AxiosError | unknown>;
 
 ```
