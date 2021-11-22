@@ -35,11 +35,11 @@
     }
   },
   "dependencies": {
-    "@lgd-utils/array": "^0.0.12",
-    "@lgd-utils/object": "^0.0.12",
+    "@lgd-utils/array": "^0.0.13",
+    "@lgd-utils/object": "^0.0.13",
     "@lgd-utils/symbol": "^0.0.1",
-    "@lgd-utils/utils": "^0.0.14",
-    "@lgd-utils/validate": "^0.0.15",
+    "@lgd-utils/utils": "^0.0.15",
+    "@lgd-utils/validate": "^0.0.16",
     "axios": "^0.23.0",
     "lodash": "^4.17.21",
     "lru-cache": "^6.0.0",
@@ -87,5 +87,5 @@
   },
   "types": "dist/axios.d.ts",
   "unpkg": "dist/axios.global.prod.js",
-  "version": "0.0.4"
+  "version": "0.0.5"
 }

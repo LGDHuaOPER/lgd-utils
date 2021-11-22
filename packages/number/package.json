@@ -13,7 +13,7 @@
     }
   },
   "dependencies": {
-    "@lgd-utils/utils": "^0.0.14",
+    "@lgd-utils/utils": "^0.0.15",
     "bytes": "^3.1.0",
     "lodash": "^4.17.21"
   },
@@ -58,5 +58,5 @@
   },
   "types": "dist/number.d.ts",
   "unpkg": "dist/number.global.prod.js",
-  "version": "0.0.11"
+  "version": "0.0.12"
 }
