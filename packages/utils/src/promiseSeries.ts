@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:26:09
- * @LastEditTime: 2021-11-18 15:23:36
+ * @LastEditTime: 2021-11-25 14:03:13
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\promiseSeries.ts
@@ -19,15 +19,15 @@ import attemptFuncWithDefaultAndError from './attemptFuncWithDefaultAndError'
  * @param errorCb - 失败回调
  * @typeParam promiseFnList - Array\<(args: unknown[]) =\> Promise<unknown>\> | unknown | undefined
  * @typeParam thisArg - unknown | undefined
- * @typeParam successCb - (val: unknown) =\> unknown | undefined
- * @typeParam errorCb - (val: unknown) =\> unknown | undefined
+ * @typeParam successCb - (val?: unknown) =\> unknown | undefined
+ * @typeParam errorCb - (val?: unknown) =\> unknown | undefined
  * @returns promise - Promise<unknown>
  */
 export default function promiseSeries(
   promiseFnList?: Array<(args: unknown[]) => Promise<unknown>> | unknown,
   thisArg?: unknown,
-  successCb?: (val: unknown) => unknown,
-  errorCb?: (val: unknown) => unknown,
+  successCb?: (val?: unknown) => unknown,
+  errorCb?: (val?: unknown) => unknown,
 ): Promise<unknown> {
   if (!Array.isArray(promiseFnList)) promiseFnList = []
   promiseFnList = (promiseFnList as Array<(args: unknown[]) => Promise<unknown>>).map((_promiseFn) => {

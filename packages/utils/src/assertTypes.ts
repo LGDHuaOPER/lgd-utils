@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-11-25 11:15:54
- * @LastEditTime: 2021-11-25 11:45:34
+ * @LastEditTime: 2021-11-25 14:07:17
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\assertTypes.ts
@@ -27,6 +27,25 @@ import lodashOverSome from 'lodash/overSome'
 import lodashToUpper from 'lodash/toUpper'
 import { test } from '@lgd-utils/regexp'
 
+/**
+ * @param value - 要检查的值
+ * @param types - 断言类型
+ * @param options - 配置
+ * @param assertEq - options.assertEq: 自定义的 eq 行为
+ * @typeParam value - unknown | undefined
+ * @typeParam types -
+    | RegExp
+    | string
+    | ((val?: unknown) =\> boolean)
+    | unknown
+    | Array\<RegExp | string | ((val?: unknown) =\> boolean) | unknown | undefined\>
+    | Record\<string, RegExp | string | ((val?: unknown) =\> boolean) | unknown | undefined\>
+    | undefined
+ * @typeParam options - \{
+    assertEq?: (val?: unknown, otherVal?: unknown) =\> boolean
+  \}
+ * @returns 是否与断言类型匹配 - boolean
+ */
 export default function assertTypes(
   value?: unknown,
   types?:

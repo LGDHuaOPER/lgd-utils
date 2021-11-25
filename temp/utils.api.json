@@ -1438,7 +1438,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@lgd-utils/utils!typeDefaultTo:function(1)",
-          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @param options - 配置\n *\n * @param assertTypes - options.assertTypes: 断言类型\n *\n * @param assertEq - options.assertEq: 断言 eq 模式\n *\n * @param negate - options.negate: 是否对结果进行取反\n *\n * @typeParam value - unknown | undefined\n *\n * @typeParam defaultValue - unknown | undefined\n *\n * @typeParam options - \\{ assertTypes?: | Array\\<RegExp | string | ((val: unknown) =\\> boolean) | unknown\\> | RegExp | string | ((val: unknown) =\\> boolean) | unknown assertEq?: ((val: unknown, otherVal: unknown) =\\> boolean) | unknown negate?: boolean | ((value?: unknown, defaultValue?: unknown) =\\> boolean) | unknown \\}\n *\n * @returns result - unknown\n */\n",
+          "docComment": "/**\n * @param value - 要检查的值\n *\n * @param defaultValue - 默认值\n *\n * @param options - 配置\n *\n * @param assertTypes - options.assertTypes: 断言类型，兼容老版本，推荐使用 options.types\n *\n * @param assertTypesOptions - options.assertTypesOptions: 使用默认断言类型方法的 options\n *\n * @param negate - options.negate: 是否对结果进行取反\n *\n * @param types - options.types: 断言类型\n *\n * @typeParam value - unknown | undefined\n *\n * @typeParam defaultValue - unknown | undefined\n *\n * @typeParam options - \\{ assertTypes?: Parameters\\<typeof assertTypes\\>[1] assertTypesOptions?: Parameters\\<typeof assertTypes\\>[2] negate?: boolean | ((value?: unknown, defaultValue?: unknown) =\\> boolean) | unknown types?: Parameters\\<typeof assertTypes\\>[1] \\}\n *\n * @returns result - unknown\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -1458,7 +1458,7 @@
             },
             {
               "kind": "Content",
-              "text": ", { assertTypes, assertEq, negate, }?: "
+              "text": ", { assertTypes: _assertTypes, assertTypesOptions, negate, types, }?: "
             },
             {
               "kind": "Content",
@@ -1466,30 +1466,57 @@
             },
             {
               "kind": "Reference",
-              "text": "Array",
-              "canonicalReference": "!Array:interface"
+              "text": "Parameters",
+              "canonicalReference": "!Parameters:type"
             },
             {
               "kind": "Content",
-              "text": "<"
+              "text": "<typeof "
             },
             {
               "kind": "Reference",
-              "text": "RegExp",
-              "canonicalReference": "!RegExp:interface"
+              "text": "assertTypes",
+              "canonicalReference": "@lgd-utils/utils!default:function"
             },
             {
               "kind": "Content",
-              "text": " | string | ((val: unknown) => boolean) | unknown> | "
+              "text": ">[1];\n    assertTypesOptions?: "
             },
             {
               "kind": "Reference",
-              "text": "RegExp",
-              "canonicalReference": "!RegExp:interface"
+              "text": "Parameters",
+              "canonicalReference": "!Parameters:type"
             },
             {
               "kind": "Content",
-              "text": " | string | ((val: unknown) => boolean) | unknown;\n    assertEq?: ((val: unknown, otherVal: unknown) => boolean) | unknown;\n    negate?: boolean | ((value?: unknown, defaultValue?: unknown) => boolean) | unknown;\n}"
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "assertTypes",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ">[2];\n    negate?: boolean | ((value?: unknown, defaultValue?: unknown) => boolean) | unknown;\n    types?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Parameters",
+              "canonicalReference": "!Parameters:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "assertTypes",
+              "canonicalReference": "@lgd-utils/utils!default:function"
+            },
+            {
+              "kind": "Content",
+              "text": ">[1];\n}"
             },
             {
               "kind": "Content",
@@ -1505,8 +1532,8 @@
             }
           ],
           "returnTypeTokenRange": {
-            "startIndex": 13,
-            "endIndex": 14
+            "startIndex": 19,
+            "endIndex": 20
           },
           "releaseTag": "Public",
           "overloadIndex": 1,
@@ -1526,10 +1553,10 @@
               }
             },
             {
-              "parameterName": "{ assertTypes, assertEq, negate, }",
+              "parameterName": "{ assertTypes: _assertTypes, assertTypesOptions, negate, types, }",
               "parameterTypeTokenRange": {
                 "startIndex": 5,
-                "endIndex": 12
+                "endIndex": 18
               }
             }
           ],

@@ -11,12 +11,13 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-06-15 20:12:01
- * @LastEditTime: 2021-10-28 16:53:26
+ * @LastEditTime: 2021-11-25 14:03:49
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\index.ts
  */
 
+export { default as assertTypes } from './assertTypes'
 export { default as assertValue } from './assertValue'
 export { default as attemptFunc } from './attemptFunc'
 export { default as attemptFuncWithDefault } from './attemptFuncWithDefault'

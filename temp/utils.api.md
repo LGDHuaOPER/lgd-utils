@@ -75,13 +75,18 @@ export function partialEqWith(partialArg?: unknown, comparator?: ((partialArg: u
 export function promiseSeries(promiseFnList?: Array<(args: unknown[]) => Promise<unknown>> | unknown, thisArg?: unknown, successCb?: (val: unknown) => unknown, errorCb?: (val: unknown) => unknown): Promise<unknown>;
 
 // @public (undocumented)
-export function typeDefaultTo(value?: unknown, defaultValue?: unknown, { assertTypes, assertEq, negate, }?: {
-    assertTypes?: Array<RegExp | string | ((val: unknown) => boolean) | unknown> | RegExp | string | ((val: unknown) => boolean) | unknown;
-    assertEq?: ((val: unknown, otherVal: unknown) => boolean) | unknown;
+export function typeDefaultTo(value?: unknown, defaultValue?: unknown, { assertTypes: _assertTypes, assertTypesOptions, negate, types, }?: {
+    assertTypes?: Parameters<typeof assertTypes>[1];
+    assertTypesOptions?: Parameters<typeof assertTypes>[2];
     negate?: boolean | ((value?: unknown, defaultValue?: unknown) => boolean) | unknown;
+    types?: Parameters<typeof assertTypes>[1];
 }): unknown;
 
 // @public (undocumented)
 export function undefinedTo(value?: unknown, defaultValue?: unknown): unknown;
+
+// Warnings were encountered during analysis:
+//
+// src/typeDefaultTo.ts:44:5 - (ae-forgotten-export) The symbol "assertTypes" needs to be exported by the entry point index.d.ts
 
 ```
