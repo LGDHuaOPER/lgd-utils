@@ -5,7 +5,12 @@
 ```ts
 
 // @public (undocumented)
-export function assertValue(value?: unknown, assertion?: unknown[] | Record<string, unknown> | RegExp | ((val: unknown) => boolean) | unknown): boolean;
+export function assertTypes(value?: unknown, types?: RegExp | string | ((val?: unknown) => boolean) | unknown | Array<RegExp | string | ((val?: unknown) => boolean) | unknown | undefined> | Record<string, RegExp | string | ((val?: unknown) => boolean) | unknown | undefined>, options?: {
+    assertEq?: (val?: unknown, otherVal?: unknown) => boolean;
+}): boolean;
+
+// @public (undocumented)
+export function assertValue(value?: unknown, assertion?: unknown[] | Record<string, unknown> | RegExp | ((val?: unknown) => boolean) | unknown): boolean;
 
 // @public (undocumented)
 export function attemptFunc(func?: ((...args: unknown[]) => unknown) | unknown, ...args: unknown[]): unknown;
@@ -30,6 +35,7 @@ export function attemptFuncWithLazyError(func?: ((...args: unknown[]) => unknown
 
 // @public (undocumented)
 const _default: {
+    assertTypes: typeof assertTypes;
     assertValue: typeof assertValue;
     attemptFunc: typeof attemptFunc;
     attemptFuncWithDefault: typeof attemptFuncWithDefault;
@@ -63,16 +69,16 @@ export function nilTo(value?: unknown, defaultValue?: unknown): unknown;
 export function normalizeValue(value: unknown, type?: string, defaultVal?: unknown): unknown;
 
 // @public (undocumented)
-export function partialEq(partialArg?: unknown): (val: unknown) => boolean;
+export function partialEq(partialArg?: unknown): (val?: unknown) => boolean;
 
 // @public (undocumented)
-export function partialEqBy(partialArg?: unknown, iteratee?: ((val: unknown) => unknown) | unknown): (val: unknown) => boolean;
+export function partialEqBy(partialArg?: unknown, iteratee?: ((val?: unknown) => unknown) | unknown): (val?: unknown) => boolean;
 
 // @public (undocumented)
-export function partialEqWith(partialArg?: unknown, comparator?: ((partialArg: unknown, val: unknown) => boolean) | unknown): (val: unknown) => boolean;
+export function partialEqWith(partialArg?: unknown, comparator?: ((partialArg?: unknown, val?: unknown) => boolean) | unknown): (val?: unknown) => boolean;
 
 // @public (undocumented)
-export function promiseSeries(promiseFnList?: Array<(args: unknown[]) => Promise<unknown>> | unknown, thisArg?: unknown, successCb?: (val: unknown) => unknown, errorCb?: (val: unknown) => unknown): Promise<unknown>;
+export function promiseSeries(promiseFnList?: Array<(args: unknown[]) => Promise<unknown>> | unknown, thisArg?: unknown, successCb?: (val?: unknown) => unknown, errorCb?: (val?: unknown) => unknown): Promise<unknown>;
 
 // @public (undocumented)
 export function typeDefaultTo(value?: unknown, defaultValue?: unknown, { assertTypes: _assertTypes, assertTypesOptions, negate, types, }?: {
@@ -84,9 +90,5 @@ export function typeDefaultTo(value?: unknown, defaultValue?: unknown, { assertT
 
 // @public (undocumented)
 export function undefinedTo(value?: unknown, defaultValue?: unknown): unknown;
-
-// Warnings were encountered during analysis:
-//
-// src/typeDefaultTo.ts:44:5 - (ae-forgotten-export) The symbol "assertTypes" needs to be exported by the entry point index.d.ts
 
 ```
