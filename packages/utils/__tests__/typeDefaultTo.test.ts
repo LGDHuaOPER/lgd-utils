@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 17:04:33
- * @LastEditTime: 2021-09-12 14:17:25
+ * @LastEditTime: 2021-11-25 13:47:01
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\__tests__\typeDefaultTo.test.ts
@@ -37,21 +37,53 @@ describe('@lgd-utils/utils typeDefaultTo', () => {
     ).toEqual({ a: 789 })
   })
 
-  it(`typeDefaultTo(void 0, '8', { assertTypes: null, assertEq: (val: unknown, otherVal: unknown) => val == otherVal }) is to be '8',
+  it(`typeDefaultTo(void 0, '8', {
+      assertTypes: null,
+      assertTypesOptions: { assertEq: (val: unknown, otherVal: unknown) => val == otherVal },
+    }) is to be '8',
     typeDefaultTo([], 9, {
       assertTypes: null,
-      assertEq: (val: unknown, otherVal: unknown) => Array.isArray(val),
+      assertTypesOptions: { assertEq: (val: unknown, otherVal: unknown) => Array.isArray(val) },
       negate: true,
     }) is equal to be []`, () => {
     expect(
-      typeDefaultTo(void 0, '8', { assertTypes: null, assertEq: (val: unknown, otherVal: unknown) => val == otherVal }),
+      typeDefaultTo(void 0, '8', {
+        assertTypes: null,
+        assertTypesOptions: { assertEq: (val: unknown, otherVal: unknown) => val == otherVal },
+      }),
     ).toBe('8')
     expect(
       typeDefaultTo([], 9, {
         assertTypes: null,
-        assertEq: (val: unknown, otherVal: unknown) => Array.isArray(val),
+        assertTypesOptions: { assertEq: (val: unknown, otherVal: unknown) => Array.isArray(val) },
         negate: true,
       }),
     ).toEqual([])
+  })
+
+  it(`typeDefaultTo(10, '11', {
+      assertTypes: [(val: unknown) => (val as number) > 10, /^\d+$/],
+    }) is to be '11',
+    typeDefaultTo([12], [13], {
+      assertTypes: {
+        1: Array.isArray,
+        2: (val: unknown) => (val as any[]).length > 0,
+      },
+      negate: true,
+    }) is equal to be [12]`, () => {
+    expect(
+      typeDefaultTo(10, '11', {
+        assertTypes: [(val: unknown) => (val as number) > 10, /^\d+$/],
+      }),
+    ).toBe('11')
+    expect(
+      typeDefaultTo([12], [13], {
+        assertTypes: {
+          1: Array.isArray,
+          2: (val: unknown) => (val as any[]).length > 0,
+        },
+        negate: true,
+      }),
+    ).toEqual([12])
   })
 })
