@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-08 10:27:04
- * @LastEditTime: 2021-11-25 12:10:23
+ * @LastEditTime: 2021-12-07 15:45:42
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\utils\src\typeDefaultTo.ts
@@ -63,4 +63,25 @@ export default function typeDefaultTo(
     : assertTypes(value, _types, assertTypesOptions)
 
   return assertResult ? (lodashIsUndefined(defaultValue) ? value : defaultValue) : value
+}
+
+typeDefaultTo.not = function typeDefaultToNot(
+  value?: unknown,
+  defaultValue?: unknown,
+  {
+    assertTypes: _assertTypes,
+    assertTypesOptions,
+    types,
+  }: {
+    assertTypes?: Parameters<typeof assertTypes>[1]
+    assertTypesOptions?: Parameters<typeof assertTypes>[2]
+    types?: Parameters<typeof assertTypes>[1]
+  } = {},
+): unknown {
+  return typeDefaultTo(value, defaultValue, {
+    assertTypes: _assertTypes,
+    assertTypesOptions,
+    negate: true,
+    types,
+  })
 }
