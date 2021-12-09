@@ -52,12 +52,12 @@ export default function mergeHeaders(
         )) as MergeHeadersMergeCustomizer)
 
   const mergeWithArgs = [
-    ...[lodashGet(options, 'mergeWithUnShiftArg')],
+    lodashGet(options, 'mergeWithUnShiftArg'),
     config.headers,
     lodashGet(options, 'customHeaders'),
     mergeCustomizer,
   ].filter((v) => !lodashIsNil(v)) as Parameters<typeof lodashMergeWith>
-  lodashMergeWith(...mergeWithArgs)
+  config.headers = lodashMergeWith(...mergeWithArgs)
 
   config.headers = omitOwnDeepBy(
     config.headers,
