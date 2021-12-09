@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-12-02 09:17:53
- * @LastEditTime: 2021-12-02 11:12:09
+ * @LastEditTime: 2021-12-09 16:20:02
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\screenlog\__tests__\index.test.ts
@@ -21,33 +21,30 @@ describe('@lgd-utils/screenlog', () => {
     expect(screenLog.availableProxyConsoleFnNames).toEqual(['clear', 'error', 'info', 'log'])
   })
 
-  screenLog.init({ autoScroll: false })
+  it(
+    `the props for screenLog are correct after the method 'init' has been called`,
+    () => {
+      screenLog.init({ autoScroll: false })
 
-  it(`screenLog._options is equal to {
-      bgColor: 'black',
-      logColor: 'lightgreen',
-      infoColor: 'blue',
-      warnColor: 'orange',
-      errorColor: 'red',
-      fontSize: '1em',
-      proxyConsole: ['clear', 'error', 'warn'],
-      css: '',
-      autoScroll: false,
-    }`, () => {
-    expect(screenLog._options).toEqual({
-      bgColor: 'black',
-      logColor: 'lightgreen',
-      infoColor: 'blue',
-      warnColor: 'orange',
-      errorColor: 'red',
-      fontSize: '1em',
-      proxyConsole: ['clear', 'error', 'warn'],
-      css: '',
-      autoScroll: false,
-    })
-  })
+      expect(Object.keys(screenLog._console).length).toBe(2)
 
-  it(`screenLog.logEl is not to be undefined`, () => {
-    expect(screenLog.logEl).not.toBeUndefined()
-  })
+      expect(screenLog._options).toEqual({
+        bgColor: 'black',
+        logColor: 'lightgreen',
+        infoColor: 'blue',
+        warnColor: 'orange',
+        errorColor: 'red',
+        fontSize: '1em',
+        proxyConsole: ['clear', 'error', 'warn'],
+        css: '',
+        autoScroll: false,
+      })
+
+      expect(screenLog.isInitialized).toBeTruthy()
+
+      expect(screenLog.logEl).not.toBeUndefined()
+
+      expect(screenLog.logElId).toBeString()
+    }
+  )
 })
