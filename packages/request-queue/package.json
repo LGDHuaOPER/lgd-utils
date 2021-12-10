@@ -1,0 +1,60 @@
+{
+  "author": {
+    "email": "lgd.huaoper@gmail.com",
+    "name": "LGD.HuaFEEng",
+    "url": "https://lgdhuaoper.github.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/LGDHuaOPER/lgd-utils/issues"
+  },
+  "buildOptions": {
+    "output": {
+      "name": "LgdUtilsRequestQueue"
+    }
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "description": "A front-end request-queue tool",
+  "devDependencies": {
+    "@types/lodash": "^4.14.176"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "__tests__",
+    "types": "types"
+  },
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "homepage": "https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/request-queue#readme",
+  "jsdelivr": "dist/request-queue.global.prod.js",
+  "keywords": [
+    "request",
+    "queue",
+    "request-queue",
+    "RequestQueue",
+    "limit",
+    "concurrent",
+    "tool",
+    "front-end"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "module": "dist/request-queue.esm.js",
+  "name": "@lgd-utils/request-queue",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LGDHuaOPER/lgd-utils.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "types": "dist/request-queue.d.ts",
+  "unpkg": "dist/request-queue.global.prod.js",
+  "version": "0.0.1"
+}
