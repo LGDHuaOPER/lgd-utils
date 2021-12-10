@@ -1,0 +1,58 @@
+{
+  "author": {
+    "email": "lgd.huaoper@gmail.com",
+    "name": "LGD.HuaFEEng",
+    "url": "https://lgdhuaoper.github.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/LGDHuaOPER/lgd-utils/issues"
+  },
+  "buildOptions": {
+    "output": {
+      "name": "LgdUtilsPolling"
+    }
+  },
+  "dependencies": {
+    "@lgd-utils/utils": "^0.0.15",
+    "@lgd-utils/validate": "^0.0.16"
+  },
+  "description": "A front-end polling tool",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__",
+    "types": "types"
+  },
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "homepage": "https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/polling#readme",
+  "jsdelivr": "dist/polling.global.prod.js",
+  "keywords": [
+    "polling",
+    "poll",
+    "request",
+    "interval",
+    "setTimeout",
+    "setInterval",
+    "tool",
+    "front-end"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "module": "dist/polling.esm.js",
+  "name": "@lgd-utils/polling",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LGDHuaOPER/lgd-utils.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "types": "dist/polling.d.ts",
+  "unpkg": "dist/polling.global.prod.js",
+  "version": "0.0.1"
+}
