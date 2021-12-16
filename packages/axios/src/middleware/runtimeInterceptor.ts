@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-27 19:20:47
- * @LastEditTime: 2021-11-22 14:44:20
+ * @LastEditTime: 2021-12-16 17:42:28
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: \lgd-utils\packages\axios\src\middleware\runtimeInterceptor.ts
@@ -214,12 +214,15 @@ export function responseRejectedWrapper(
 
   if (!responseOrError) {
     const hookName = 'emptyErrorHook'
-    returnV = attemptFuncWithLazyDefaultAndLazyError(
-      lodashGet(options, hookName),
-      () => Promise.reject(responseOrError),
-      () => Promise.reject(responseOrError),
-      responseOrError,
-    )
+    const hook = lodashGet(options, hookName)
+    if (hook !== void 0) {
+      returnV = attemptFuncWithLazyDefaultAndLazyError(
+        hook,
+        () => Promise.reject(responseOrError),
+        () => Promise.reject(responseOrError),
+        responseOrError,
+      )
+    }
     hookNames.push(hookName)
   } else if ((responseOrError as AxiosError).response) {
     // The request was made and the server responded with a status code
@@ -244,24 +247,30 @@ export function responseRejectedWrapper(
         )
       }
       const hookName = 'isAxiosErrorHook'
-      returnV = attemptFuncWithLazyDefaultAndLazyError(
-        lodashGet(options, hookName),
-        () => Promise.reject((responseOrError as AxiosError).response),
-        () => Promise.reject((responseOrError as AxiosError).response),
-        (responseOrError as AxiosError).response,
-        responseOrError,
-        done,
-      )
+      const hook = lodashGet(options, hookName)
+      if (hook !== void 0) {
+        returnV = attemptFuncWithLazyDefaultAndLazyError(
+          hook,
+          () => Promise.reject((responseOrError as AxiosError).response),
+          () => Promise.reject((responseOrError as AxiosError).response),
+          (responseOrError as AxiosError).response,
+          responseOrError,
+          done,
+        )
+      }
       hookNames.push(hookName)
     } else {
       const hookName = 'hasResponseNotAxiosErrorHook'
-      returnV = attemptFuncWithLazyDefaultAndLazyError(
-        lodashGet(options, hookName),
-        () => Promise.reject((responseOrError as AxiosError).response),
-        () => Promise.reject((responseOrError as AxiosError).response),
-        (responseOrError as AxiosError).response,
-        responseOrError,
-      )
+      const hook = lodashGet(options, hookName)
+      if (hook !== void 0) {
+        returnV = attemptFuncWithLazyDefaultAndLazyError(
+          hook,
+          () => Promise.reject((responseOrError as AxiosError).response),
+          () => Promise.reject((responseOrError as AxiosError).response),
+          (responseOrError as AxiosError).response,
+          responseOrError,
+        )
+      }
       hookNames.push(hookName)
     }
   } else if ((responseOrError as AxiosError).request) {
@@ -269,23 +278,29 @@ export function responseRejectedWrapper(
     // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
     // http.ClientRequest in node.js
     const hookName = 'hasRequestHook'
-    returnV = attemptFuncWithLazyDefaultAndLazyError(
-      lodashGet(options, hookName),
-      () => Promise.reject((responseOrError as AxiosError).request),
-      () => Promise.reject((responseOrError as AxiosError).request),
-      (responseOrError as AxiosError).request,
-      responseOrError,
-    )
+    const hook = lodashGet(options, hookName)
+    if (hook !== void 0) {
+      returnV = attemptFuncWithLazyDefaultAndLazyError(
+        hook,
+        () => Promise.reject((responseOrError as AxiosError).request),
+        () => Promise.reject((responseOrError as AxiosError).request),
+        (responseOrError as AxiosError).request,
+        responseOrError,
+      )
+    }
     hookNames.push(hookName)
   } else {
     // Something happened in setting up the request that triggered an Error
     const hookName = 'otherErrorHook'
-    returnV = attemptFuncWithLazyDefaultAndLazyError(
-      lodashGet(options, hookName),
-      () => Promise.reject(responseOrError),
-      () => Promise.reject(responseOrError),
-      responseOrError,
-    )
+    const hook = lodashGet(options, hookName)
+    if (hook !== void 0) {
+      returnV = attemptFuncWithLazyDefaultAndLazyError(
+        hook,
+        () => Promise.reject(responseOrError),
+        () => Promise.reject(responseOrError),
+        responseOrError,
+      )
+    }
     hookNames.push(hookName)
   }
 
