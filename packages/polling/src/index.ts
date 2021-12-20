@@ -30,7 +30,7 @@ export default class Polling {
   public maxTimes: number
 
   // 请求
-  public request: () => Promise<unknown>
+  public request?: () => Promise<unknown>
 
   // 请求适配器
   public requestAdapter: (apiConfig: string | Record<string, unknown>) => Promise<unknown>
@@ -107,7 +107,7 @@ export default class Polling {
       val: unknown,
     ) => unknown
 
-    this.type = [0, 1].includes(config.type) ? config.type : 0
+    this.type = [0, 1].includes(config.type as number) ? (config.type as number) : 0
 
     this.hasExeImmediate = !this.immediate
   }
