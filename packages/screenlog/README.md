@@ -2,10 +2,10 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-19 22:59:53
- * @LastEditTime: 2021-12-02 09:35:14
+ * @LastEditTime: 2021-12-30 18:01:21
  * @LastEditors: shiconghua
  * @Description: file content
- * @FilePath: \lgd-utils\packages\screenlog\README.md
+ * @FilePath: /lgd-utils/packages/screenlog/README.md
 -->
 # `@lgd-utils/screenlog`
 
@@ -49,11 +49,15 @@ screenLog.init()
 - [@lgd-utils/array](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/array) - A front-end array tool
 - [@lgd-utils/axios](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/axios) - A axios adapter and middleware tool
 - [@lgd-utils/cached-storage](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/cached-storage) - 一个具有失效功能的缓存存储库
+- [@lgd-utils/collection](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/collection) - A front-end collection tool
 - [@lgd-utils/error](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/error) - A front-end error tool
 - [@lgd-utils/html](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/html) - A front-end html tool
 - [@lgd-utils/number](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/number) - A front-end number tool
 - [@lgd-utils/object](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/object) - A front-end object tool
+- [@lgd-utils/polling](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/polling) - A front-end polling tool
 - [@lgd-utils/regexp](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/regexp) - A front-end regexp tool
+- [@lgd-utils/request-queue](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/request-queue) - A front-end request-queue tool
+- [@lgd-utils/screenlog](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/screenlog) - Bring console.log and so on, on the screen
 - [@lgd-utils/symbol](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/symbol) - A front-end symbol tool
 - [@lgd-utils/utils](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils) - A front-end utils tool
 - [@lgd-utils/validate](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/validate) - A front-end verification tool

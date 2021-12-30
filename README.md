@@ -2,10 +2,10 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 23:55:10
- * @LastEditTime: 2021-12-02 09:20:33
+ * @LastEditTime: 2021-12-30 17:48:31
  * @LastEditors: shiconghua
  * @Description: file content
- * @FilePath: \lgd-utils\README.md
+ * @FilePath: /lgd-utils/README.md
 -->
 <h1 align="center">@lgd-utils</h1>
 
@@ -25,7 +25,9 @@
 - [@lgd-utils/html](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/html)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/html)](https://www.npmjs.com/package/@lgd-utils/html)
 - [@lgd-utils/number](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/number)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/number)](https://www.npmjs.com/package/@lgd-utils/number)
 - [@lgd-utils/object](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/object)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/object)](https://www.npmjs.com/package/@lgd-utils/object)
+- [@lgd-utils/polling](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/polling)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/polling)](https://www.npmjs.com/package/@lgd-utils/polling)
 - [@lgd-utils/regexp](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/regexp)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/regexp)](https://www.npmjs.com/package/@lgd-utils/regexp)
+- [@lgd-utils/request-queue](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/request-queue)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/request-queue)](https://www.npmjs.com/package/@lgd-utils/request-queue)
 - [@lgd-utils/screenlog](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/screenlog)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/screenlog)](https://www.npmjs.com/package/@lgd-utils/screenlog)
 - [@lgd-utils/symbol](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/symbol)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/symbol)](https://www.npmjs.com/package/@lgd-utils/symbol)
 - [@lgd-utils/utils](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils)  [![npm](https://img.shields.io/npm/dt/@lgd-utils/utils)](https://www.npmjs.com/package/@lgd-utils/utils)
