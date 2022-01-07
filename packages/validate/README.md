@@ -2,10 +2,10 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-09-01 17:04:33
- * @LastEditTime: 2021-10-28 17:11:44
+ * @LastEditTime: 2022-01-07 09:46:55
  * @LastEditors: shiconghua
  * @Description: file content
- * @FilePath: \lgd-utils\packages\validate\README.md
+ * @FilePath: /lgd-utils/packages/validate/README.md
 -->
 # `@lgd-utils/validate`
 
@@ -59,7 +59,10 @@ validate.validEmptyString('  ', lodashTrim); // true
 - [@lgd-utils/html](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/html) - A front-end html tool
 - [@lgd-utils/number](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/number) - A front-end number tool
 - [@lgd-utils/object](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/object) - A front-end object tool
+- [@lgd-utils/polling](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/polling) - A front-end polling tool
 - [@lgd-utils/regexp](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/regexp) - A front-end regexp tool
+- [@lgd-utils/request-queue](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/request-queue) - A front-end request-queue tool
+- [@lgd-utils/screenlog](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/screenlog) - Bring console.log and so on, on the screen
 - [@lgd-utils/symbol](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/symbol) - A front-end symbol tool
 - [@lgd-utils/utils](https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/utils) - A front-end utils tool
 - [More…](https://github.com/LGDHuaOPER/lgd-utils)
