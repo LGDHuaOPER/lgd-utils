@@ -13,8 +13,8 @@
     }
   },
   "dependencies": {
-    "@lgd-utils/utils": "^0.0.15",
-    "@lgd-utils/validate": "^0.0.16"
+    "@lgd-utils/utils": "^0.0.16",
+    "@lgd-utils/validate": "^0.0.17"
   },
   "description": "A front-end polling tool",
   "directories": {
