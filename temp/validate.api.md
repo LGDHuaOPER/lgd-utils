@@ -9,14 +9,20 @@ const _default: {
     validArrayBufferView: typeof validArrayBufferView;
     validCacheLike: typeof validCacheLike;
     validEmail: typeof validEmail;
+    validEmptyArray: typeof validEmptyArray;
     validEmptyObject: typeof validEmptyObject;
     validEmptyString: typeof validEmptyString;
+    validExternal: typeof validExternal;
     validFormData: typeof validFormData;
     validIPv4: typeof validIPv4;
+    validMobile: typeof validMobile;
     validNilOrEmptyStr: typeof validNilOrEmptyStr;
+    validNonemptyArray: typeof validNonemptyArray;
+    validNonemptyObject: typeof validNonemptyObject;
     validNonemptyString: typeof validNonemptyString;
     validObjectKey: typeof validObjectKey;
     validStream: typeof validStream;
+    validTel: typeof validTel;
     validToStringBlob: typeof validToStringBlob;
     validToStringFile: typeof validToStringFile;
     validToStringObject: typeof validToStringObject;
@@ -37,6 +43,12 @@ export function validCacheLike(cache?: CacheLike<unknown>): boolean;
 export function validEmail(email?: unknown, lv?: number | string): boolean;
 
 // @public (undocumented)
+export function validEmptyArray(value?: unknown, iteratee?: (value?: unknown) => unknown | undefined, { assertArray, assertEmpty, }?: {
+    assertArray?: typeof Array.isArray;
+    assertEmpty?: (value?: unknown) => boolean;
+}): boolean;
+
+// @public (undocumented)
 export function validEmptyObject(value?: unknown, iteratee?: (value?: unknown) => unknown | undefined, { assertObject, assertEmpty, }?: {
     assertObject?: typeof validToStringObject;
     assertEmpty?: (value?: unknown) => boolean;
@@ -46,13 +58,31 @@ export function validEmptyObject(value?: unknown, iteratee?: (value?: unknown) =
 export function validEmptyString(value?: unknown, iteratee?: unknown): boolean;
 
 // @public (undocumented)
+export function validExternal(external?: unknown, lv?: number | string): boolean;
+
+// @public (undocumented)
 export function validFormData(value?: unknown, FormDataConstructor?: typeof FormData): boolean;
 
 // @public (undocumented)
 export function validIPv4(ipv4?: unknown, lv?: number | string): boolean;
 
 // @public (undocumented)
+export function validMobile(mobile?: unknown, lv?: number | string): boolean;
+
+// @public (undocumented)
 export function validNilOrEmptyStr(value?: unknown): boolean;
+
+// @public (undocumented)
+export function validNonemptyArray(value?: unknown, iteratee?: (value?: unknown) => unknown | undefined, { assertArray, assertNonempty, }?: {
+    assertArray?: typeof Array.isArray;
+    assertNonempty?: (value?: unknown) => boolean;
+}): boolean;
+
+// @public (undocumented)
+export function validNonemptyObject(value?: unknown, iteratee?: (value?: unknown) => unknown | undefined, { assertObject, assertNonempty, }?: {
+    assertObject?: typeof validToStringObject;
+    assertNonempty?: (value?: unknown) => boolean;
+}): boolean;
 
 // @public (undocumented)
 export function validNonemptyString(value?: unknown, iteratee?: unknown): boolean;
@@ -62,6 +92,9 @@ export function validObjectKey(objectKey?: unknown, lv?: number | string): boole
 
 // @public (undocumented)
 export function validStream(value?: unknown): boolean;
+
+// @public (undocumented)
+export function validTel(tel?: unknown, lv?: number | string): boolean;
 
 // @public (undocumented)
 export function validToStringBlob(value?: unknown): boolean;

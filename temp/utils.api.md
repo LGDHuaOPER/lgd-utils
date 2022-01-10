@@ -89,6 +89,18 @@ export function typeDefaultTo(value?: unknown, defaultValue?: unknown, { assertT
 }): unknown;
 
 // @public (undocumented)
+export namespace typeDefaultTo {
+    var // (undocumented)
+    not: (value?: unknown, defaultValue?: unknown, { assertTypes: _assertTypes, assertTypesOptions, types, }?: {
+        assertTypes?: unknown;
+        assertTypesOptions?: {
+            assertEq?: ((val?: unknown, otherVal?: unknown) => boolean) | undefined;
+        } | undefined;
+        types?: unknown;
+    }) => unknown;
+}
+
+// @public (undocumented)
 export function undefinedTo(value?: unknown, defaultValue?: unknown): unknown;
 
 ```

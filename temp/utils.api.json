@@ -334,7 +334,7 @@
             {
               "kind": "Reference",
               "text": "typeDefaultTo",
-              "canonicalReference": "@lgd-utils/utils!default:function"
+              "canonicalReference": "@lgd-utils/utils!~typeDefaultTo:function"
             },
             {
               "kind": "Content",
@@ -1565,7 +1565,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export default function typeDefaultTo(value?: "
+              "text": "declare function typeDefaultTo(value?: "
             },
             {
               "kind": "Content",
@@ -1684,6 +1684,42 @@
             }
           ],
           "name": "typeDefaultTo"
+        },
+        {
+          "kind": "Namespace",
+          "canonicalReference": "@lgd-utils/utils!typeDefaultTo:namespace",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare namespace typeDefaultTo "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "typeDefaultTo",
+          "members": [
+            {
+              "kind": "Variable",
+              "canonicalReference": "@lgd-utils/utils!typeDefaultTo.not:var",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "not: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(value?: unknown, defaultValue?: unknown, { assertTypes: _assertTypes, assertTypesOptions, types, }?: {\n        assertTypes?: unknown;\n        assertTypesOptions?: {\n            assertEq?: ((val?: unknown, otherVal?: unknown) => boolean) | undefined;\n        } | undefined;\n        types?: unknown;\n    }) => unknown"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "not",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
         },
         {
           "kind": "Function",
