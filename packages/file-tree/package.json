@@ -1,0 +1,52 @@
+{
+  "author": {
+    "email": "lgd.huaoper@gmail.com",
+    "name": "LGD.HuaFEEng",
+    "url": "https://lgdhuaoper.github.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/LGDHuaOPER/lgd-utils/issues"
+  },
+  "buildOptions": {
+    "formats": "cjs"
+  },
+  "description": "A back-end file-tree tool",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__",
+    "types": "types"
+  },
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "homepage": "https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/file-tree#readme",
+  "keywords": [
+    "file-tree",
+    "file",
+    "tree",
+    "files",
+    "directory",
+    "directories",
+    "recursion",
+    "util",
+    "tool",
+    "back-end",
+    "node"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@lgd-utils/file-tree",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LGDHuaOPER/lgd-utils.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "types": "dist/file-tree.d.ts",
+  "version": "0.0.1"
+}

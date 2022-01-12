@@ -42,7 +42,11 @@ const outputConfigs = {
 
 const defaultFormats = Object.keys(outputConfigs)
 const inlineFormats = process.env.FORMATS && process.env.FORMATS.split(',')
-const packageFormats = inlineFormats || pkgBuildOptions.formats || defaultFormats
+const packageFormats = _.isArray(pkgBuildOptions.formats)
+  ? pkgBuildOptions.formats
+  : _.isString(pkgBuildOptions.formats)
+  ? [pkgBuildOptions.formats]
+  : inlineFormats || defaultFormats
 const packageConfigs = process.env.PROD_ONLY
   ? []
   : packageFormats.map((format) => createConfig(format, outputConfigs[format]))

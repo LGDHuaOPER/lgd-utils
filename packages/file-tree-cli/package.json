@@ -1,0 +1,55 @@
+{
+  "__lgd_utils__disable_build": true,
+  "author": {
+    "email": "lgd.huaoper@gmail.com",
+    "name": "LGD.HuaFEEng",
+    "url": "https://lgdhuaoper.github.io/"
+  },
+  "bin": {
+    "file-tree-cli": "bin/file-tree-cli.js",
+    "lgd-utils-file-tree": "bin/lgd-utils-file-tree.js",
+    "lu-file-tree": "bin/lu-file-tree.js"
+  },
+  "bugs": {
+    "url": "https://github.com/LGDHuaOPER/lgd-utils/issues"
+  },
+  "description": "A back-end file-tree-cli tool",
+  "directories": {
+    "lib": "src"
+  },
+  "files": [
+    "bin",
+    "src",
+    "index.js"
+  ],
+  "homepage": "https://github.com/LGDHuaOPER/lgd-utils/tree/main/packages/file-tree-cli#readme",
+  "keywords": [
+    "file-tree-cli",
+    "file-tree",
+    "file",
+    "tree",
+    "files",
+    "directory",
+    "directories",
+    "cli",
+    "recursion",
+    "util",
+    "tool",
+    "back-end",
+    "node"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@lgd-utils/file-tree-cli",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LGDHuaOPER/lgd-utils.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "version": "0.0.1"
+}
