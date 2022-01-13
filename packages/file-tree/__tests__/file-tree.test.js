@@ -1,5 +1,5 @@
-import fileTree from '../src/file-tree';
+import fileTree from '../src'
 
 describe('@lgd-utils/file-tree', () => {
-    it('needs tests');
-});
+  it('needs tests')
+})

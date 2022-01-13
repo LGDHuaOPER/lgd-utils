@@ -8,6 +8,12 @@
     "url": "https://github.com/LGDHuaOPER/lgd-utils/issues"
   },
   "buildOptions": {
+    "_cjs": {
+      "_extraExternal": [
+        "fs",
+        "path"
+      ]
+    },
     "formats": "cjs"
   },
   "description": "A back-end file-tree tool",
