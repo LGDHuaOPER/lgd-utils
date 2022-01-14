@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2022-01-13 11:18:48
- * @LastEditTime: 2022-01-13 15:24:12
+ * @LastEditTime: 2022-01-14 14:41:09
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: /lgd-utils/packages/file-tree/src/genFileInfo.ts
@@ -13,10 +13,11 @@ import * as path from 'path'
 
 import genFileChildren from './genFileChildren'
 
-export default function genFileInfo(curPath: string, cwd?: string, initCwd?: string, isNotRoot?: boolean): FileInfo {
-  if (Object.prototype.toString.call(curPath) !== '[object String]')
-    throw new TypeError(`The parameter 'curPath' for function 'genFileInfo' is ${typeof curPath}.`)
-
+export default function genFileInfo(curPath?: string, cwd?: string, initCwd?: string, _isNotRoot?: boolean): FileInfo {
+  if (curPath === void 0) curPath = '.'
+  const curPathType = Object.prototype.toString.call(curPath)
+  if (curPathType !== '[object String]')
+    throw new TypeError(`The parameter 'curPath' for function 'genFileInfo' is ${curPathType}.`)
   if (path.isAbsolute(curPath)) {
     initCwd = curPath
     cwd = curPath
@@ -74,7 +75,7 @@ export default function genFileInfo(curPath: string, cwd?: string, initCwd?: str
     fileInfo.children = genFileChildren(curPath, cwd, initCwd)
   }
 
-  if (isNotRoot !== true) {
+  if (_isNotRoot !== true) {
     fileInfo.cwd = initCwd
   }
 
