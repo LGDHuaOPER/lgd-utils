@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2022-01-13 11:23:40
- * @LastEditTime: 2022-01-14 17:37:56
+ * @LastEditTime: 2022-01-17 18:10:21
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: /lgd-utils/packages/file-tree/types/file-tree.d.ts
@@ -56,16 +56,28 @@ declare interface FileInfo {
 declare type FileChildren = Array<FileInfo>
 
 declare interface FileTreeOptions {
+  blackList?: string | string[]
   curPath?: string
+  cwd?: string
   enableAll?: boolean
   enableDirectoryOnly?: boolean
-  cwd?: string
   initCwd?: string
-  blackList?: string | string[]
+  order?: OrderHandlerOptions | null
   whiteList?: string | string[]
 }
 
 declare interface FilterBlackWhiteOptions {
   blackList?: string | string[]
   whiteList?: string | string[]
+}
+
+declare type OrderHandlerOptions = Required<OrderHandlerOptionsObjectType>['iteratees'] | OrderHandlerOptionsObjectType
+
+declare type OrderHandlerOptionsIterateesNotArrayType = boolean | string | ((value: unknown) => unknown)
+
+declare type OrderHandlerOptionsOrdersStringType = 'asc' | 'desc'
+
+declare interface OrderHandlerOptionsObjectType {
+  iteratees?: OrderHandlerOptionsIterateesNotArrayType | Array<string | string[] | ((value: unknown) => unknown)>
+  orders?: OrderHandlerOptionsOrdersStringType | Array<OrderHandlerOptionsOrdersStringType>
 }

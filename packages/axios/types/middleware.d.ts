@@ -2,10 +2,10 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2021-10-28 14:16:21
- * @LastEditTime: 2021-11-22 14:35:00
+ * @LastEditTime: 2022-01-17 17:15:05
  * @LastEditors: shiconghua
  * @Description: file content
- * @FilePath: \lgd-utils\packages\axios\types\middleware.d.ts
+ * @FilePath: /lgd-utils/packages/axios/types/middleware.d.ts
  */
 
 declare interface ContentTypeDefaultsOptions {
@@ -270,7 +270,7 @@ declare interface RuntimeInterceptorResponseRejectedWrapper {
     responseOrError: AxiosError,
   ) => AxiosError | unknown | Promise<AxiosError | unknown>
   hasRequestHook?: (
-    request: Pick<AxiosResponse, 'request'>,
+    request: AxiosResponse['request'],
     responseOrError: AxiosError,
   ) => AxiosError | unknown | Promise<AxiosError | unknown>
   otherErrorHook?: (responseOrError: unknown) => unknown | Promise<unknown>

@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2022-01-14 16:58:50
- * @LastEditTime: 2022-01-14 17:17:23
+ * @LastEditTime: 2022-01-17 16:51:44
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: /lgd-utils/packages/file-tree/src/fileTree.ts
@@ -11,6 +11,7 @@
 import filterBlackWhite from './filterBlackWhite'
 import filterDirectory from './filterDirectory'
 import genFileInfo from './genFileInfo'
+import orderHandler from './orderHandler'
 
 export default function fileTree(curPath?: string, options?: FileTreeOptions): FileInfo {
   if (Object.prototype.toString.call(curPath) === '[object Object]') {
@@ -26,11 +27,12 @@ export default function fileTree(curPath?: string, options?: FileTreeOptions): F
     )
 
   const {
+    blackList,
+    cwd,
     enableAll = false,
     enableDirectoryOnly = false,
-    cwd,
     initCwd,
-    blackList,
+    order,
     whiteList,
   } = options as FileTreeOptions
 
@@ -42,10 +44,14 @@ export default function fileTree(curPath?: string, options?: FileTreeOptions): F
     const _fileInfo = filterDirectory(fileInfo) as FileInfo | null
     fileInfo = _fileInfo === null ? fileInfo : _fileInfo
   }
+
   fileInfo = filterBlackWhite(fileInfo, {
     blackList,
     whiteList,
   }) as FileInfo
+
+  if (![void 0, null].includes(order as undefined | null))
+    fileInfo = orderHandler(fileInfo, order as OrderHandlerOptions) as FileInfo
 
   return fileInfo
 }
