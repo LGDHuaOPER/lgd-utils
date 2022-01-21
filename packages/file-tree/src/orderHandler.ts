@@ -2,7 +2,7 @@
  * @Author: shiconghua
  * @Alias: LGD.HuaFEEng
  * @Date: 2022-01-17 15:04:26
- * @LastEditTime: 2022-01-17 20:10:27
+ * @LastEditTime: 2022-01-21 17:22:49
  * @LastEditors: shiconghua
  * @Description: file content
  * @FilePath: /lgd-utils/packages/file-tree/src/orderHandler.ts
@@ -35,6 +35,13 @@ function orderHandlerOptionsStringTypeHandler(options: string): {
     case 'isFile':
       iteratees = [['fs.stat', 'isFile']]
       orders = ['desc']
+      break
+    case 'n':
+    case 'fn':
+    case 'fileName':
+    case 'name':
+      iteratees = [['path.parse', 'name']]
+      orders = ['asc']
       break
     default:
       iteratees = [options as string]
@@ -87,6 +94,15 @@ function orderHandlerOptionsNotObjectTypeHandler(options: OrderHandlerOptionsObj
               case 'isDirectory':
               case 'isFile':
                 _order = 'desc'
+                break
+              default:
+                _order = 'asc'
+            }
+          }
+          if (_v[0] === 'path.parse') {
+            switch (_v[1]) {
+              case 'name':
+                _order = 'asc'
                 break
               default:
                 _order = 'asc'
@@ -170,7 +186,7 @@ export default function orderHandler(
       ['path.parse']: {
         ...fileInfo['path.parse'],
       },
-      children: children.length === 0 ? void 0 : children,
+      children: children.length === 0 ? void 0 : (orderHandler(children, options) as FileChildren),
     }
   }
 }
